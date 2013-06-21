@@ -1,0 +1,86 @@
+/* 	=============================================
+
+	$ 	BASE SCSS 
+	---------------------------------------------
+	* 	ALL COMPASS IMPORTS
+	*	BREAKPOINTS
+	*	VARS
+
+	============================================== 	*/
+
+	// @import "compass/reset";
+	@import "compass/css3/border-radius";
+	@import "compass/css3/images";
+	@import "compass/css3/box-sizing";
+
+
+	/* 	=============================================
+
+	$ 	LAYOUTS
+	---------------------------------------------
+	* 	SET BOX SIZING
+	*	SET BREAKPOINTS
+	* 	SET GRID NAMES AND COLUMN SIZES
+
+	============================================== 	*/
+
+	// BOX SIZING 
+
+	* {
+		@include box-sizing(border-box);
+	}
+
+	// BREAKPOINTS
+	// --------------------------------------------
+	// *	MOBILE FIRST 
+
+	$bp-s : 400px;
+	$bp-m : 600px;
+	$bp-w : 1000px;
+	$bp-xw : 1600px;
+
+	
+	// GRID VARIABLES HERE
+	//--------------------------------------------
+	// *	ADDITIONAL GRIDS AND NAME CHANGES WILL NEED TO 
+	//		BE UPDATED IN _GRID.SCSS
+
+	$grid-units-sml : 3;
+	$grid-units-med: 6;
+	$grid-units-wide : 12;
+
+	//GRID GUTTER
+
+	/*	** NB: CAN BE 0% IF IE8+
+		** ADD PADDING AND BOX SIZING INSTEAD 	*/
+
+	$grid-gutter : 2.5%; 
+
+	
+
+	/* 	=============================================
+
+	$ 	STICKY FOOTER 
+	---------------------------------------------
+	*	TO USE - 
+	* 	SET FOOTER HEIGHT AND CONTAINER VARIABLES
+	*	@IMPORT _STICKY-FOOTER.SCSS 
+
+	============================================== 	*/
+
+	$footer-height: 17em;
+	$body-container : ".wrap-main";
+	$footer-container : ".footer-wrap";
+	
+
+	/* 	=============================================
+
+	$ 	COLOURS
+	---------------------------------------------
+	*	SET COLOURS TO BE USED ON PROJECT
+
+	============================================== 	*/
+
+	$color-text : #2E2E2E;
+	$color-primary : #FF6600;
+	//	ETC...

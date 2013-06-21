@@ -1,0 +1,79 @@
+/* 	=============================================
+
+	$	TYPOGRAPHY
+	---------------------------------------------
+
+	*	INCLUDE BASELINE COMPASS STUFF
+	*	http://compass-style.org/reference/compass/typography/
+	* 	SET CUSTOM TYPOGRAPHY STYLES
+
+	==============================================*/
+
+
+	@import "compass/typography/vertical_rhythm";
+
+	$basepx: 16;
+
+	$base-font-size: 16px;
+
+	$base-line-height: 28px;
+
+	@include establish-baseline;
+
+	//  USAGE
+
+	/*
+	... 
+
+	@include adjust-font-size-to(12px, 1)
+
+	...
+
+	 margin-bottom: rhythm()
+
+	*/
+
+
+/* 	=============================================
+
+  	$	SET CUSTOM FONT FAMILIES AS VARS
+  	---------------------------------------------
+
+	==============================================*/
+
+	$font-heading : "freight-sans-pro", sans-serif;
+
+	$font-body: "freight-sans-pro", sans-serif;
+
+
+/* 	=============================================
+
+	$	CUSTOM COLOUR WHEN DRAGGING TEXT
+	---------------------------------------------
+
+	*	SUGGEST USING VARS SET IN _BASE.SCSS
+
+	==============================================*/
+
+	::selection {
+	  background: #DDD;
+	  }
+
+	::-moz-selection {
+	  background: #DDD;
+	}
+
+
+/* 	=============================================
+
+	$	GENERAL TYPOGRAPHY BELOW
+	---------------------------------------------
+
+	*	^p ^h1 ^h2 ^h3 ^h4 ^h5 ^h6 ^em ^strong 
+	*	^blockquote ^figcaption ^a ^pre ^code ^q
+	*	^ul ^ol ^dl ^li ^dt ^dd etc...
+	==============================================*/
+
+	body {
+		font: 300 100%/1.5 $font-body;
+	}
