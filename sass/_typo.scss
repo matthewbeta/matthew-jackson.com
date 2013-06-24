@@ -55,12 +55,10 @@
 
 	==============================================*/
 
-	::selection {
-	  background: #DDD;
-	  }
-
+	::selection ,
 	::-moz-selection {
-	  background: #DDD;
+	  background: $color-primary;
+	  color: $color-bg;
 	}
 
 
@@ -77,6 +75,37 @@
 	body {
 		font-weight: 300;
 		font-family: $font-body;
-		color: rgb(77, 73, 73);
+		color: $color-text;
 	}
+	.single-para {
+		padding-bottom: rhythm();
+	}
+	.heading {
 
+	}
+	.heading--page {
+		font-size: px2em(48px);
+	}
+	.heading--section {
+		font-size: px2em(32px);
+	}
+	
+	a {
+		color: $color-primary;
+		text-decoration: none;
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: underline;
+		}
+	}
+	.quote--plain {
+		font-size: px2em(24px);
+	}
+	.small-print {
+		padding-bottom: px2em(16px);
+	}
+	.credits {
+		font-size: px2em(12px);
+	}

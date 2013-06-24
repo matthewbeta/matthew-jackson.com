@@ -328,14 +328,11 @@ html {
 	*	SUGGEST USING VARS SET IN _BASE.SCSS
 
 	==============================================*/
-/* line 58, ../sass/_typo.scss */
-::selection {
-  background: #DDD;
-}
-
-/* line 62, ../sass/_typo.scss */
+/* line 59, ../sass/_typo.scss */
+::selection,
 ::-moz-selection {
-  background: #DDD;
+  background: #1c85d1;
+  color: #fdfdfd;
 }
 
 /* 	=============================================
@@ -347,11 +344,51 @@ html {
 	*	^blockquote ^figcaption ^a ^pre ^code ^q
 	*	^ul ^ol ^dl ^li ^dt ^dd etc...
 	==============================================*/
-/* line 77, ../sass/_typo.scss */
+/* line 75, ../sass/_typo.scss */
 body {
   font-weight: 300;
   font-family: "freight-sans-pro", sans-serif;
-  color: #4d4949;
+  color: #333333;
+}
+
+/* line 80, ../sass/_typo.scss */
+.single-para {
+  padding-bottom: 1.75em;
+}
+
+/* line 86, ../sass/_typo.scss */
+.heading--page {
+  font-size: 3em;
+}
+
+/* line 89, ../sass/_typo.scss */
+.heading--section {
+  font-size: 2em;
+}
+
+/* line 93, ../sass/_typo.scss */
+a {
+  color: #1c85d1;
+  text-decoration: none;
+}
+/* line 99, ../sass/_typo.scss */
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
+
+/* line 103, ../sass/_typo.scss */
+.quote--plain {
+  font-size: 1.5em;
+}
+
+/* line 106, ../sass/_typo.scss */
+.small-print {
+  padding-bottom: 1em;
+}
+
+/* line 109, ../sass/_typo.scss */
+.credits {
+  font-size: 0.75em;
 }
 
 @font-face {
@@ -769,7 +806,7 @@ form {
 /* line 27, ../sass/_sticky-footer.scss */
 .wrap-main {
   min-height: 100%;
-  padding-bottom: 17em;
+  padding-bottom: 24em;
   overflow: visible;
 }
 /* line 73, ../sass/_helpers.scss */
@@ -789,8 +826,8 @@ form {
 /* line 38, ../sass/_sticky-footer.scss */
 .footer-wrap {
   width: 100%;
-  height: 17em;
-  margin-top: -17em;
+  height: 24em;
+  margin-top: -24em;
 }
 /* line 73, ../sass/_helpers.scss */
 .footer-wrap {
@@ -823,11 +860,58 @@ form {
 /* line 5, ../sass/_layout.scss */
 .section__content {
   margin: 0 auto;
-  padding: 1em;
-  max-width: 62.5em;
+  padding: 4em 1em;
+  max-width: 50em;
+}
+/* line 73, ../sass/_helpers.scss */
+.section__content {
+  *zoom: 1;
+}
+/* line 77, ../sass/_helpers.scss */
+.section__content:before, .section__content:after {
+  content: "";
+  display: table;
+}
+/* line 81, ../sass/_helpers.scss */
+.section__content:after {
+  clear: both;
 }
 
-/* line 17, ../sass/style.scss */
+/* line 1, ../sass/_footer.scss */
+.section--footer {
+  background: #e6e6e6;
+}
+
+/* line 6, ../sass/_footer.scss */
+.profile-img,
+.contact-list a {
+  border-radius: 50%;
+}
+
+/* line 11, ../sass/_footer.scss */
+.contact__list li {
+  padding-top: 2em;
+}
+/* line 14, ../sass/_footer.scss */
+.contact__list a {
+  display: block;
+  width: 3em;
+  height: 3em;
+  padding-top: 1em;
+  font-size: 2em;
+  text-align: center;
+  color: #e6e6e6;
+  background: #fdfdfd;
+  border-radius: 50%;
+}
+/* line 26, ../sass/_footer.scss */
+.contact__list a:hover, .contact__list a:active, .contact__list a:focus {
+  text-decoration: none;
+  color: #fdfdfd;
+  background: #1c85d1;
+}
+
+/* line 19, ../sass/style.scss */
 body {
-  background: #ebeae2;
+  background: #fdfdfd;
 }

@@ -14,6 +14,8 @@
 
 @import "_layout.scss";
 
+@import "_footer.scss";
+
 body {
-	background: rgb(235, 234, 226);
+	background: $color-bg;
 }

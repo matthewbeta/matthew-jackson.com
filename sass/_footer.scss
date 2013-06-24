@@ -1,0 +1,32 @@
+.section--footer {
+	background: lighten($color-text, 70);
+}
+
+.profile-img,
+.contact-list a{
+	border-radius: 50%;
+}
+
+.contact__list {
+	li {
+		padding-top: px2em(32);
+	}
+	a {
+		display: block;
+		width: 3em;
+		height: 3em;
+		padding-top: 1em;
+		font-size: px2em(32px);
+		text-align: center;
+		color: lighten($color-text, 70);
+		background: $color-bg;
+		border-radius: 50%;
+		&:hover,
+		&:active,
+		&:focus {
+			text-decoration: none;
+			color: $color-bg;
+			background: $color-primary;
+		}
+	}
+}

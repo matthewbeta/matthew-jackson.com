@@ -3,7 +3,8 @@
 }
 
 .section__content {
+	@include clr();
 	margin: 0 auto;
-	padding: 1em;
-	max-width: px2em(1000);
+	padding: 4em 1em;
+	max-width: px2em(800);
 }
