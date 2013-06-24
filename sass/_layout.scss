@@ -1,0 +1,9 @@
+.section {
+	@include clr();
+}
+
+.section__content {
+	margin: 0 auto;
+	padding: 1em;
+	max-width: px2em(1000);
+}

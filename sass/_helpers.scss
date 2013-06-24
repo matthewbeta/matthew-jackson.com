@@ -328,3 +328,7 @@
 			@include focusable
 		}
 	} 
+
+	.clr {
+		@include clr();
+	}

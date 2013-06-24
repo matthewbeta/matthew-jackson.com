@@ -21,20 +21,24 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="{{ site.url }}css/style.css">
+        <link rel="stylesheet" href="{{ site.url }}/css/style.css">
 
     </head>
     <body>
 
       <div id="wrapMain" class="wrap-main">
+
+      <div class="header-wrap section section--header">
         
-        <header id="headerMain" class="header-main grid" role="banner">
-          
-          <a href="{{ site.url }}" id="brand" class="brand grid__unit brand">
-            <i class="icon icon-brand" aria-hidden="true"></i><span class="brand-text">Matthew Jackson</span>
+        <header id="headerMain" class="header-main section__content" role="banner">
+
+          <div class="grid">
+            
+          <a href="{{ site.url }}" id="brand" class="brand grid__unit m-3 w-3 brand">
+            <i class="icon icon--brand" aria-hidden="true"></i><span class="brand-text">Matthew Jackson</span>
           </a>
           
-          <nav id="navMain" class="nav-main grid__unit" role="navigation">
+          <nav id="navMain" class="nav-main grid__unit m-3 w-9" role="navigation">
             
             <ul class="nav-main__list">
               
@@ -60,18 +64,71 @@
 
           </nav>
 
+            
+          </div>
+          
+
         </header>
+
+      </div>
         
         {{ content }}
+
+      <section id="contact" class="section section--contact">
+  
+        <div class="media section__content">
+          
+          <div class="media__img">
+            <img src="{{ site.url }}/assets/images/me.jpg" alt="My face" class="profile-img">
+          </div>
+
+          <div class="media__body">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, mollitia, repellendus, sunt, rem quidem alias sit.</p>
+
+            <ul class="grid contact__list">
+              
+              <li class="grid__unit s-1 m-1 w-3">
+                
+                <a href="mailto:hello@matthew-jackson.com"><i class="icon icon--mail" aria-hidden="true"></i><b class="visually-hidden">Email me</b></a>
+
+              </li>
+
+              <li class="grid__unit s-1 m-1 w-3">
+                
+                <a href="http://twitter.com/matthewbeta"><i class="icon icon--twitter" aria-hidden="true"></i><b class="visually-hidden">Tweet me</b></a>
+
+              </li>
+
+              <li class="grid__unit s-1 m-1 w-3">
+                
+                <a href="http://github.com/matthewbeta"><i class="icon icon--github" aria-hidden="true"></i><b class="visually-hidden">Tweet me</b></a>
+
+              </li>
+
+              <li class="grid__unit s-1 m-1 w-3">
+                
+                <a href="http://flickr.com/beta_male"><i class="icon icon--flickr" aria-hidden="true"></i><b class="visually-hidden">Flick&hellip;urr me&hellip;?</b></a>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
 
       </div>
       <!-- / WRAP ENDS  -->
       
-      <div class="footer-wrap">
+      <div class="footer-wrap section section--footer">
         
-        <footer id="footerMain" class="footer-main">
+        <footer id="footerMain" class="footer-main section__content">
           
-          <p>test</p>
+          <p>&copy; {{ site.time | date: '%Y' }} | All content is licensed under the <a href="https://raw.github.com/philsturgeon/dbad/master/LICENSE-en.md">DBAD License</a></p>
+          
         </footer>
         
 

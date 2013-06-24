@@ -8,7 +8,7 @@
 
 	============================================== 	*/
 
-	// @import "compass/reset";
+	@import "compass/reset";
 	@import "compass/css3/border-radius";
 	@import "compass/css3/images";
 	@import "compass/css3/box-sizing";
@@ -45,7 +45,7 @@
 	// *	ADDITIONAL GRIDS AND NAME CHANGES WILL NEED TO 
 	//		BE UPDATED IN _GRID.SCSS
 
-	$grid-units-sml : 3;
+	$grid-units-sml : 4;
 	$grid-units-med: 6;
 	$grid-units-wide : 12;
 

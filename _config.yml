@@ -1,2 +1,5 @@
 name: Matthew Jackson
 pygments: true
+permalink: pretty
+pagination: 1
+

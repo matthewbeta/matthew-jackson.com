@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'mj-cons';
-	src:url('..assets/fonts/mj-cons.eot');
-	src:url('..assets/fonts/mj-cons.eot?#iefix') format('embedded-opentype'),
-		url('..assets/fonts/mj-cons.woff') format('woff'),
-		url('..assets/fonts/mj-cons.ttf') format('truetype'),
-		url('..assets/fonts/mj-cons.svg#mj-cons') format('svg');
+	src:url('../assets/fonts/mj-cons.eot');
+	src:url('../assets/fonts/mj-cons.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/mj-cons.woff') format('woff'),
+		url('../assets/fonts/mj-cons.ttf') format('truetype'),
+		url('../assets/fonts/mj-cons.svg#mj-cons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -33,21 +33,21 @@ you can use the generic selector below, but it's slower:
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
-.icon-mail:before {
+.icon--mail:before {
 	content: "\e005";
 }
-.icon-menu:before {
+.icon--menu:before {
 	content: "\e019";
 }
-.icon-brand:before {
+.icon--brand:before {
 	content: "\e01a";
 }
-.icon-github:before {
+.icon--github:before {
 	content: "\e000";
 }
-.icon-flickr:before {
+.icon--flickr:before {
 	content: "\e001";
 }
-.icon-twitter:before {
+.icon--twitter:before {
 	content: "\e003";
 }

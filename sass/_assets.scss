@@ -1,0 +1,26 @@
+img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.media {
+	@include clr();
+	.media__img {
+		// float: left;
+		// margin-right: 1em;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.media__body {
+		// overflow:hidden; 
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.media--rtl {
+	@extend .media;
+	.media__img  {
+		float: right;
+		margin-left: 1em;
+	}
+}

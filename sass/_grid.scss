@@ -18,14 +18,14 @@
 	.grid {
 		position: relative;
 		float: left;
-	 	width: 100%;
+	 	width: 102.5%;
 	  	margin-left: $grid-gutter * -1;
 	  	@include clr();
 	}
 	.grid__unit {
 	  	float: left;
 	  	display: block;
-	  	width: 100%;
+	  	width: 97.560976%;
 	  	margin-left: $grid-gutter;
 	}
 
@@ -41,6 +41,9 @@
 	.s-2 {
 		@include cols($grid-units-sml, 2);
 	}
+	.s-3 {
+		@include cols($grid-units-sml, 3);
+	}
 
 /* =============================================
 
@@ -53,6 +56,9 @@
 	}
 	.s-push-2 {
 		@include offset($grid-units-sml, 2)
+	}
+	.s-push-3 {
+		@include offset($grid-units-sml, 3)
 	}
 
 @include mq(m) {
