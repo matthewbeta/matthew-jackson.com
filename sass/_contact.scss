@@ -1,0 +1,66 @@
+.section--contact {
+	background: lighten($color-text, 70);
+}
+
+.profile-img,
+.contact-list a{
+	border-radius: 50%;
+}
+.contact__header {
+	
+
+	@include mq(m) {
+
+		position: relative;
+		padding-left: 10em;
+
+		&:before {
+			content: "";
+			background: url("//placekitten.com/200/200") center center no-repeat transparent;
+			background-size: cover;
+			position: absolute;
+			top: 1.5em;
+			left: 0;
+			height: 6em;
+			width: 6em;
+			border-radius: 100%;
+			margin-right: 1em;
+			overflow: hidden;
+		}
+			
+	}
+}
+.contact__list {
+	
+	padding-top: rhythm();
+
+	@include mq(m) {
+			padding-top: rhythm(1.5);
+		}
+
+	li {
+		@include mq(w) {
+			padding-top: px2em(32);
+		}
+	}
+	a {
+		display: block;
+		width: 2em;
+		height: 2em;
+		margin: 0 auto;
+		padding-top: .5em;
+		font-size: px2em(32px);
+		text-align: center;
+		color: lighten($color-text, 70);
+		background: $color-bg;
+		border-radius: 50%;
+		&:hover,
+		&:active,
+		&:focus {
+			text-decoration: none;
+			color: $color-bg;
+			background: $color-primary;
+		}
+
+	}
+}

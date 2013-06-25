@@ -6,21 +6,17 @@ img {
 .media {
 	@include clr();
 	.media__img {
-		// float: left;
-		// margin-right: 1em;
-		display: table-cell;
-		vertical-align: middle;
+		float: left;
+		margin-right: 2em;
 	}
 	.media__body {
-		// overflow:hidden; 
-		display: table-cell;
-		vertical-align: middle;
+		overflow:hidden; 
 	}
 }
 .media--rtl {
 	@extend .media;
 	.media__img  {
 		float: right;
-		margin-left: 1em;
+		margin-left: 2em;
 	}
 }
