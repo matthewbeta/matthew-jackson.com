@@ -12,28 +12,6 @@
 
 	@import "compass/typography/vertical_rhythm";
 
-	$basepx: 16;
-
-	$base-font-size: 16px;
-
-	$base-line-height: 28px;
-
-	@include establish-baseline;
-
-	//  USAGE
-
-	/*
-	... 
-
-	@include adjust-font-size-to(12px, 1)
-
-	...
-
-	 margin-bottom: rhythm()
-
-	*/
-
-
 /* 	=============================================
 
   	$	SET CUSTOM FONT FAMILIES AS VARS
@@ -73,22 +51,44 @@
 	==============================================*/
 
 	body {
-		font-weight: 300;
-		font-family: $font-body;
+		font: 300 100%/1.75 $font-body;
 		color: $color-text;
+		-webkit-hyphens: auto;
+    	-moz-hyphens: auto;
+         hyphens: auto;
+         -ms-word-break: break-all;
+         word-break: break-all;
+
+         // Non standard for webkit
+         word-break: break-word;
+
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		hyphens: auto;
+	                    
+	   	-webkit-hyphenate-before: 2;
+	    -webkit-hyphenate-after: 3;
+	    hyphenate-lines: 3;
+	    -moz-font-feature-settings: "liga=1, dlig=1";
+	    -ms-font-feature-settings: "liga", "dlig";
+	    -webkit-font-feature-settings: "liga", "dlig";
+	    -o-font-feature-settings: "liga", "dlig";
+	    font-feature-settings: "liga", "dlig";
 	}
 	.single-para {
-		padding-bottom: rhythm();
+		padding-bottom: 1em;
 	}
 	.heading {
 
 	}
 	.heading--page {
-		font-size: px2em(48px);
+		font-size: 3em;
+		line-height: 1.5;
+		padding-bottom: .5em;
 	}
 	.heading--section {
-		font-size: px2em(32px);
-		padding-bottom: rhythm(.5);
+		font-size: 2em;
+		padding-bottom: .5em;
 	}
 	
 	a {
@@ -102,11 +102,44 @@
 		}
 	}
 	.quote--plain {
-		font-size: px2em(24px);
+		font-size: 1.5em;
 	}
 	.small-print {
-		padding-bottom: px2em(16px);
+		padding-bottom: 1em;
 	}
 	.credits {
-		font-size: px2em(12px);
+		font-size: .8em;
 	}
+	
+	.wf-loading {
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, details,
+	figure, figcaption, output, ruby, section, summary,
+	time {
+
+		opacity: 0;
+		
+	}
+}
+.wf-active {
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, details,
+	figure, figcaption, output, ruby, section, summary,
+	time {
+		opacity: 1;
+		transition: opacity .3s ease-out;
+	}
+}
+	 

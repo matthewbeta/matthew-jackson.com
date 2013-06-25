@@ -5,6 +5,9 @@
 .section__content {
 	@include clr();
 	margin: 0 auto;
-	padding: 4em 2em;
+	padding: 3em 2em;
 	max-width: px2em(800);
+	@include mq(w) {
+		padding: 4em 1em;
+	}
 }

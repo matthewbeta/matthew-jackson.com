@@ -293,27 +293,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	* 	SET CUSTOM TYPOGRAPHY STYLES
 
 	==============================================*/
-/* line 61, ../../Downloads/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-* html {
-  font-size: 100%;
-}
-
-/* line 64, ../../Downloads/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-html {
-  font-size: 16px;
-  line-height: 1.75em;
-}
-
-	/*
-	... 
-
-	@include adjust-font-size-to(12px, 1)
-
-	...
-
-	 margin-bottom: rhythm()
-
-	*/
 /* 	=============================================
 
   	$	SET CUSTOM FONT FAMILIES AS VARS
@@ -328,7 +307,7 @@ html {
 	*	SUGGEST USING VARS SET IN _BASE.SCSS
 
 	==============================================*/
-/* line 59, ../sass/_typo.scss */
+/* line 37, ../sass/_typo.scss */
 ::selection,
 ::-moz-selection {
   background: #1c85d1;
@@ -344,27 +323,45 @@ html {
 	*	^blockquote ^figcaption ^a ^pre ^code ^q
 	*	^ul ^ol ^dl ^li ^dt ^dd etc...
 	==============================================*/
-/* line 75, ../sass/_typo.scss */
+/* line 53, ../sass/_typo.scss */
 body {
-  font-weight: 300;
-  font-family: "freight-sans-pro", sans-serif;
+  font: 300 100%/1.75 "freight-sans-pro", sans-serif;
   color: #333333;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-before: 2;
+  -webkit-hyphenate-after: 3;
+  hyphenate-lines: 3;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
 }
 
-/* line 80, ../sass/_typo.scss */
+/* line 78, ../sass/_typo.scss */
 .single-para {
-  padding-bottom: 1.75em;
+  padding-bottom: 1em;
 }
 
-/* line 86, ../sass/_typo.scss */
+/* line 84, ../sass/_typo.scss */
 .heading--page {
   font-size: 3em;
+  line-height: 1.5;
+  padding-bottom: .5em;
 }
 
 /* line 89, ../sass/_typo.scss */
 .heading--section {
   font-size: 2em;
-  padding-bottom: 0.875em;
+  padding-bottom: .5em;
 }
 
 /* line 94, ../sass/_typo.scss */
@@ -389,7 +386,36 @@ a:hover, a:focus, a:active {
 
 /* line 110, ../sass/_typo.scss */
 .credits {
-  font-size: 0.75em;
+  font-size: .8em;
+}
+
+/* line 124, ../sass/_typo.scss */
+.wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading h5, .wf-loading h6, .wf-loading p, .wf-loading blockquote, .wf-loading pre,
+.wf-loading a, .wf-loading abbr, .wf-loading acronym, .wf-loading address, .wf-loading big, .wf-loading cite, .wf-loading code,
+.wf-loading del, .wf-loading dfn, .wf-loading em, .wf-loading img, .wf-loading ins, .wf-loading kbd, .wf-loading q, .wf-loading s, .wf-loading samp,
+.wf-loading small, .wf-loading strike, .wf-loading strong, .wf-loading sub, .wf-loading sup, .wf-loading tt, .wf-loading var,
+.wf-loading b, .wf-loading u, .wf-loading i, .wf-loading center,
+.wf-loading dl, .wf-loading dt, .wf-loading dd, .wf-loading ol, .wf-loading ul, .wf-loading li,
+.wf-loading fieldset, .wf-loading form, .wf-loading label, .wf-loading legend,
+.wf-loading table, .wf-loading caption, .wf-loading tbody, .wf-loading tfoot, .wf-loading thead, .wf-loading tr, .wf-loading th, .wf-loading td, .wf-loading details,
+.wf-loading figure, .wf-loading figcaption, .wf-loading output, .wf-loading ruby, .wf-loading section, .wf-loading summary,
+.wf-loading time {
+  opacity: 0;
+}
+
+/* line 140, ../sass/_typo.scss */
+.wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6, .wf-active p, .wf-active blockquote, .wf-active pre,
+.wf-active a, .wf-active abbr, .wf-active acronym, .wf-active address, .wf-active big, .wf-active cite, .wf-active code,
+.wf-active del, .wf-active dfn, .wf-active em, .wf-active img, .wf-active ins, .wf-active kbd, .wf-active q, .wf-active s, .wf-active samp,
+.wf-active small, .wf-active strike, .wf-active strong, .wf-active sub, .wf-active sup, .wf-active tt, .wf-active var,
+.wf-active b, .wf-active u, .wf-active i, .wf-active center,
+.wf-active dl, .wf-active dt, .wf-active dd, .wf-active ol, .wf-active ul, .wf-active li,
+.wf-active fieldset, .wf-active form, .wf-active label, .wf-active legend,
+.wf-active table, .wf-active caption, .wf-active tbody, .wf-active tfoot, .wf-active thead, .wf-active tr, .wf-active th, .wf-active td, .wf-active details,
+.wf-active figure, .wf-active figcaption, .wf-active output, .wf-active ruby, .wf-active section, .wf-active summary,
+.wf-active time {
+  opacity: 1;
+  transition: opacity .3s ease-out;
 }
 
 @font-face {
@@ -860,7 +886,7 @@ form {
 /* line 5, ../sass/_layout.scss */
 .section__content {
   margin: 0 auto;
-  padding: 4em 2em;
+  padding: 3em 2em;
   max-width: 50em;
 }
 /* line 73, ../sass/_helpers.scss */
@@ -875,6 +901,81 @@ form {
 /* line 81, ../sass/_helpers.scss */
 .section__content:after {
   clear: both;
+}
+@media only screen and (min-width: 62.5em) {
+  /* line 5, ../sass/_layout.scss */
+  .section__content {
+    padding: 4em 1em;
+  }
+}
+
+/* line 1, ../sass/_header.scss */
+.section--header {
+  border-top: 1em solid #e6e6e6;
+}
+/* line 3, ../sass/_header.scss */
+.section--header .section__content {
+  padding-top: 2em;
+}
+
+/* line 7, ../sass/_header.scss */
+.brand {
+  font-size: 6em;
+  line-height: 1;
+  text-align: center;
+}
+/* line 13, ../sass/_header.scss */
+.brand:hover, .brand:active, .brand:focus {
+  text-decoration: none;
+}
+@media only screen and (min-width: 37.5em) {
+  /* line 7, ../sass/_header.scss */
+  .brand {
+    text-align: left;
+  }
+}
+
+/* line 20, ../sass/_header.scss */
+.nav-main {
+  padding-top: 2em;
+}
+
+/* line 23, ../sass/_header.scss */
+.nav-main__list {
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+@media only screen and (min-width: 37.5em) {
+  /* line 23, ../sass/_header.scss */
+  .nav-main__list {
+    text-align: right;
+  }
+}
+
+/* line 31, ../sass/_header.scss */
+.nav-main__item {
+  display: table-cell;
+}
+/* line 34, ../sass/_header.scss */
+.nav-main__item a {
+  color: #333333;
+  display: block;
+}
+@media only screen and (min-width: 37.5em) {
+  /* line 31, ../sass/_header.scss */
+  .nav-main__item {
+    display: inline-block;
+  }
+  /* line 41, ../sass/_header.scss */
+  .nav-main__item a {
+    padding-left: 2em;
+  }
+}
+
+/* line 1, ../sass/_about.scss */
+.welcome-img {
+  border-radius: 100%;
 }
 
 /* line 1, ../sass/_contact.scss */
@@ -912,12 +1013,12 @@ form {
 
 /* line 33, ../sass/_contact.scss */
 .contact__list {
-  padding-top: 1.75em;
+  padding-top: 1.5em;
 }
 @media only screen and (min-width: 37.5em) {
   /* line 33, ../sass/_contact.scss */
   .contact__list {
-    padding-top: 2.625em;
+    padding-top: 2.25em;
   }
 }
 @media only screen and (min-width: 62.5em) {
@@ -932,7 +1033,7 @@ form {
   width: 2em;
   height: 2em;
   margin: 0 auto;
-  padding-top: .5em;
+  padding-top: .25em;
   font-size: 2em;
   text-align: center;
   color: #e6e6e6;
@@ -946,7 +1047,7 @@ form {
   background: #1c85d1;
 }
 
-/* line 21, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 body {
   background: #fdfdfd;
 }

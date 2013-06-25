@@ -1,0 +1,47 @@
+.section--header {
+	border-top: 1em solid lighten($color-text, 70);
+	.section__content {
+		padding-top: 2em
+	}
+}
+.brand {
+	font-size: 6em;
+	line-height: 1;
+	text-align: center;
+	&:hover,
+	&:active, 
+	&:focus {
+		text-decoration: none;
+	}
+	@include mq(m) {
+		text-align: left;
+	}
+}
+.nav-main {
+	padding-top: 2em;
+}
+.nav-main__list {
+	display: table;
+	width: 100%;
+	text-align: center;
+	@include mq(m) {
+		text-align: right;
+	}
+}
+.nav-main__item {
+	display: table-cell;
+
+	a {
+		color: $color-text;
+		display: block;
+		}
+	
+	@include mq(m) {
+		display: inline-block;
+		a {
+		padding-left: 2em;
+		}
+	}
+
+	
+}
