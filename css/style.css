@@ -976,6 +976,7 @@ form {
 /* line 1, ../sass/_about.scss */
 .welcome-img {
   border-radius: 100%;
+  overflow: hidden;
 }
 
 /* line 1, ../sass/_contact.scss */
