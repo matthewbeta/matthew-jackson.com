@@ -6,21 +6,34 @@ layout: default
 
 	<article class="post section__content">
 
+	<div class="grid">
+		
+		<div class="grid__unit m-4 w-8">
+			
 		<header class="post__header">
 			
-			<h2>{{ page.title }}</h2>
+			<h2 class="heading heading--page">{{ page.title }}</h2>
 
 			<p class="meta">{{ page.date | date_to_string }}</p>
 			
 		</header>
-		
-		{{ content }}
 
+		<div class="post__content">
+			
+		{{ content }}
+			
+		</div>
+		
 		<footer class="post__footer">
 			
-			
+
 
 		</footer>
+
+		</div>
+		
+	</div>
+
 
 	</article>
 

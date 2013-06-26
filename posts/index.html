@@ -2,14 +2,32 @@
 layout: default
 title: Matthew Jackson is a designer
 ---
+<section id="about" class="section section--about">
 
-  	<h1>Posts</h1>
+  <div class="section__content">
+		
+		<div class="grid">
 
-  	<ul>
-  	{% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.excerpt }}</p>
-    </li>
-  	{% endfor %}
-	</ul>
+			<div class="grid__unit m-4 w-8">
+				
+	  		<h1 class="heading heading--page">Posts</h1>
+
+		  	<ul>
+
+		  	{% for post in site.posts %}
+		    <li>
+		      <a href="{{ post.url }}"><h2 class="heading heading--section">{{ post.title }}</h2></a>
+		      <p>{{ post.excerpt }}</p>
+		    </li>
+		  	{% endfor %}
+
+			</ul>
+
+			</div>
+	  		
+			
+		</div>
+
+	</div>
+
+</section>

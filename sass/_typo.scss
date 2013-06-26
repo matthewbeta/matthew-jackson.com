@@ -101,6 +101,13 @@
 			text-decoration: underline;
 		}
 	}
+	.meta {
+		font-size: 1em;
+		padding-bottom: 1em;
+		margin-bottom: 1em;
+		border: solid $color-primary;
+		border-width: 1px 0;
+	}
 	.quote--plain {
 		font-size: 1.5em;
 	}
@@ -109,8 +116,54 @@
 	}
 	.credits {
 		font-size: .8em;
+		text-indent: 0;
 	}
-	
+	.drop-cap:first-letter {
+		font-size: 6em;
+		line-height: 1;
+		display: block;
+		margin-right: 100%;
+	}
+	figure blockquote {
+		position: relative;
+		font: 1.5em/1.2 $font-heading;
+		padding-top: rhythm(1);
+		@media all and (min-width: 30em) {
+			font-size: 2em;
+		}
+		&:before {
+			content: "“";
+			position: absolute;
+			top: -.25em;
+			left: 0;
+			font-size: 3em;
+			color: lighten($color-text, 70);
+		}
+		&:after {
+			content: "”";
+			display: inline;
+			font-size: 1em;
+			color: lighten($color-text, 70);
+		}
+	}
+	figure {
+		margin: 1em 0;
+		padding: 1em 0;
+		border: solid lighten($color-text, 70);
+		border-width: 1px 0;
+	}
+	figcaption {
+		padding-top: 1em;
+		font-size: .75em;
+		font-style: italic;
+		color: lighten($color-text, 25%);
+		@include mq(m) {
+			font-size: 1em;
+		}
+	}
+	p + p {
+		text-indent: 1.5em;
+	}
 	.wf-loading {
 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 	a, abbr, acronym, address, big, cite, code,

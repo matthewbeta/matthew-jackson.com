@@ -375,21 +375,95 @@ a:hover, a:focus, a:active {
 }
 
 /* line 104, ../sass/_typo.scss */
+.meta {
+  font-size: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border: solid #1c85d1;
+  border-width: 1px 0;
+}
+
+/* line 111, ../sass/_typo.scss */
 .quote--plain {
   font-size: 1.5em;
 }
 
-/* line 107, ../sass/_typo.scss */
+/* line 114, ../sass/_typo.scss */
 .small-print {
   padding-bottom: 1em;
 }
 
-/* line 110, ../sass/_typo.scss */
+/* line 117, ../sass/_typo.scss */
 .credits {
   font-size: .8em;
+  text-indent: 0;
 }
 
-/* line 124, ../sass/_typo.scss */
+/* line 121, ../sass/_typo.scss */
+.drop-cap:first-letter {
+  font-size: 6em;
+  line-height: 1;
+  display: block;
+  margin-right: 100%;
+}
+
+/* line 127, ../sass/_typo.scss */
+figure blockquote {
+  position: relative;
+  font: 1.5em/1.2 "freight-sans-pro", sans-serif;
+  padding-top: 1.5em;
+}
+@media all and (min-width: 30em) {
+  /* line 127, ../sass/_typo.scss */
+  figure blockquote {
+    font-size: 2em;
+  }
+}
+/* line 134, ../sass/_typo.scss */
+figure blockquote:before {
+  content: "“";
+  position: absolute;
+  top: -.25em;
+  left: 0;
+  font-size: 3em;
+  color: #e6e6e6;
+}
+/* line 142, ../sass/_typo.scss */
+figure blockquote:after {
+  content: "”";
+  display: inline;
+  font-size: 1em;
+  color: #e6e6e6;
+}
+
+/* line 149, ../sass/_typo.scss */
+figure {
+  margin: 1em 0;
+  padding: 1em 0;
+  border: solid #e6e6e6;
+  border-width: 1px 0;
+}
+
+/* line 155, ../sass/_typo.scss */
+figcaption {
+  padding-top: 1em;
+  font-size: .75em;
+  font-style: italic;
+  color: #737373;
+}
+@media only screen and (min-width: 37.5em) {
+  /* line 155, ../sass/_typo.scss */
+  figcaption {
+    font-size: 1em;
+  }
+}
+
+/* line 164, ../sass/_typo.scss */
+p + p {
+  text-indent: 1.5em;
+}
+
+/* line 177, ../sass/_typo.scss */
 .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading h5, .wf-loading h6, .wf-loading p, .wf-loading blockquote, .wf-loading pre,
 .wf-loading a, .wf-loading abbr, .wf-loading acronym, .wf-loading address, .wf-loading big, .wf-loading cite, .wf-loading code,
 .wf-loading del, .wf-loading dfn, .wf-loading em, .wf-loading img, .wf-loading ins, .wf-loading kbd, .wf-loading q, .wf-loading s, .wf-loading samp,
@@ -403,7 +477,7 @@ a:hover, a:focus, a:active {
   opacity: 0;
 }
 
-/* line 140, ../sass/_typo.scss */
+/* line 193, ../sass/_typo.scss */
 .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6, .wf-active p, .wf-active blockquote, .wf-active pre,
 .wf-active a, .wf-active abbr, .wf-active acronym, .wf-active address, .wf-active big, .wf-active cite, .wf-active code,
 .wf-active del, .wf-active dfn, .wf-active em, .wf-active img, .wf-active ins, .wf-active kbd, .wf-active q, .wf-active s, .wf-active samp,
@@ -974,9 +1048,8 @@ form {
 }
 
 /* line 1, ../sass/_about.scss */
-.welcome-img {
+.welcome-img img {
   border-radius: 100%;
-  overflow: hidden;
 }
 
 /* line 1, ../sass/_contact.scss */
