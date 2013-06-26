@@ -459,7 +459,7 @@ figcaption {
 }
 
 /* line 164, ../sass/_typo.scss */
-p + p {
+.post__content p + p {
   text-indent: 1.5em;
 }
 

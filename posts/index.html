@@ -17,7 +17,8 @@ title: Matthew Jackson is a designer
 		  	{% for post in site.posts %}
 		    <li>
 		      <a href="{{ post.url }}"><h2 class="heading heading--section">{{ post.title }}</h2></a>
-		      <p>{{ post.excerpt }}</p>
+		     	<p>{{ post.date }}</p>
+		     	<p>{{ post.excerpt }}</p>
 		    </li>
 		  	{% endfor %}
 
