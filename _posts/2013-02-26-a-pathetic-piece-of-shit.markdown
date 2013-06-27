@@ -37,15 +37,6 @@ Mr Antopolski talks about a similar issue in the interview above and tells a sto
 
 Thats it. My new mantra. Let go. Let it be awful, or mediocre, or fantastic. And iterate. And evolve. And improve. 
 
-{% highlight html linenos %}
-<figure>
-  <blockquote>
-    Let it be the pathetic piece of shit it was always meant to be.
-  </blockquote>
-  <figcaption>Dan Antopolski's children's mother's director, via Comedians Comedian Podcast, <a href="http://soundcloud.com/stu-goldsmith/the-comedians-comedian-1/">Episode 3</a> </figcaption>
-</figure>
-{% endhighlight %}
-
 So now my blog exists. It is rough. There's no navigation, no link colours, one grid layout for all sizes. It is not finished. But its shipped [^3]. It will change (probably). It will get better (maybe). If it doesn't, so what? Its just some shit I made.
 
 <a href="http://twitter.com/matthewbeta" class="signature">@matthewbeta</a>

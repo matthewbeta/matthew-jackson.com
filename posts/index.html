@@ -10,14 +10,14 @@ title: Matthew Jackson is a designer
 
 			<div class="grid__unit m-4 w-8">
 				
-	  		<h1 class="heading heading--page">Notes</h1>
+	  		<h1 class="heading heading--page">Infrequent notes</h1>
 
 		  	<ul>
 
 		  	{% for post in site.posts %}
 		    <li>
 		      <a href="{{ post.url }}"><h2 class="heading heading--section">{{ post.title }}</h2></a>
-		     	<p class="meta">{{ post.date }}</p>
+		     	<p class="meta">{{ post.date | date: "%d %B %Y" }}</p>
 		     	<p>{{ post.excerpt }}</p>
 		     	<p><a href="{{ post.url }}">Read on&hellip;</a></p>
 		    </li>
