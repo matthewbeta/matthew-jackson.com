@@ -22,7 +22,10 @@
 
 @import "_contact.scss";
 
+@import "_post.scss";
+
 body {
 	background: $color-bg;
+	transition: all 0.3s ease-out;
 }
 

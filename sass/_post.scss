@@ -1,0 +1,42 @@
+.signature {
+	display: block;
+	padding: 1em 0 2em;
+	border-bottom: 1px solid lighten($color-text, 70);
+}
+.footnotes {
+	padding: 1em 0;
+	font-style: italic;
+	color: lighten($color-text, 50);
+	border-bottom: 1px solid lighten($color-text, 70);
+	hr {
+		display: none;
+	}
+	ol {
+		list-style-type: decimal;		
+		list-style-position: outside;
+	}
+	li {
+		padding-bottom: 1em;
+	}
+}
+.footnotes li {
+		position: relative;
+		padding-right: 1em;
+	}
+	a[rev="footnote"] {
+		position: absolute;
+		top: 0;
+		right: .5em;
+
+	}
+.next-post {
+	text-align: right;
+}
+.prev-post {
+	border-right: 1px solid lighten($color-text, 70);
+}
+
+.post__footer {
+	padding: 1em 0;
+	
+}

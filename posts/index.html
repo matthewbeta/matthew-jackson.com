@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: post
 title: Matthew Jackson is a designer
 ---
-<section id="about" class="section section--about">
+<section id="post" class="section section--post">
 
   <div class="section__content">
 		
@@ -10,15 +10,16 @@ title: Matthew Jackson is a designer
 
 			<div class="grid__unit m-4 w-8">
 				
-	  		<h1 class="heading heading--page">Posts</h1>
+	  		<h1 class="heading heading--page">Notes</h1>
 
 		  	<ul>
 
 		  	{% for post in site.posts %}
 		    <li>
 		      <a href="{{ post.url }}"><h2 class="heading heading--section">{{ post.title }}</h2></a>
-		     	<p>{{ post.date }}</p>
+		     	<p class="meta">{{ post.date }}</p>
 		     	<p>{{ post.excerpt }}</p>
+		     	<p><a href="{{ post.url }}">Read on&hellip;</a></p>
 		    </li>
 		  	{% endfor %}
 

@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: post__content
 title:  "This is a pathetic piece of shit"
 date:   2013-02-23 00:00:00
-categories: Design Shipping Process
+categories: Design
 excerpt: Nothing like a deadline to focus the mind, eh? I'm not trying to say "I don't want my client work to be perfect. Please take all my clients" but it is certainly easier to be pragmatic about things when you *need* to finish. 
+snippet: Matt realises that perfection is an impossibility and learns to ship the damn thing
 ---
 
 <p class="drop-cap">Nothing like a deadline to focus the mind, eh? I'm not trying to say "I don't want my client work to be perfect. Please take all my clients" but it is certainly easier to be pragmatic about things when you *need* to finish. </p>
@@ -37,6 +38,8 @@ Mr Antopolski talks about a similar issue in the interview above and tells a sto
 Thats it. My new mantra. Let go. Let it be awful, or mediocre, or fantastic. And iterate. And evolve. And improve. 
 
 So now my blog exists. It is rough. There's no navigation, no link colours, one grid layout for all sizes. It is not finished. But its shipped [^3]. It will change (probably). It will get better (maybe). If it doesn't, so what? Its just some shit I made.
+
+<a href="http://twitter.com/matthewbeta" class="signature">@matthewbeta</a>
 
 <h3 class="heading heading--sub">Footnotes</h3>
 

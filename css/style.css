@@ -364,17 +364,30 @@ body {
   padding-bottom: .5em;
 }
 
-/* line 94, ../sass/_typo.scss */
+/* line 93, ../sass/_typo.scss */
+.heading--sub {
+  padding: 1em 0 0;
+  border-bottom: 1px solid #e6e6e6;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+/* line 100, ../sass/_typo.scss */
 a {
   color: #1c85d1;
   text-decoration: none;
 }
-/* line 100, ../sass/_typo.scss */
+/* line 106, ../sass/_typo.scss */
 a:hover, a:focus, a:active {
   text-decoration: underline;
 }
 
-/* line 104, ../sass/_typo.scss */
+/* line 110, ../sass/_typo.scss */
+.signature {
+  font-size: 1.5em;
+}
+
+/* line 113, ../sass/_typo.scss */
 .meta {
   font-size: 1em;
   padding-bottom: 1em;
@@ -383,23 +396,23 @@ a:hover, a:focus, a:active {
   border-width: 1px 0;
 }
 
-/* line 111, ../sass/_typo.scss */
+/* line 120, ../sass/_typo.scss */
 .quote--plain {
   font-size: 1.5em;
 }
 
-/* line 114, ../sass/_typo.scss */
+/* line 123, ../sass/_typo.scss */
 .small-print {
   padding-bottom: 1em;
 }
 
-/* line 117, ../sass/_typo.scss */
+/* line 126, ../sass/_typo.scss */
 .credits {
   font-size: .8em;
   text-indent: 0;
 }
 
-/* line 121, ../sass/_typo.scss */
+/* line 130, ../sass/_typo.scss */
 .drop-cap:first-letter {
   font-size: 6em;
   line-height: 1;
@@ -407,19 +420,19 @@ a:hover, a:focus, a:active {
   margin-right: 100%;
 }
 
-/* line 127, ../sass/_typo.scss */
+/* line 136, ../sass/_typo.scss */
 figure blockquote {
   position: relative;
   font: 1.5em/1.2 "freight-sans-pro", sans-serif;
   padding-top: 1.5em;
 }
 @media all and (min-width: 30em) {
-  /* line 127, ../sass/_typo.scss */
+  /* line 136, ../sass/_typo.scss */
   figure blockquote {
     font-size: 2em;
   }
 }
-/* line 134, ../sass/_typo.scss */
+/* line 143, ../sass/_typo.scss */
 figure blockquote:before {
   content: "“";
   position: absolute;
@@ -428,7 +441,7 @@ figure blockquote:before {
   font-size: 3em;
   color: #e6e6e6;
 }
-/* line 142, ../sass/_typo.scss */
+/* line 151, ../sass/_typo.scss */
 figure blockquote:after {
   content: "”";
   display: inline;
@@ -436,7 +449,7 @@ figure blockquote:after {
   color: #e6e6e6;
 }
 
-/* line 149, ../sass/_typo.scss */
+/* line 158, ../sass/_typo.scss */
 figure {
   margin: 1em 0;
   padding: 1em 0;
@@ -444,7 +457,7 @@ figure {
   border-width: 1px 0;
 }
 
-/* line 155, ../sass/_typo.scss */
+/* line 164, ../sass/_typo.scss */
 figcaption {
   padding-top: 1em;
   font-size: .75em;
@@ -452,18 +465,24 @@ figcaption {
   color: #737373;
 }
 @media only screen and (min-width: 37.5em) {
-  /* line 155, ../sass/_typo.scss */
+  /* line 164, ../sass/_typo.scss */
   figcaption {
     font-size: 1em;
   }
 }
 
-/* line 164, ../sass/_typo.scss */
+/* line 173, ../sass/_typo.scss */
 .post__content p + p {
   text-indent: 1.5em;
 }
 
-/* line 177, ../sass/_typo.scss */
+/* line 176, ../sass/_typo.scss */
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+/* line 190, ../sass/_typo.scss */
 .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading h5, .wf-loading h6, .wf-loading p, .wf-loading blockquote, .wf-loading pre,
 .wf-loading a, .wf-loading abbr, .wf-loading acronym, .wf-loading address, .wf-loading big, .wf-loading cite, .wf-loading code,
 .wf-loading del, .wf-loading dfn, .wf-loading em, .wf-loading img, .wf-loading ins, .wf-loading kbd, .wf-loading q, .wf-loading s, .wf-loading samp,
@@ -477,7 +496,7 @@ figcaption {
   opacity: 0;
 }
 
-/* line 193, ../sass/_typo.scss */
+/* line 206, ../sass/_typo.scss */
 .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6, .wf-active p, .wf-active blockquote, .wf-active pre,
 .wf-active a, .wf-active abbr, .wf-active acronym, .wf-active address, .wf-active big, .wf-active cite, .wf-active code,
 .wf-active del, .wf-active dfn, .wf-active em, .wf-active img, .wf-active ins, .wf-active kbd, .wf-active q, .wf-active s, .wf-active samp,
@@ -881,6 +900,31 @@ img {
   margin-left: 2em;
 }
 
+/* line 24, ../sass/_assets.scss */
+.aspect {
+  height: 0;
+  width: 100%;
+  position: relative;
+}
+/* line 29, ../sass/_assets.scss */
+.aspect iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 37, ../sass/_assets.scss */
+.aspect--16-9 {
+  padding-bottom: 56.25%;
+}
+
+/* line 40, ../sass/_assets.scss */
+.aspect--4-3 {
+  padding-bottom: 75%;
+}
+
 /*  =============================================
 
 	$   STICKY FOOTER
@@ -985,7 +1029,7 @@ form {
 
 /* line 1, ../sass/_header.scss */
 .section--header {
-  border-top: 1em solid #e6e6e6;
+  border-top: 0.5em solid #e6e6e6;
 }
 /* line 3, ../sass/_header.scss */
 .section--header .section__content {
@@ -1077,8 +1121,8 @@ form {
     position: absolute;
     top: 1.5em;
     left: 0;
-    height: 6em;
-    width: 6em;
+    height: 8em;
+    width: 8em;
     border-radius: 100%;
     margin-right: 1em;
     overflow: hidden;
@@ -1121,7 +1165,64 @@ form {
   background: #1c85d1;
 }
 
-/* line 25, ../sass/style.scss */
+/* line 1, ../sass/_post.scss */
+.signature {
+  display: block;
+  padding: 1em 0 2em;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* line 6, ../sass/_post.scss */
+.footnotes {
+  padding: 1em 0;
+  font-style: italic;
+  color: #b3b3b3;
+  border-bottom: 1px solid #e6e6e6;
+}
+/* line 11, ../sass/_post.scss */
+.footnotes hr {
+  display: none;
+}
+/* line 14, ../sass/_post.scss */
+.footnotes ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+/* line 18, ../sass/_post.scss */
+.footnotes li {
+  padding-bottom: 1em;
+}
+
+/* line 22, ../sass/_post.scss */
+.footnotes li {
+  position: relative;
+  padding-right: 1em;
+}
+
+/* line 26, ../sass/_post.scss */
+a[rev="footnote"] {
+  position: absolute;
+  top: 0;
+  right: .5em;
+}
+
+/* line 32, ../sass/_post.scss */
+.next-post {
+  text-align: right;
+}
+
+/* line 35, ../sass/_post.scss */
+.prev-post {
+  border-right: 1px solid #e6e6e6;
+}
+
+/* line 39, ../sass/_post.scss */
+.post__footer {
+  padding: 1em 0;
+}
+
+/* line 27, ../sass/style.scss */
 body {
   background: #fdfdfd;
+  transition: all 0.3s ease-out;
 }

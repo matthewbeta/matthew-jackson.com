@@ -90,6 +90,12 @@
 		font-size: 2em;
 		padding-bottom: .5em;
 	}
+	.heading--sub {
+		padding: 1em 0 0;
+		border-bottom: 1px solid lighten($color-text, 70);
+		font-weight: 400;
+		font-size: 1.2em;
+	}
 	
 	a {
 		color: $color-primary;
@@ -100,6 +106,9 @@
 		&:active {
 			text-decoration: underline;
 		}
+	}
+	.signature {
+		font-size: 1.5em;
 	}
 	.meta {
 		font-size: 1em;
@@ -163,6 +172,10 @@
 	}
 	.post__content p + p {
 		text-indent: 1.5em;
+	}
+	sup {
+		vertical-align: super;
+		font-size: smaller;
 	}
 	.wf-loading {
 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
