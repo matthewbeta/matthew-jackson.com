@@ -81,7 +81,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	* 	SET GRID NAMES AND COLUMN SIZES
 
 	============================================== 	*/
-/* line 29, ../sass/_base.scss */
+/* line 30, ../sass/_base.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -574,6 +574,11 @@ you can use the generic selector below, but it's slower:
 /* line 51, ../sass/_icons.scss */
 .icon--twitter:before {
   content: "\e003";
+}
+
+/* line 54, ../sass/_icons.scss */
+.icon--codepen:before {
+  content: "\e004";
 }
 
 /* 	=============================================
@@ -1116,7 +1121,7 @@ form {
   /* line 17, ../sass/_contact.scss */
   .contact__header:before {
     content: "";
-    background: url("//placekitten.com/200/200") center center no-repeat transparent;
+    background: url(../assets/images/face.jpg) center center no-repeat transparent;
     background-size: cover;
     position: absolute;
     top: 1.5em;
@@ -1151,18 +1156,31 @@ form {
   width: 2em;
   height: 2em;
   margin: 0 auto;
-  padding-top: .25em;
   font-size: 2em;
   text-align: center;
+}
+/* line 53, ../sass/_contact.scss */
+.contact__list a .rotate {
+  padding-top: .25em;
   color: #e6e6e6;
   background: #fdfdfd;
   border-radius: 50%;
+  transition: all 1s ease-in;
 }
-/* line 59, ../sass/_contact.scss */
+/* line 63, ../sass/_contact.scss */
 .contact__list a:hover, .contact__list a:active, .contact__list a:focus {
   text-decoration: none;
+}
+/* line 64, ../sass/_contact.scss */
+.contact__list a:hover .rotate, .contact__list a:active .rotate, .contact__list a:focus .rotate {
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  transform: rotateY(360deg);
   color: #fdfdfd;
   background: #1c85d1;
+  transition: all .5s ease-out;
 }
 
 /* line 1, ../sass/_post.scss */

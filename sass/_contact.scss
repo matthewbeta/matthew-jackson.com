@@ -16,7 +16,7 @@
 
 		&:before {
 			content: "";
-			background: url("//placekitten.com/200/200") center center no-repeat transparent;
+			background: url(../assets/images/face.jpg) center center no-repeat transparent;
 			background-size: cover;
 			position: absolute;
 			top: 1.5em;
@@ -48,18 +48,29 @@
 		width: 2em;
 		height: 2em;
 		margin: 0 auto;
-		padding-top: .25em;
 		font-size: px2em(32px);
 		text-align: center;
-		color: lighten($color-text, 70);
-		background: $color-bg;
-		border-radius: 50%;
+		.rotate {
+			padding-top: .25em;
+			color: lighten($color-text, 70);
+			background: $color-bg;
+			border-radius: 50%;
+			transition: all 1s ease-in;
+			
+		}
 		&:hover,
 		&:active,
 		&:focus {
+			.rotate {
+				@include rotateY(360deg);
+				color: $color-bg;
+				background: $color-primary;
+				transition: all .5s ease-out;
+			}
 			text-decoration: none;
-			color: $color-bg;
-			background: $color-primary;
+			
+
+
 		}
 
 	}
