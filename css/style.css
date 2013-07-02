@@ -353,14 +353,14 @@ body {
 
 /* line 84, ../sass/_typo.scss */
 .heading--page {
-  font-size: 3em;
+  font-size: 2.4em;
   line-height: 1.5;
   padding-bottom: .5em;
 }
 
 /* line 89, ../sass/_typo.scss */
 .heading--section {
-  font-size: 2em;
+  font-size: 1.8em;
   padding-bottom: .5em;
 }
 
@@ -384,7 +384,7 @@ a:hover, a:focus, a:active {
 
 /* line 110, ../sass/_typo.scss */
 .signature {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 /* line 113, ../sass/_typo.scss */
@@ -398,7 +398,7 @@ a:hover, a:focus, a:active {
 
 /* line 120, ../sass/_typo.scss */
 .quote--plain {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 /* line 123, ../sass/_typo.scss */
@@ -1009,7 +1009,7 @@ form {
 /* line 5, ../sass/_layout.scss */
 .section__content {
   margin: 0 auto;
-  padding: 3em 2em;
+  padding: 2em 1em;
   max-width: 50em;
 }
 /* line 73, ../sass/_helpers.scss */
@@ -1028,8 +1028,13 @@ form {
 @media only screen and (min-width: 62.5em) {
   /* line 5, ../sass/_layout.scss */
   .section__content {
-    padding: 4em 1em;
+    padding: 2em 1em;
   }
+}
+
+/* line 1, ../sass/_footer.scss */
+.footer-main {
+  padding-bottom: 4em;
 }
 
 /* line 1, ../sass/_header.scss */
@@ -1237,6 +1242,12 @@ a[rev="footnote"] {
 /* line 39, ../sass/_post.scss */
 .post__footer {
   padding: 1em 0;
+}
+
+/* line 1, ../sass/_portfolio.scss */
+.portfolio__item {
+  margin-bottom: 1em;
+  border: 1px solid #e6e6e6;
 }
 
 /* line 1, ../sass/_github-pygments.scss */
@@ -1674,7 +1685,7 @@ a[rev="footnote"] {
 }
 
 /* Literal.Number.Integer.Long */
-/* line 30, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 body {
   background: #fdfdfd;
   transition: all 0.3s ease-out;

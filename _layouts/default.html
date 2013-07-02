@@ -7,17 +7,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>{{ page.title }}</title>
-        <script type="text/javascript">
-          (function() {
-            var config = {
-              kitId: 'zua3djh',
-              scriptTimeout: 3000
-            };
-            var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-          })();
-        </script>
+        
+        {% include typekit.liquid %}
+
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="initial-scale=device-width">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -34,51 +28,20 @@
 
           <div class="grid">
             
-          <a href="/" id="brand" class="brand grid__unit m-3 w-3 brand">
-            <i class="icon icon--brand" aria-hidden="true"></i><span class="visually-hidden">Matthew Jackson</span>
-          </a>
-          
-          <nav id="navMain" class="nav-main grid__unit m-3 w-9" role="navigation">
+            <a href="/" id="brand" class="brand grid__unit m-3 w-3 brand">
+              <i class="icon icon--brand" aria-hidden="true"></i><span class="visually-hidden">Matthew Jackson</span>
+            </a>
             
-            <ul class="nav-main__list">
-
-              <li class="nav-main__item">
-
-                  <a href="#about">About</a>
-
-              </li>
-
-              <li class="nav-main__item">
-                
-                  <a href="#portfolio">Work</a>
-
-              </li>
-
-              <li class="nav-main__item">
-                
-                <a href="#contact">Contact</a>
-
-              </li>
-
-              <li class="nav-main__item">
-                
-                <a href="{{ site.url }}/posts">Notes</a>
-
-              </li>
-
-            </ul>  
-
-          </nav>
-
+            {% include nav-home.liquid %}
             
           </div>
-          
 
         </header>
 
       </div>
         
-        {{ content }}
+      
+      {{ content }}
 
 
       </div>
@@ -86,93 +49,15 @@
       
       <div class="footer-wrap">
 
-      <div class="section section--contact">
+      {% include contact.liquid %}
 
-        <div id="contact" class="section__content contact">
-            
-            <div class="contact__header">
-              
-              <h2 class="heading heading--section">Say hello</h2>
-
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, optio, similique a perspiciatis atque animi voluptate accusamus. Possimus, inventore quas dolore non harum deleniti sint natus quasi quae ipsum culpa?</p>
-            
-            </div>
-
-            <ul class="grid contact__list">
-              
-              <li class="grid__unit s-1 w-3">
-                
-                <a href="mailto:hello@matthew-jackson.com">
-                 <div class="rotate">
-                    <i class="icon icon--mail" aria-hidden="true"></i><b class="visually-hidden">Write me</b>
-                  </div>
-                </a>
-
-              </li>
-
-              <li class="grid__unit s-1 w-3">
-                
-                <a href="http://twitter.com/matthewbeta">
-                  <div class="rotate">
-                    <i class="icon icon--twitter" aria-hidden="true"></i><b class="visually-hidden">Tweet me</b>
-                  </div>
-                </a>
-
-              </li>
-
-              <li class="grid__unit s-1 w-3">
-                
-                <a href="http://github.com/matthewbeta">
-                  <div class="rotate">
-                    <i class="icon icon--github" aria-hidden="true"></i><b class="visually-hidden">Uhhr&hellip; Git me(?)</b>
-                  </div>
-                </a>
-
-              </li>
-
-              <li class="grid__unit s-1 w-3">
-                
-                <a href="http://codepen.io/matthewbeta">
-
-                  <div class="rotate">
-                    <i class="icon icon--codepen" aria-hidden="true"></i><b class="visually-hidden">I'm on Codepen too</b>
-                  </div>
-
-                </a>
-
-              </li>
-
-            </ul>
-
-        </div>
-
-      </div>
-
-      <footer class="section section--footer">
-        
-        <div id="footerMain" class="footer-main section__content">
-          
-          <p class="small-print">&copy; {{ site.time | date: '%Y' }} | All content is licensed under the <a href="https://raw.github.com/philsturgeon/dbad/master/LICENSE-en.md">DBAD License</a></p>
-
-          <p class="credits">Made in Efailisaf, South Wales on a Mac using <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="http://www.bohemiancoding.com/sketch/">Sketch</a>, <a href="http://www.easel.io"></a> (and probably some Adobe stuff). Built with <a href="http://sass-lang.com">SCSS</a> with a little help from <a href="http://compass-style.org">Compass</a>, on top of <a href="http://jekyllrb.com">Jekyll</a> and hosted on <a href="http://github.io">Github</a>. The font used is <a href="http://www.dardenstudio.com/typefaces/freight_sans">Freight Sans</a> by Darden Studio, served via <a href="http://typekit.com">Typekit</a>.</p>
-          
-        </div>
-        
-
-      </footer>
+      {% include footer.liquid %}
 
     </div>
       
-      <script src="{{ site.url }}/js/main.min.js"></script>
+<script src="{{ site.url }}/js/main.min.js"></script>
 
-      <script>
-          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-          e.src='//www.google-analytics.com/analytics.js';
-          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-          ga('create','UA-41931191-1');ga('send','pageview');
-      </script>
+{% include analytics.liquid %}
 
-    </body>
+</body>
 </html>
