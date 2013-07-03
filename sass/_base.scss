@@ -30,6 +30,19 @@
 	* {
 		@include box-sizing(border-box);
 	}
+	
+	/* 	=============================================
+
+	$ 	VIEWPORT RULE
+	---------------------------------------------
+	* 	http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+	*	http://dev.w3.org/csswg/css-device-adapt/#the-atviewport-rule
+
+	============================================== 	*/
+
+	@-ms-viewport{
+    	width: device-width;
+	}
 
 	// BREAKPOINTS
 	// --------------------------------------------

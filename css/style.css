@@ -88,6 +88,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
 }
 
+	/* 	=============================================
+
+	$ 	VIEWPORT RULE
+	---------------------------------------------
+	* 	http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+	*	http://dev.w3.org/csswg/css-device-adapt/#the-atviewport-rule
+
+	============================================== 	*/
+@-ms-viewport {
+  width: device-width;
+}
+
 /*	** NB: CAN BE 0% IF IE8+
 	** ADD PADDING AND BOX SIZING INSTEAD 	*/
 	/* 	=============================================
@@ -359,7 +371,7 @@ body {
 }
 
 /* line 89, ../sass/_typo.scss */
-.heading--section {
+.heading--section, .post__content h2 {
   font-size: 1.8em;
   padding-bottom: .5em;
 }
@@ -482,7 +494,13 @@ sup {
   font-size: smaller;
 }
 
-/* line 190, ../sass/_typo.scss */
+/* line 191, ../sass/_typo.scss */
+.post__content ol {
+  list-style: decimal;
+  list-style-position: outside;
+}
+
+/* line 207, ../sass/_typo.scss */
 .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading h5, .wf-loading h6, .wf-loading p, .wf-loading blockquote, .wf-loading pre,
 .wf-loading a, .wf-loading abbr, .wf-loading acronym, .wf-loading address, .wf-loading big, .wf-loading cite, .wf-loading code,
 .wf-loading del, .wf-loading dfn, .wf-loading em, .wf-loading img, .wf-loading ins, .wf-loading kbd, .wf-loading q, .wf-loading s, .wf-loading samp,
@@ -496,7 +514,7 @@ sup {
   opacity: 0;
 }
 
-/* line 206, ../sass/_typo.scss */
+/* line 223, ../sass/_typo.scss */
 .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6, .wf-active p, .wf-active blockquote, .wf-active pre,
 .wf-active a, .wf-active abbr, .wf-active acronym, .wf-active address, .wf-active big, .wf-active cite, .wf-active code,
 .wf-active del, .wf-active dfn, .wf-active em, .wf-active img, .wf-active ins, .wf-active kbd, .wf-active q, .wf-active s, .wf-active samp,

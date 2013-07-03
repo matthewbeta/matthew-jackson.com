@@ -177,6 +177,23 @@
 		vertical-align: super;
 		font-size: smaller;
 	}
+	
+	.post__content {
+		
+		h2, h3, h4, h5, h6 {
+			@extend .heading;
+
+		}
+		h2 {
+			@extend .heading--section;
+
+		}
+		ol {
+			list-style: decimal;
+			list-style-position: outside;
+		}
+	}
+
 	.wf-loading {
 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 	a, abbr, acronym, address, big, cite, code,
