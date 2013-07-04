@@ -51,7 +51,7 @@
 	==============================================*/
 
 	body {
-		font: 300 1.2em/1.75 $font-body;
+		font: 300 1em/1.75 $font-body;
 		color: $color-text;
 		-webkit-hyphens: auto;
     	-moz-hyphens: auto;
@@ -74,6 +74,12 @@
 	    -webkit-font-feature-settings: "liga", "dlig";
 	    -o-font-feature-settings: "liga", "dlig";
 	    font-feature-settings: "liga", "dlig";
+	    @include mq(m) {
+		 	font-size: 1.2em;
+		}
+		@include mq(w) {
+		 	font-size: 1.4em;
+		}
 	}
 	.single-para {
 		padding-bottom: 1em;

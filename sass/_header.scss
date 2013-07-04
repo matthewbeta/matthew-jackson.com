@@ -5,9 +5,9 @@
 	}
 }
 .brand {
-	font-size: 6em;
+	font-size: 3em;
 	line-height: 1;
-	text-align: center;
+	text-align: left;
 	&:hover,
 	&:active, 
 	&:focus {
@@ -15,10 +15,14 @@
 	}
 	@include mq(m) {
 		text-align: left;
+		font-size: 6em;
 	}
 }
 .nav-main {
-	padding-top: 2em;
+	padding-top: .5em;
+	@include mq(m) {
+		padding-top: 2em;
+	}
 }
 .nav-main__list {
 	display: table;

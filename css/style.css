@@ -337,7 +337,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	==============================================*/
 /* line 53, ../sass/_typo.scss */
 body {
-  font: 300 1.2em/1.75 "freight-sans-pro", sans-serif;
+  font: 300 1em/1.75 "freight-sans-pro", sans-serif;
   color: #333333;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -357,26 +357,38 @@ body {
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
 }
+@media only screen and (min-width: 37.5em) {
+  /* line 53, ../sass/_typo.scss */
+  body {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (min-width: 62.5em) {
+  /* line 53, ../sass/_typo.scss */
+  body {
+    font-size: 1.4em;
+  }
+}
 
-/* line 78, ../sass/_typo.scss */
+/* line 84, ../sass/_typo.scss */
 .single-para {
   padding-bottom: 1em;
 }
 
-/* line 84, ../sass/_typo.scss */
+/* line 90, ../sass/_typo.scss */
 .heading--page {
   font-size: 2.4em;
   line-height: 1.5;
   padding-bottom: .5em;
 }
 
-/* line 89, ../sass/_typo.scss */
+/* line 95, ../sass/_typo.scss */
 .heading--section, .post__content h2 {
   font-size: 1.8em;
   padding-bottom: .5em;
 }
 
-/* line 93, ../sass/_typo.scss */
+/* line 99, ../sass/_typo.scss */
 .heading--sub {
   padding: 1em 0 0;
   border-bottom: 1px solid #e6e6e6;
@@ -384,22 +396,22 @@ body {
   font-size: 1.2em;
 }
 
-/* line 100, ../sass/_typo.scss */
+/* line 106, ../sass/_typo.scss */
 a {
   color: #1c85d1;
   text-decoration: none;
 }
-/* line 106, ../sass/_typo.scss */
+/* line 112, ../sass/_typo.scss */
 a:hover, a:focus, a:active {
   text-decoration: underline;
 }
 
-/* line 110, ../sass/_typo.scss */
+/* line 116, ../sass/_typo.scss */
 .signature {
   font-size: 1.8em;
 }
 
-/* line 113, ../sass/_typo.scss */
+/* line 119, ../sass/_typo.scss */
 .meta {
   font-size: 1em;
   padding-bottom: 1em;
@@ -408,23 +420,23 @@ a:hover, a:focus, a:active {
   border-width: 1px 0;
 }
 
-/* line 120, ../sass/_typo.scss */
+/* line 126, ../sass/_typo.scss */
 .quote--plain {
   font-size: 1.2em;
 }
 
-/* line 123, ../sass/_typo.scss */
+/* line 129, ../sass/_typo.scss */
 .small-print {
   padding-bottom: 1em;
 }
 
-/* line 126, ../sass/_typo.scss */
+/* line 132, ../sass/_typo.scss */
 .credits {
   font-size: .8em;
   text-indent: 0;
 }
 
-/* line 130, ../sass/_typo.scss */
+/* line 136, ../sass/_typo.scss */
 .drop-cap:first-letter {
   font-size: 6em;
   line-height: 1;
@@ -432,19 +444,19 @@ a:hover, a:focus, a:active {
   margin-right: 100%;
 }
 
-/* line 136, ../sass/_typo.scss */
+/* line 142, ../sass/_typo.scss */
 figure blockquote {
   position: relative;
   font: 1.5em/1.2 "freight-sans-pro", sans-serif;
   padding-top: 1.5em;
 }
 @media all and (min-width: 30em) {
-  /* line 136, ../sass/_typo.scss */
+  /* line 142, ../sass/_typo.scss */
   figure blockquote {
     font-size: 2em;
   }
 }
-/* line 143, ../sass/_typo.scss */
+/* line 149, ../sass/_typo.scss */
 figure blockquote:before {
   content: "“";
   position: absolute;
@@ -453,7 +465,7 @@ figure blockquote:before {
   font-size: 3em;
   color: #e6e6e6;
 }
-/* line 151, ../sass/_typo.scss */
+/* line 157, ../sass/_typo.scss */
 figure blockquote:after {
   content: "”";
   display: inline;
@@ -461,7 +473,7 @@ figure blockquote:after {
   color: #e6e6e6;
 }
 
-/* line 158, ../sass/_typo.scss */
+/* line 164, ../sass/_typo.scss */
 figure {
   margin: 1em 0;
   padding: 1em 0;
@@ -469,7 +481,7 @@ figure {
   border-width: 1px 0;
 }
 
-/* line 164, ../sass/_typo.scss */
+/* line 170, ../sass/_typo.scss */
 figcaption {
   padding-top: 1em;
   font-size: .75em;
@@ -477,30 +489,30 @@ figcaption {
   color: #737373;
 }
 @media only screen and (min-width: 37.5em) {
-  /* line 164, ../sass/_typo.scss */
+  /* line 170, ../sass/_typo.scss */
   figcaption {
     font-size: 1em;
   }
 }
 
-/* line 173, ../sass/_typo.scss */
+/* line 179, ../sass/_typo.scss */
 .post__content p + p {
   text-indent: 1.5em;
 }
 
-/* line 176, ../sass/_typo.scss */
+/* line 182, ../sass/_typo.scss */
 sup {
   vertical-align: super;
   font-size: smaller;
 }
 
-/* line 191, ../sass/_typo.scss */
+/* line 197, ../sass/_typo.scss */
 .post__content ol {
   list-style: decimal;
   list-style-position: outside;
 }
 
-/* line 207, ../sass/_typo.scss */
+/* line 213, ../sass/_typo.scss */
 .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading h5, .wf-loading h6, .wf-loading p, .wf-loading blockquote, .wf-loading pre,
 .wf-loading a, .wf-loading abbr, .wf-loading acronym, .wf-loading address, .wf-loading big, .wf-loading cite, .wf-loading code,
 .wf-loading del, .wf-loading dfn, .wf-loading em, .wf-loading img, .wf-loading ins, .wf-loading kbd, .wf-loading q, .wf-loading s, .wf-loading samp,
@@ -514,7 +526,7 @@ sup {
   opacity: 0;
 }
 
-/* line 223, ../sass/_typo.scss */
+/* line 229, ../sass/_typo.scss */
 .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6, .wf-active p, .wf-active blockquote, .wf-active pre,
 .wf-active a, .wf-active abbr, .wf-active acronym, .wf-active address, .wf-active big, .wf-active cite, .wf-active code,
 .wf-active del, .wf-active dfn, .wf-active em, .wf-active img, .wf-active ins, .wf-active kbd, .wf-active q, .wf-active s, .wf-active samp,
@@ -1027,7 +1039,7 @@ form {
 /* line 5, ../sass/_layout.scss */
 .section__content {
   margin: 0 auto;
-  padding: 2em 1em;
+  padding: 1em 1em;
   max-width: 50em;
 }
 /* line 73, ../sass/_helpers.scss */
@@ -1043,10 +1055,16 @@ form {
 .section__content:after {
   clear: both;
 }
+@media only screen and (min-width: 37.5em) {
+  /* line 5, ../sass/_layout.scss */
+  .section__content {
+    padding: 2em 3em;
+  }
+}
 @media only screen and (min-width: 62.5em) {
   /* line 5, ../sass/_layout.scss */
   .section__content {
-    padding: 2em 1em;
+    padding: 3em 2em;
   }
 }
 
@@ -1066,9 +1084,9 @@ form {
 
 /* line 7, ../sass/_header.scss */
 .brand {
-  font-size: 6em;
+  font-size: 3em;
   line-height: 1;
-  text-align: center;
+  text-align: left;
 }
 /* line 13, ../sass/_header.scss */
 .brand:hover, .brand:active, .brand:focus {
@@ -1078,42 +1096,49 @@ form {
   /* line 7, ../sass/_header.scss */
   .brand {
     text-align: left;
+    font-size: 6em;
   }
 }
 
-/* line 20, ../sass/_header.scss */
+/* line 21, ../sass/_header.scss */
 .nav-main {
-  padding-top: 2em;
+  padding-top: .5em;
+}
+@media only screen and (min-width: 37.5em) {
+  /* line 21, ../sass/_header.scss */
+  .nav-main {
+    padding-top: 2em;
+  }
 }
 
-/* line 23, ../sass/_header.scss */
+/* line 27, ../sass/_header.scss */
 .nav-main__list {
   display: table;
   width: 100%;
   text-align: center;
 }
 @media only screen and (min-width: 37.5em) {
-  /* line 23, ../sass/_header.scss */
+  /* line 27, ../sass/_header.scss */
   .nav-main__list {
     text-align: right;
   }
 }
 
-/* line 31, ../sass/_header.scss */
+/* line 35, ../sass/_header.scss */
 .nav-main__item {
   display: table-cell;
 }
-/* line 34, ../sass/_header.scss */
+/* line 38, ../sass/_header.scss */
 .nav-main__item a {
   color: #333333;
   display: block;
 }
 @media only screen and (min-width: 37.5em) {
-  /* line 31, ../sass/_header.scss */
+  /* line 35, ../sass/_header.scss */
   .nav-main__item {
     display: inline-block;
   }
-  /* line 41, ../sass/_header.scss */
+  /* line 45, ../sass/_header.scss */
   .nav-main__item a {
     padding-left: 2em;
   }
@@ -1247,17 +1272,35 @@ a[rev="footnote"] {
   right: .5em;
 }
 
-/* line 32, ../sass/_post.scss */
-.next-post {
-  text-align: right;
-}
-
-/* line 35, ../sass/_post.scss */
+/* line 33, ../sass/_post.scss */
+.next-post,
 .prev-post {
-  border-right: 1px solid #e6e6e6;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  border-left: 1px solid #e6e6e6;
+}
+@media only screen and (min-width: 37.5em) {
+  /* line 33, ../sass/_post.scss */
+  .next-post,
+  .prev-post {
+    margin-bottom: 0;
+    padding-left: 0;
+    border-left: 0 none;
+  }
 }
 
-/* line 39, ../sass/_post.scss */
+@media only screen and (min-width: 37.5em) {
+  /* line 45, ../sass/_post.scss */
+  .next-post {
+    text-align: right;
+  }
+
+  /* line 48, ../sass/_post.scss */
+  .prev-post {
+    border-right: 1px solid #e6e6e6;
+  }
+}
+/* line 53, ../sass/_post.scss */
 .post__footer {
   padding: 1em 0;
 }
