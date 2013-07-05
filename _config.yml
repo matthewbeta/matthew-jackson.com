@@ -1,5 +1,5 @@
 name: Matthew Jackson
 pygments: true
-permalink: pretty
+permalink: /notes/:categories/:title
 pagination: 1
 
