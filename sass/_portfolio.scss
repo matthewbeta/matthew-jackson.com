@@ -1,6 +1,57 @@
 .portfolio__item {
+	position: relative;
 	margin-bottom: 1em;	
-
 	border: 1px solid lighten($color-text, 70);
+}
 
+.portfolio__link {
+    -webkit-backface-visibility: hidden; 
+	display: block;
+	position: relative;
+	overflow: hidden;
+	background: #FFF;
+}
+
+.portfolio__link img {
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	@include transition(opacity 0.3s ease-in-out);
+}
+
+.portfolio__link:hover img {
+	opacity: 0.5;
+}
+
+.portfolio__link::after,
+.portfolio__link::before {
+	position: absolute;
+	width: 100%;
+	color: #fff;
+	@include transition(transform 0.3s ease-in-out);
+}
+
+.portfolio__link::before {
+	content: attr(data-title);
+	top: 0;
+	height: 30%;
+	background: transparentize($color-primary, 0.3);
+	padding: 1em;
+	z-index: 1;
+	@include translateY(-100%);
+}
+
+.portfolio__link::after {
+	content: attr(data-description);
+	top: 30%;
+	height: 70%;
+	background: rgba(0,0,0,.7);
+	padding: 1em;
+	z-index: 2;
+	@include translateY(100%);
+	font-size: .8em;
+}
+
+.portfolio__link:hover::after,
+.portfolio__link:hover::before {
+	@include translateY(0);
 }

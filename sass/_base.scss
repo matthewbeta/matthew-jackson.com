@@ -13,6 +13,7 @@
 	@import "compass/css3/images";
 	@import "compass/css3/box-sizing";
 	@import "compass/css3/transform";
+	@import "compass/css3/transition";
 
 
 	/* 	=============================================
@@ -27,7 +28,7 @@
 
 	// BOX SIZING 
 
-	* {
+	*, *::before, *::after{
 		@include box-sizing(border-box);
 	}
 	
