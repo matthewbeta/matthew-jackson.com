@@ -148,13 +148,14 @@ Ok. That was more epic than I intended but the initial set up is the hardest/lea
 
 <a href="http://twitter.com/matthewbeta" class="signature">@matthewbeta</a>
 
+<h3 class="heading heading--sub">Further reading</h3>
+- [Introduction to NPM - How To Node](http://howtonode.org/introduction-to-npm)
+- [Getting started guide - Grunt JS](http://gruntjs.com/getting-started)
+
 <h3 class="heading heading--sub">Footnotes</h3>
 
 [^1]: Check out this [guide to terminal for Mac](http://wiseheartdesign.com/articles/2010/11/12/the-designers-guide-to-the-osx-command-prompt/) or this [Guide to command prompt for Windows](http://www.makeuseof.com/tag/a-beginners-guide-to-the-windows-command-line/) 
 
-<h3 class="heading heading--sub">Further reading</h3>
-- [Introduction to NPM - How To Node](http://howtonode.org/introduction-to-npm)
-- [Getting started guide - Grunt JS](http://gruntjs.com/getting-started)
 
 
 
