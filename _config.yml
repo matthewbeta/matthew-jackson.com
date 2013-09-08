@@ -2,4 +2,4 @@ name: Matthew Jackson
 pygments: true
 permalink: /notes/:categories/:title
 pagination: 1
-
+exclude: ['node_modules' , 'sass']
