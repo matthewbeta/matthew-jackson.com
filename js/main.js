@@ -1,4 +1,4 @@
-// @codekit-prepend "jquery-2.0.2.min.js"
+
 
 var mj = {
 
