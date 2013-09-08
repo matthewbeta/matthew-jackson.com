@@ -78,7 +78,7 @@
 		 	font-size: 1.4em;
 		}
 	}
-	.single-para {
+	p {
 		padding-bottom: 1em;
 	}
 	.heading {
@@ -143,6 +143,7 @@
 		line-height: 1;
 		display: block;
 		margin-right: 100%;
+		margin-left: -10px;
 	}
 	figure blockquote {
 		position: relative;
@@ -181,9 +182,9 @@
 			font-size: 1em;
 		}
 	}
-	.post__content p + p {
-		text-indent: 1.5em;
-	}
+	// .post__content p + p {
+	// 	text-indent: 1.5em;
+	// }
 	sup {
 		vertical-align: super;
 		font-size: smaller;
@@ -204,6 +205,11 @@
 			list-style-position: outside;
 		}
 	}
+
+	code { 
+	font-family: "Monaco" , monospace; 
+	}
+	
 
 	.wf-loading {
 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
