@@ -12,8 +12,12 @@
 		display: none;
 	}
 	ol {
-		list-style-type: decimal;		
+		list-style-type: decimal;	
 		list-style-position: outside;
+		margin-left: 1em;
+		@include mq(m) {
+			margin-left: 0;
+		}
 	}
 	li {
 		padding-bottom: 1em;
@@ -21,12 +25,12 @@
 }
 .footnotes li {
 		position: relative;
-		padding-right: 1em;
+		padding-right: 1.5em;
 	}
 	a[rev="footnote"] {
 		position: absolute;
-		top: 0;
-		right: .5em;
+		top: .25em;
+		right: 0em;
 
 	}
 	.next-post, 
