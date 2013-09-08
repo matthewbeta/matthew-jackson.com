@@ -2,8 +2,8 @@
 layout: post__content
 title:  "Setting up Grunt from scratch"
 categories: Development
-excerpt: In this post I'll walk through getting set up with Grunt. We're gonna get in the terminal/command prompt in a minute. I promise it isn't gonna get weird.
-snippet: Getting started with Grunt. We're gonna get in the terminal/command prompt in a minute. I promise it isn't gonna get weird.
+excerpt: Where I walk through getting set up with Grunt. We're gonna get in the command line in a minute. I promise it isn't gonna get weird.
+snippet: Grunt from scratch. We're gonna get in the command line in a minute. I promise it isn't gonna get weird.
 tags: front-end, development, design, tools, grunt, node
 published: true
 ---
@@ -12,7 +12,7 @@ published: true
 
 ## Rule 1: Don't fear the Terminal
 
-We're gonna get in the terminal/command prompt in a minute. I promise it isn't gonna get weird. I used to hate it too. Then I got to love it. Then I started using it for loads of stuff. Then I hated it, because all the tabs or windows I needed open drove me nuts. What's so beautiful about Grunt, is you can run loads of commands in one line. Stick with me on this, its awesome[^1]. 
+We're gonna get in the command line in a minute. I promise it isn't gonna get weird. I used to hate it too. Then I got to love it. Then I started using it for loads of stuff. Then I hated it, because all the tabs or windows I needed open drove me nuts. What's so beautiful about Grunt, is you can run loads of commands in one line. Stick with me on this, its awesome[^1]. 
 
 Just follow along with what I'm doing by copying everything out of the code example <em>after</em> the <code>$</code> sign (that's just t omake it look more like OSX terminal and makes me feel cool). The commands examples are the same for Mac and Windows and if they aren't I'll write them both out cos I got your back. 
 
