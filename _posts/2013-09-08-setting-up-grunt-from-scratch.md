@@ -121,6 +121,22 @@ The command prompt will walk you through setting up the file automatically§ in 
 Question(NPM Suggested answer)
 {% endhighlight %}
 
+It'll look something like this:
+
+{% highlight bash linenos %}
+Press ^C at any time to quit.
+name: (awesome) 
+version: (0.0.0) 
+description: Demo
+entry point: (Gruntfile.js) 
+test command: /
+git repository: /
+keywords: /
+author: @matthewbeta
+license: (BSD) /
+Question(NPM Suggested answer)
+{% endhighlight %}
+
 You can either type in an answer, or if NPM guessed right in the suggestion, you can just hit enter.
 
 Next create a new file in your project and name it Gruntfile.js. Copy and paste in the following code (we'll go over it in the next post):
