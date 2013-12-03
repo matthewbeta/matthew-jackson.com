@@ -1,13 +1,11 @@
 .signature {
 	display: block;
 	padding: 1em 0 2em;
-	border-bottom: 1px solid lighten($color-text, 70);
 }
 .footnotes {
 	padding: 1em 0;
 	font-style: italic;
 	color: lighten($color-text, 50);
-	border-bottom: 1px solid lighten($color-text, 70);
 	hr {
 		display: none;
 	}
@@ -44,6 +42,24 @@
 			border-left: 0 none;
 		}
 	}
+
+	.post__social-links {
+		display: block;
+		border: solid $color-primary;
+		border-width: 1px 0;
+		margin-bottom: 1em;
+		@include mq(w) {
+		 position: absolute;
+	   left: 0;
+	   font-size: .8em;
+	   padding: 1em 0;
+	   margin-bottom: 1em;
+	   width: 5em;
+		}
+	}
+	.post__content {
+		border-bottom: 1px solid lighten($color-text, 70);
+	}
 @include mq(m) {
 		 	
 	.next-post {
@@ -52,7 +68,15 @@
 	.prev-post {
 		border-right: 1px solid lighten($color-text, 70);
 	}
-
+}
+@include mq(m) {	
+	.post__content {
+		padding: 0 4em;
+	}
+	.lede {
+		margin: 0 (4em / 1.2 * -1);
+		padding-bottom: 2em
+	}
 }
 .post__footer {
 	padding: 1em 0;

@@ -8,7 +8,9 @@ tags: front-end, development, design, tools, grunt, node
 published: true
 ---
 
-<p class="drop-cap">Being a modern web designer involves a lot of tools. <a href="http://gruntjs.com">Grunt</a> is currently my new hotness. Its a tool I use to manage a bunch of other tools I use. In fact its consolidated about 5 different tools I had into one click (well command but more on that later). In this post I'll walk through getting set up with Grunt and in the next post, we'll set up Grunt to handle Sass with Compass, Jekyll, JS concatenation and minification, Live reloading changes to any of the HTML/CSS/JS and finally multi-device browsing and browser refresh. Boom.</p>
+<p class="lede">Being a modern web designer involves a lot of tools. <a href="http://gruntjs.com">Grunt</a> is currently my new hotness. Its a tool I use to manage a bunch of other tools I use. In fact its consolidated about 5 different tools I had into one click (well command but more on that later).</p> 
+
+<p class="drop-cap">In this post I'll walk through getting set up with Grunt and in the next post, we'll set up Grunt to handle Sass with Compass, Jekyll, JS concatenation and minification, Live reloading changes to any of the HTML/CSS/JS and finally multi-device browsing and browser refresh. Boom.</p>
 
 ## Rule 1: Don't fear the Terminal
 

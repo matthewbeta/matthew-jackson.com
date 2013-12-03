@@ -20,29 +20,19 @@
     </head>
     <body>
 
-      <div id="wrapMain" class="wrap-main">
 
       <div class="header-wrap section section--header">
-        
-        <header id="headerMain" class="header-main section__content" role="banner">
-
-          <div class="grid">
-        
-          {% include brand.liquid %}
-          
-          {% include nav.liquid %}
-
-          </div>
-
-        </header>
+       
 
       </div>
+
+      <div id="wrapMain" class="wrap-main">
         
         {{ content }}
 
       </div>
       <!-- / WRAP ENDS  -->
-      
+
       <div class="footer-wrap">
 
       {% include contact.liquid %}
@@ -50,6 +40,7 @@
       {% include footer.liquid %}
 
     </div>
+      
       
       <script src="{{ site.url }}/js/min/main.min.js"></script>
 

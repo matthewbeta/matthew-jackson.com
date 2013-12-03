@@ -7,7 +7,7 @@ excerpt: Nothing like a deadline to focus the mind, eh? I'm not trying to say "I
 snippet: Matt realises that perfection is an impossibility and learns to ship the damn thing
 ---
 
-<p class="drop-cap">Nothing like a deadline to focus the mind, eh? I'm not trying to say "I don't want my client work to be perfect. Please take all my clients" but it is certainly easier to be pragmatic about things when you *need* to finish. </p>
+<p class="lede">Nothing like a deadline to focus the mind, eh? I'm not trying to say "I don't want my client work to be perfect. Please take all my clients" but it is certainly easier to be pragmatic about things when you *need* to finish. </p>
 
 <figure>
   <blockquote>
@@ -16,7 +16,7 @@ snippet: Matt realises that perfection is an impossibility and learns to ship th
   <figcaption>Dan Antopolski, Comedians Comedian Podcast, <a href="http://soundcloud.com/stu-goldsmith/the-comedians-comedian-1/">Episode 3</a> </figcaption>
 </figure>
 
-I heard the above during an episode of the excellent [Comedian's Comedian](http://www.comedianscomedian.com/) podcast[^1] during which, Dan Antopolski was discussing his writing process and said a couple of things which nailed how I've been feeling of late.
+I heard the above during an episode of the excellent [ Comedian's Comedian podcast](http://www.comedianscomedian.com/)[^1] during which, Dan Antopolski was discussing his writing process and said a couple of things which nailed how I've been feeling of late.
 
 When I was young, I used to draw. A lot. I was alright at it. I won a Blue Peter badge (sort of)[^2]. I wanted each picture to be its own work of art, like I saw in my head. No practice. No iteration. Just straight into the final piece every time. I *had* to have a crisp sheet of bright, white paper. I would *need* a pointy sharp pencil and a sharp, black, felt-tipped pen.  Like, a [Berol fine](http://www.amazon.co.uk/Berol-Colour-Fibre-Tipped-wallet/dp/B000NJXUBO). Box fresh, without a fuzzy tip (that's how I roll kids).
 

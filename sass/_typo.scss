@@ -102,10 +102,14 @@
 		padding-bottom: .5em;
 	}
 	.heading--sub {
-		padding: 1em 0 0;
 		border-bottom: 1px solid lighten($color-text, 70);
 		font-weight: 400;
 		font-size: 1.2em;
+	}
+	.heading--discrete {
+		font-style: italic;
+		font-size: .8em;
+		color: #aaa;
 	}
 	
 	a {
@@ -128,6 +132,10 @@
 		border: solid $color-primary;
 		border-width: 1px 0;
 	}
+	.lede {
+		font-weight: 400;
+		font-size: 1.2em;
+	}
 	.quote--plain {
 		font-size: 1.2em;
 	}
@@ -142,8 +150,11 @@
 		font-size: 6em;
 		line-height: 1;
 		display: block;
-		margin-right: 100%;
-		margin-left: -10px;
+		// margin-right: 100%;
+		// margin-left: -10px;
+		float: left;
+		padding-right: .2em;
+		margin-top: -12px;
 	}
 	figure blockquote {
 		position: relative;

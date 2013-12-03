@@ -2,11 +2,12 @@
 layout: post__content
 title:  "Notes on customer service"
 categories: Process
+excerpt: The following are some rules I've learned during several years of customer service jobs in my previous life as a senior complaint handler for a large financial institution. I have written them down as a note-to-self as I could do with being reminded sometimes. 
 snippet: Matt takes everything he knows about his previous career in customer service and applies it his current career in customer service.
 tags: business, ux, clients
 ---
 
-The following are some rules I've learned during several years of customer service jobs in my previous life as a senior complaint handler for a large financial institution. I have written them down as a note-to-self as I could do with being reminded sometimes. Thought maybe others might find them useful too:
+<p class="lede">The following are some rules I've learned during several years of customer service jobs in my previous life as a senior complaint handler for a large financial institution. I have written them down as a note-to-self as I could do with being reminded sometimes. Thought maybe others might find them useful too:</p>
 
 ## Everyone is a customer
 The back-end dev who works in your studio? She's a customer. The junior designer who shadows you? He's a customer. Your boss? Customer. Printers? Customer. They are all relying on you to provide something. Even if they are not direct customers. All the following rules apply to all of them.

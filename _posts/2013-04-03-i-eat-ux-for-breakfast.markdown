@@ -7,9 +7,9 @@ excerpt: I've been working pretty hard at on not being grumpy about things all t
 snippet: Matt realises that perfection is an impossibility and learns to ship the damn thing
 ---
 
-<p class="drop-cap">You know what really winds me up? Everything. I regularly veer from rage, rants and righteous indignation to abjectness, gloom and melancholia. </p>
+<p class="lede">You know what really winds me up? Everything. I regularly veer from rage, rants and righteous indignation to abjectness, gloom and melancholia. </p>
 
-Sometimes over important things (government omnishambles, the forthcoming apocalypse, the royal family[^1]) Sometimes over fucking ridiculous things like my toaster (either cook the bread or don't, you bastard!), vapid link-bate on Facebook (Can you name a [insert noun] without a [insert letter] in it?), something called a "One Direction" and most recently an advert trying to spark a debate on how the nation wipes its arse:</p>
+Sometimes over important things (government omnishambles, the forthcoming apocalypse, the royal family[^1]) Sometimes over fucking ridiculous things like my toaster (either cook the bread or don't, you bastard!), vapid link-bate on Facebook (Can you name a [insert noun] without a [insert letter] in it?), something called a "One Direction" and most recently an advert trying to spark a debate on how the nation wipes its arse:
 
 <figure>
 	<div class="video aspect aspect--16-9">

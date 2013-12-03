@@ -8,9 +8,9 @@ tags: front-end, development, design, tools, grunt, node
 published: true
 ---
 
-<p class="drop-cap">Previously, we installed Node, NPM and Grunt including setting up a package.json and a Gruntfile. In this exciting installment, we're gonna plug everything in so you can see how amazers Grunt is, experience its awesome power and bathe in a warm glow of lazy satisfaction.</p>
+<p class="lede">Previously, we installed Node, NPM and Grunt including setting up a package.json and a Gruntfile. In this exciting installment, we're gonna plug everything in so you can see how amazers Grunt is, experience its awesome power and bathe in a warm glow of lazy satisfaction.</p>
 
-If you haven't [installed Node, NPM and Grunt](http://matthew-jackson.com/notes/development/setting-up-grunt-from-scratch/), you need to. So jump over to that post and install all the stuff (its really not hard or too scary) and then come back.
+<p class="drop-cap">If you haven't installed <a href="http://matthew-jackson.com/notes/development/setting-up-grunt-from-scratch/">Node, NPM and Grunt</a>, you need to. So jump over to that post and install all the stuff (its really not hard or too scary) and then come back.</p>
 
 Here's what we want Grunt to do for us:
 

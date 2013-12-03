@@ -15,13 +15,13 @@
 	}
 	@include mq(m) {
 		text-align: left;
-		font-size: 6em;
+		font-size: 4em;
 	}
 }
 .nav-main {
 	padding-top: .5em;
 	@include mq(m) {
-		padding-top: 2em;
+		padding-top: 1em;
 	}
 }
 .nav-main__list {

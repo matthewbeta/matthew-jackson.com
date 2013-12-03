@@ -19,7 +19,7 @@
 			background: url(../assets/images/face.jpg) center center no-repeat transparent;
 			background-size: cover;
 			position: absolute;
-			top: 1.5em;
+			top: .25em;
 			left: 0;
 			height: 8em;
 			width: 8em;
@@ -32,11 +32,11 @@
 }
 .contact__list {
 	
-	padding-top: rhythm();
+	// padding-top: rhythm();
 
-	@include mq(m) {
-			padding-top: rhythm(1.5);
-		}
+	// @include mq(m) {
+	// 		padding-top: rhythm(1.5);
+	// 	}
 
 	li {
 		@include mq(w) {

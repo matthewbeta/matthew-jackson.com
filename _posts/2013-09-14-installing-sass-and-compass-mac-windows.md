@@ -7,9 +7,9 @@ snippet: Install Sass and Compass manually. Don't worry. Its super easy.
 tags: sass compass development
 ---
 
-<p class="drop-cap">Quick post. I'm going to assume you've heard of Sass and Compass before[^2] and I'm not going to cover any of that. If you haven't heard about them or their preprocessor cousins I hope you get good broadband under your rock cos you need to do some serious google catch up. </p>
+<p class="lede">Quick post. I'm going to assume you've heard of Sass and Compass before and I'm not going to cover any of that. If you haven't heard about them or their preprocessor cousins I hope you get good broadband under your rock cos you need to do some serious google catch up. </p>
 
-If you want to Sass and Compass without a tool like [Codekit](http://incident57.com/codekit/) or [Prepros](http://alphapixels.com/prepros) (I did to use Grunt) then you might have to go and install Sass and Compass manually. Don't worry. Its super easy.
+<p class="drop-cap">If you want to Sass and Compass without a tool like <a href="http://incident57.com/codekit/">Codekit</a> or <a href="http://alphapixels.com/prepros">Prepros</a> (I did to use Grunt) then you might have to go and install Sass and Compass manually. Don't worry. Its super easy.</p>
 
 ## Don't fear the command line
 
