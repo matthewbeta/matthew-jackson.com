@@ -51,7 +51,16 @@
 	font-size: .8em;
 }
 
-.portfolio__link:hover::after,
-.portfolio__link:hover::before {
-	@include translateY(0);
+// .portfolio__link:hover::after,
+// .portfolio__link:hover::before {
+// 	@include translateY(0);
+// }
+.portfolio__link {
+	&:hover, 
+	&:focus {
+		&::before, 
+		&::after {
+			@include translateY(0);
+		}
+	}
 }
