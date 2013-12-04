@@ -3,6 +3,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+
     watch: {
       // WATCH THE SASS FILES FOR CHNAGES AND COMPILE WITH COMPASS
       compass: {
@@ -13,27 +14,25 @@ module.exports = function(grunt) {
       jekyll: {
         files: [
           // capture all except css
-          '*.html', '*.yml', 'assets/js/**.js',
-          '_posts/**', '_includes/**', '!**/css/**'
+          '**/*.html', '*.yml', '!_site/**', '!*.css'
         ],
-        tasks: ['jekyll:dev' , 'styleinjector']
+        tasks: ['jekyll:dev' , 'copy:js', 'copy:css']
+      },
+      js: {
+        files: ['js/**.js'],
+        tasks: ['copy:js'],
       }
     },
-    uglify: {
-      all: {       
-        files: {
-          'JS/min/main.min.js': ['JS/jquery-2.0.2.min.js', 'JS/main.js']
-        }
-      }
-    },
+
     jekyll: {
-      dev: {
-        drafts: true,
-        future: true
+      dev: {},
+      staging: {
+        config: "_config_staging.yml",
+        dest: "./_staging"
       }
     },
     compass: {
-      dev: {
+      local: {
         options: {              
           sassDir: ['sass'],
           cssDir: ['css'],
@@ -41,71 +40,79 @@ module.exports = function(grunt) {
         }
       }
     },
-    connect: {
-      server: {
-        options: {
-          base: '_site/',
-          port: 9009
-        }
-      }
-    },
-    open: {
-      server: {
-        path: 'http://localhost:<%= connect.server.options.port %>/'
-      }
-    },
+
     copy: {
       css : {
         files: [ 
           {
-            src: 'css/style.css',
-            dest: '_site/css/style.css'
+            expand: true,
+            cwd: 'css/',
+            src: '*.css',
+            dest: '_site/css/',
+            flatten: true,
+            filter: 'isFile',
           }
-        ] 
+        ]
       },
-      js : {
-        files: {
-          '_site/JS/min/*':'JS/min/*.js'
-        }
+      js: {
+        files: [ 
+          {
+            expand: true,
+            cwd: 'js/',
+            src: '*.js',
+            dest: '_site/js/',
+            flatten: true,
+            filter: 'isFile',
+          }
+        ]
       }
     },
-    styleinjector: {
+
+    browser_sync: {
       files: {
         src: [
-          '_site/css/**/*.css' , 
-          '_site/css/**/*.css',
-          '_site/**/*.html'
+          '_site/css/*.css' , 
+          '_site/**/*.html', 
+          '_site/js/*.js'
         ]
       },
       options: {
           watchTask: true,
+          server: {
+            baseDir: '_site',
+          },
           urlTransforms: {
               remove : "_site",
           },
+          ghostMode: {
+                scroll: true,
+                links: true,
+                forms: true
+            },
       },
     },
+
   });
   
   // INCLUDE ALL THE GRUNT TASKS
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-style-injector');
-  grunt.loadNpmTasks('grunt-open');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-jekyll');
  
   // COPY STYLES TO _SITE
-  grunt.registerTask('copyCSS', ['compass', 'copy:css', 'styleinjector']);
-   // COPY JS
-  grunt.registerTask('copyJS', ['uglify', 'copy:js']);
+  grunt.registerTask('copyCSS', ['compass', 'copy:css']);
+
+  // RUN JEKYLL USING STAGING SETTINGS
+  grunt.registerTask('staging', ['jekyll:staging']);
+
   // Default task.
   grunt.registerTask('default', [
     'jekyll:dev',
     'copyCSS',
-    'connect:server',
-    'open:server',
+    'copy:js',
+    'browser_sync',
     'watch'
   ]);
  
