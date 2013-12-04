@@ -91,6 +91,16 @@ module.exports = function(grunt) {
             },
       },
     },
+    imagemin: {                          // Task
+      dynamic: {                         // Another target
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'assets/images_src/',                 // Src matches are relative to this path
+          src: ['*.{png,jpg,gif}'],   // Actual patterns to match
+          dest: 'assets/images/'                  // Destination path prefix
+        }]
+      }
+    }
 
   });
   
@@ -100,6 +110,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
  
   // COPY STYLES TO _SITE
   grunt.registerTask('copyCSS', ['compass', 'copy:css']);
@@ -109,11 +120,12 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', [
+    'imagemin',
     'jekyll:dev',
     'copyCSS',
     'copy:js',
     'browser_sync',
-    'watch'
+    'watch',
   ]);
  
 };
