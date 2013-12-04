@@ -37,7 +37,7 @@
 	background: transparentize($color-primary, 0.3);
 	padding: 1em;
 	z-index: 1;
-	@include translateY(-100%);
+	@include translateY(-102%);
 }
 
 .portfolio__link::after {
@@ -47,7 +47,7 @@
 	background: rgba(0,0,0,.7);
 	padding: 1em;
 	z-index: 2;
-	@include translateY(100%);
+	@include translateY(102%);
 	font-size: .8em;
 }
 
