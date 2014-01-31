@@ -16,13 +16,21 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="{{ site.url }}/css/style.css">
-
+        
+        {% if page.css %} 
+        <style>
+          {{ page.css }}
+        </style>
+        {% endif %}
     </head>
     <body>
 
       <div id="wrapMain" class="wrap-main">
 
-      <div class="header-wrap section section--header">
+      <div 
+
+        style=""
+        class="header-wrap section section--header">
         
         <header id="headerMain" class="header-main section__content" role="banner">
 
