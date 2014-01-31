@@ -2,7 +2,7 @@
 layout: post__content
 title: "Weeping coconuts"
 categories: art
-excerpt: You can wait for your boss to tell you to do it, your client to ask you to do it or for someone else to blog about how to do it
+excerpt: Culturally sitting in on Facebook with Frida Kahlo's weeping coconuts; or I saw something not evil on Facebook and joined in
 snippet: Culturally sitting on Frida Kahlo's weeping coconuts
 tags: art facebook frida kahlo painting coconuts
 published: true
