@@ -21,7 +21,7 @@
 
 	$font-heading : "freight-sans-pro", sans-serif;
 
-	$font-body: "freight-sans-pro", sans-serif;
+	$font-body: "chaparral-pro", sans-serif;
 
 
 /* 	=============================================
@@ -84,7 +84,11 @@
 	em {
 		font-style: italic;
 	}
+	strong {
+		font-weight: 600;
+	}
 	.heading {
+		font-family: $font-heading;
 		-webkit-hyphens: none;
     	-moz-hyphens: none;
          hyphens: none;
@@ -136,7 +140,7 @@
 		border-width: 1px 0;
 	}
 	.lede {
-		font-weight: 400;
+		font-style: italic;
 		font-size: 1.2em;
 	}
 	.quote--plain {
@@ -153,11 +157,8 @@
 		font-size: 6em;
 		line-height: 1;
 		display: block;
-		// margin-right: 100%;
-		// margin-left: -10px;
 		float: left;
 		padding-right: .2em;
-		margin-top: -12px;
 	}
 	figure blockquote {
 		position: relative;
@@ -222,6 +223,7 @@
 
 	code { 
 	font-family: "Monaco" , monospace; 
+	font-size: .8em;
 	}
 	
 
