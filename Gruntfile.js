@@ -14,7 +14,7 @@ module.exports = function(grunt) {
       jekyll: {
         files: [
           // capture all except css
-          '**/*.html', '*.yml', '!_site/**', '!*.css'
+          '**/*.html', '*.yml', '**/*.md', '!_site/**', '!*.css'
         ],
         tasks: ['jekyll:dev' , 'copy:js', 'copy:css']
       },
