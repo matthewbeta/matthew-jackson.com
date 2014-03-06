@@ -1,5 +1,6 @@
 .section--header {
-	border-top: .5em solid lighten($color-text, 70);
+	background-color: $color-yellow;
+	border-top: .5em solid $color-text;
 	.section__content {
 		padding-top: 2em
 	}
@@ -8,6 +9,7 @@
 	font-size: 3em;
 	line-height: 1;
 	text-align: left;
+	color: $color-text;
 	&:hover,
 	&:active, 
 	&:focus {
