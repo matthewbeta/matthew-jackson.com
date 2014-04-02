@@ -61,7 +61,6 @@ Now go back to the command line and repeat this process (ie. one by one) with th
 {% highlight bash linenos %}
 $ npm install grunt-contrib-compass --save-dev
 $ npm install grunt-contrib-uglify --save-dev
-$ npm install grunt-style-injector --save-dev
 {% endhighlight %}
 
 So with a bit of luck, you now have all the plugins you need for your project. Your package.json should list all these in devDependencies (maybe a few more too).
