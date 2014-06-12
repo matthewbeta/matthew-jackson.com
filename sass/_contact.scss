@@ -1,6 +1,7 @@
 .section--contact {
-	background: $color-contact-bg;
+	background: $color-primary;
 	padding-top: 2em;
+	color: $color-bg;
 }
 
 .profile-img,
@@ -8,7 +9,7 @@
 	border-radius: 50%;
 }
 .contact__header {
-	
+
 
 	@include mq(m) {
 
@@ -28,11 +29,11 @@
 			margin-right: 1em;
 			overflow: hidden;
 		}
-			
+
 	}
 }
 .contact__list {
-	
+
 	li {
 		@include mq(w) {
 			padding-top: px2em(32);
@@ -50,18 +51,17 @@
 			padding-top: .35em;
 			transition: all .2s ease-in;
 			border-radius: 50%;
-			//background-color: $color-bg;
 		}
 		&:hover,
 		&:active,
 		&:focus {
 			.rotate {
-				color: $color-contact-bg;
+				color: $color-bg;
 				background-color: $color-text;
 				transition: all .3s ease-out;
 			}
 			text-decoration: none;
-			
+
 
 
 		}

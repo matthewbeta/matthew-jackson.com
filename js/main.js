@@ -8,7 +8,7 @@ var mj = {
 	init: function() {
 
 		mj.bindUI();
-	
+
 	},
 
 	scrollPage : function(event, href) {

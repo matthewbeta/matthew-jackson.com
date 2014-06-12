@@ -12,7 +12,7 @@
     "grunt-contrib-copy": "~0.4.1",
     "grunt-shell": "~0.3.1",
     "grunt-open": "~0.2.1",
-    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-connect": "~0.7.1",
     "path": "~0.4.9",
     "open": "0.0.4",
     "chokidar": "~0.6.3",

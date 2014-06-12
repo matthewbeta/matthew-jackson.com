@@ -45,7 +45,7 @@
 	$	GENERAL TYPOGRAPHY BELOW
 	---------------------------------------------
 
-	*	^p ^h1 ^h2 ^h3 ^h4 ^h5 ^h6 ^em ^strong 
+	*	^p ^h1 ^h2 ^h3 ^h4 ^h5 ^h6 ^em ^strong
 	*	^blockquote ^figcaption ^a ^pre ^code ^q
 	*	^ul ^ol ^dl ^li ^dt ^dd etc...
 	==============================================*/
@@ -62,7 +62,7 @@
          // Non standard for webkit
          word-break: break-word;
 
-	                    
+
 	   	-webkit-hyphenate-before: 2;
 	    -webkit-hyphenate-after: 3;
 	    hyphenate-lines: 3;
@@ -118,11 +118,10 @@
 		font-size: .8em;
 		color: #aaa;
 	}
-	
+
 	a {
 		color: $color-primary;
 		text-decoration: none;
-
 		&:hover,
 		&:focus,
 		&:active {
@@ -204,9 +203,9 @@
 		vertical-align: super;
 		font-size: smaller;
 	}
-	
+
 	.post__content {
-		
+
 		h2, h3, h4, h5, h6 {
 			@extend .heading;
 
@@ -221,11 +220,11 @@
 		}
 	}
 
-	code { 
-	font-family: "Monaco" , monospace; 
+	code {
+	font-family: "Monaco" , monospace;
 	font-size: .8em;
 	}
-	
+
 
 	.wf-loading {
 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -240,7 +239,7 @@
 	time {
 
 		opacity: 0;
-		
+
 	}
 }
 .wf-active {
@@ -258,4 +257,3 @@
 		transition: opacity .3s ease-out;
 	}
 }
-	 

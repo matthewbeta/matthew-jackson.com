@@ -1,10 +1,13 @@
 module.exports = function(grunt) {
- 
+
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
     watch: {
+      options: {
+        livereload: true,
+      },
       // WATCH THE SASS FILES FOR CHNAGES AND COMPILE WITH COMPASS
       compass: {
         files: ['sass/**/*.{scss,sass}'],
@@ -14,7 +17,7 @@ module.exports = function(grunt) {
       jekyll: {
         files: [
           // capture all except css
-          '**/*.html', '*.yml', '**/*.md', '!_site/**', '!*.css'
+          '**/*.html', '*.yml', '**/*.md', '!_site/**', '!*.css', '!node_modules/**', '!.git/**', '!.sass-cache',
         ],
         tasks: ['jekyll:dev' , 'copy:js', 'copy:css']
       },
@@ -33,7 +36,7 @@ module.exports = function(grunt) {
     },
     compass: {
       local: {
-        options: {              
+        options: {
           sassDir: ['sass'],
           cssDir: ['css'],
           environment: 'production'
@@ -43,7 +46,7 @@ module.exports = function(grunt) {
 
     copy: {
       css : {
-        files: [ 
+        files: [
           {
             expand: true,
             cwd: 'css/',
@@ -55,7 +58,7 @@ module.exports = function(grunt) {
         ]
       },
       js: {
-        files: [ 
+        files: [
           {
             expand: true,
             cwd: 'js/',
@@ -71,8 +74,8 @@ module.exports = function(grunt) {
     browser_sync: {
       files: {
         src: [
-          '_site/css/*.css' , 
-          '_site/**/*.html', 
+          '_site/css/*.css' ,
+          '_site/**/*.html',
           '_site/js/*.js'
         ]
       },
@@ -100,18 +103,28 @@ module.exports = function(grunt) {
           dest: 'assets/images/'                  // Destination path prefix
         }]
       }
-    }
+    },
+    // connect: {
+    //   server: {
+    //     options: {
+    //       open: true,
+    //       port: 9001,
+    //       base: './_site'
+    //     }
+    //   }
+    // }
 
   });
-  
+
   // INCLUDE ALL THE GRUNT TASKS
   grunt.loadNpmTasks('grunt-contrib-watch');
+  // grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
- 
+
   // COPY STYLES TO _SITE
   grunt.registerTask('copyCSS', ['compass', 'copy:css']);
 
@@ -127,5 +140,5 @@ module.exports = function(grunt) {
     'browser_sync',
     'watch',
   ]);
- 
+
 };
