@@ -61,7 +61,6 @@ Now go back to the command line and repeat this process (ie. one by one) with th
 {% highlight bash linenos %}
 $ npm install grunt-contrib-compass --save-dev
 $ npm install grunt-contrib-uglify --save-dev
-$ npm install grunt-style-injector --save-dev
 {% endhighlight %}
 
 So with a bit of luck, you now have all the plugins you need for your project. Your package.json should list all these in devDependencies (maybe a few more too).
@@ -311,7 +310,7 @@ Here we create a task called "prod" and add one task to be run when its called (
 Go make a change to the Sass file and then run this in terminal: 
 
 {% highlight bash linenos %}
-$ grunt:prod
+$ grunt prod
 {% endhighlight %}
 
 If everything worked, it should have recompiled, but compressed th eoutput CSS onto one line. 
@@ -325,3 +324,5 @@ If I got anything wrong or you've any questions, tweet me. I'm generally not a d
 Happy grunting. 
 
 <a href="http://twitter.com/matthewbeta" class="signature">@matthewbeta</a>
+
+*Update* Thanks to [@rightsaidjames](https://github.com/rightsaidjames) for [this pull request](https://github.com/matthewbeta/grunt-demo/pull/1). Corrections have been made!
