@@ -1,2 +1,6 @@
 *.sketch
 *.ai
+.sass-cache/
+node_modules
+assets/images_src/
+_site/
