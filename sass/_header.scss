@@ -4,19 +4,10 @@
 		padding-top: 2em
 	}
 }
-.brand {
-	font-size: 3em;
-	line-height: 1;
-	text-align: left;
-	color: $color-primary;
-	&:hover,
-	&:active,
-	&:focus {
-		text-decoration: none;
-	}
+.icon-logo {
+	width: 3em;
 	@include mq(m) {
-		text-align: left;
-		font-size: 4em;
+		width: 4em;
 	}
 }
 .nav-main {

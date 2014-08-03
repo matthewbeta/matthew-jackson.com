@@ -4,8 +4,7 @@
 	color: $color-bg;
 }
 
-.profile-img,
-.contact-list a{
+.profile-img {
 	border-radius: 50%;
 }
 .contact__header {
@@ -33,7 +32,6 @@
 	}
 }
 .contact__list {
-
 	li {
 		@include mq(w) {
 			padding-top: px2em(32);
@@ -44,27 +42,16 @@
 		width: 2.175em;
 		height: 2em;
 		margin: 0 auto;
-		font-size: px2em(32px);
 		text-align: center;
 		color: $color-text;
-		.rotate {
-			padding-top: .35em;
-			transition: all .2s ease-in;
-			border-radius: 50%;
-		}
 		&:hover,
 		&:active,
 		&:focus {
 			.rotate {
 				color: $color-bg;
-				background-color: $color-text;
 				transition: all .3s ease-out;
 			}
 			text-decoration: none;
-
-
-
 		}
-
 	}
 }
