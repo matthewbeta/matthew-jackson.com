@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>{{ page.title }}</title>
-        
+
         {% include typekit.liquid %}
 
         <meta name="description" content="{{ page.snippet }}">
@@ -20,14 +20,15 @@
     </head>
     <body>
 
+      {% include svg-icons.svg %}
 
       <div class="header-wrap section section--header">
-       
+
 
       </div>
 
       <div id="wrapMain" class="wrap-main">
-        
+
         {{ content }}
 
       </div>
@@ -40,11 +41,11 @@
       {% include footer.liquid %}
 
     </div>
-      
-      
+
+
       <script src="{{ site.url }}/js/min/main.min.js"></script>
 
       {% include analytics.liquid %}
-      
+
     </body>
 </html>

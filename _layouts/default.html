@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>{{ page.title }}</title>
-        
+
         {% include typekit.liquid %}
 
         <meta name="description" content="{{ page.snippet }}">
@@ -20,31 +20,33 @@
     </head>
     <body>
 
+      {% include svg-icons.svg %}
+
       <div id="wrapMain" class="wrap-main">
 
       <div class="header-wrap section section--header">
-        
+
         <header id="headerMain" class="header-main section__content" role="banner">
 
           <div class="grid">
-            
+
             {% include brand.liquid %}
-            
+
             {% include nav-home.liquid %}
-            
+
           </div>
 
         </header>
 
       </div>
-        
-      
+
+
       {{ content }}
 
 
       </div>
       <!-- / WRAP ENDS  -->
-      
+
       <div class="footer-wrap">
 
       {% include contact.liquid %}
@@ -52,8 +54,8 @@
       {% include footer.liquid %}
 
     </div>
-      
-<script src="{{ site.url }}/js/min/main.min.js"></script>
+
+<script src="{{ site.url }}/js/min/main.min.js" async></script>
 
 {% include analytics.liquid %}
 
