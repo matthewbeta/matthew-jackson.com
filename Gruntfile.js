@@ -51,7 +51,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'css/',
             src: '*.css',
-            dest: '_site/css/',
+            dest: '_includes/',
             flatten: true,
             filter: 'isFile',
           }
@@ -123,8 +123,8 @@ module.exports = function(grunt) {
   // Default task.
   grunt.registerTask('default', [
     'imagemin',
-    'jekyll:dev',
     'copyCSS',
+    'jekyll:dev',
     'copy:js',
     'browser_sync',
     'watch',
