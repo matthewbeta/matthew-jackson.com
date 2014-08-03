@@ -98,27 +98,16 @@ module.exports = function(grunt) {
       dynamic: {                         // Another target
         files: [{
           expand: true,                  // Enable dynamic expansion
-          cwd: 'assets/images_src/',                 // Src matches are relative to this path
+          cwd: 'assets/images/',                 // Src matches are relative to this path
           src: ['*.{png,jpg,gif}'],   // Actual patterns to match
           dest: 'assets/images/'                  // Destination path prefix
         }]
       }
     },
-    // connect: {
-    //   server: {
-    //     options: {
-    //       open: true,
-    //       port: 9001,
-    //       base: './_site'
-    //     }
-    //   }
-    // }
-
   });
 
   // INCLUDE ALL THE GRUNT TASKS
   grunt.loadNpmTasks('grunt-contrib-watch');
-  // grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-browser-sync');
