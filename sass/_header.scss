@@ -6,8 +6,10 @@
 }
 .icon-logo {
 	width: 3em;
+	height: 3em;
 	@include mq(m) {
 		width: 4em;
+		height: 4em;
 	}
 }
 .nav-main {
