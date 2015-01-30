@@ -6,7 +6,6 @@ title: Linked - Understand Javascript Array Reduce in 1 Minute
 date: 2015-01-30 16:41
 url: https://www.airpair.com/javascript/javascript-array-reduce
 ---
-[Understand Javascript Array Reduce in 1 Minute](https://www.airpair.com/javascript/javascript-array-reduce)
 
 This really helped me "get" array.reduce: 
 
@@ -24,3 +23,5 @@ for ( var i = 0; i < numbers.length; i++ ){
 "That’s it. You just reduced the “numbers” collection into the “total” variable. Pretty simple huh?"
 
 It is now, yeah :)
+
+[Understand Javascript Array Reduce in 1 Minute](https://www.airpair.com/javascript/javascript-array-reduce)
