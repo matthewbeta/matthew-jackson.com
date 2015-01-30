@@ -10,12 +10,9 @@ url: https://www.airpair.com/javascript/javascript-array-reduce
 
 This really helped me "get" array.reduce: 
 
-<figure>
-<blockquote>
-<p>Everybody knows what looping over a collection is. But do you know what reducing a collection means? No? Are you sure?</p>
-<p>It sounds scary. But it is in fact pretty simple. You do it all the time. Here. Let me show you an example:</p>
-</blockquote>
-</figure>
+    Everybody knows what looping over a collection is. But do you know what reducing a collection means? No? Are you sure?
+    It sounds scary. But it is in fact pretty simple. You do it all the time. Here. Let me show you an example:
+
 
 {% highlight js linenos %}
 var total = 0;
@@ -25,8 +22,6 @@ for ( var i = 0; i < numbers.length; i++ ){
 }
 {% endhighlight%}
 
-<figure>
-<blockquote>
-<p>That’s it. You just reduced the “numbers” collection into the “total” variable. Pretty simple huh?</p>
-</blockquote>
-</figure>
+    That’s it. You just reduced the “numbers” collection into the “total” variable. Pretty simple huh?
+
+It is now, yeah :)
