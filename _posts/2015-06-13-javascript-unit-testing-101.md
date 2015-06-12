@@ -2,8 +2,8 @@
 layout: post__content
 title: Javascript unit testing 101
 categories: development javascript mocha testing
-excerpt: To me, unit testing seems like exercise. The consensus seems to be that we should do it, I'm sure we'd feel better if we did do it. No one seems to do it as much as they should if at all. Part of the reason I haven't personally been doing htem is because I didn't really know how. So the last couple of days I sat down and got my head around the practical implications of writing, running and passing JS unit tests.
-snippet: Part of the reason I haven't personally been doing htem is because I didn't really know how (shame-face emoji). So the last couple of days I sat down and got my head around the practical implications of writing, running and passing JS unit tests.
+excerpt: To me, unit testing seems like exercise. The consensus seems to be that we should do it, I'm sure we'd feel better if we did do it. No one seems to do it as much as they should if at all. Part of the reason I haven't been unit testing my Javascript is because I didn't really know how (shame-face emoji). Recently, I sat down and got my head around the practical implications of writing, running and passing JS unit tests.
+snippet: Part of the reason I haven't been unit testing my Javascript is because I didn't really know how (shame-face emoji). Recently, I sat down and got my head around the practical implications of writing, running and passing JS unit tests.
 tags: javascript testing beginner mocha chai
 published: true
 ---
