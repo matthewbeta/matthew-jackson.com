@@ -17,9 +17,10 @@ module.exports = function(grunt) {
       jekyll: {
         files: [
           // capture all except css
-          '**/*.html', '*.yml', '**/*.md', '**/*.liquid', '!_site/**', '!*.css', '!node_modules/**', '!.git/**', '!.sass-cache',
+          '**/*.html', '*.yml', '**/*.md', '**/*.liquid', '!_site/**',
+          '!*.css', '!node_modules/**', '!.git/**', '!.sass-cache',
         ],
-        tasks: ['jekyll:dev' , 'copy:js', 'copy:css']
+        tasks: ['jekyll:dev', 'copy:js', 'copy:css']
       },
       js: {
         files: ['js/**.js'],
@@ -45,62 +46,58 @@ module.exports = function(grunt) {
     },
 
     copy: {
-      css : {
-        files: [
-          {
-            expand: true,
-            cwd: 'css/',
-            src: '*.css',
-            dest: '_includes/',
-            flatten: true,
-            filter: 'isFile',
-          }
-        ]
+      css: {
+        files: [{
+          expand: true,
+          cwd: 'css/',
+          src: '*.css',
+          dest: '_includes/',
+          flatten: true,
+          filter: 'isFile',
+        }]
       },
       js: {
-        files: [
-          {
-            expand: true,
-            cwd: 'js/',
-            src: '*.js',
-            dest: '_site/js/',
-            flatten: true,
-            filter: 'isFile',
-          }
-        ]
+        files: [{
+          expand: true,
+          cwd: 'js/',
+          src: '*.js',
+          dest: '_site/js/',
+          flatten: true,
+          filter: 'isFile',
+        }]
       }
     },
 
     browser_sync: {
       files: {
         src: [
-          '_site/css/*.css' ,
+          '_site/css/*.css',
           '_site/**/*.html',
           '_site/js/*.js'
         ]
       },
       options: {
-          watchTask: true,
-          server: {
-            baseDir: '_site',
-          },
-          urlTransforms: {
-              remove : "_site",
-          },
-          ghostMode: {
-                scroll: true,
-                links: true,
-                forms: true
-            },
+        watchTask: true,
+        server: {
+          baseDir: '_site',
+        },
+        urlTransforms: {
+          remove: "_site",
+        },
+        ghostMode: {
+          scroll: true,
+          links: true,
+          forms: true
+        },
       },
     },
-    imagemin: {                          // Task
-      dynamic: {                         // Another target
+    imagemin: { // Task
+      dynamic: { // Another target
         files: [{
-          expand: true,                  // Enable dynamic expansion
-          cwd: 'assets/images/',                 // Src matches are relative to this path
-          src: ['*.{png,jpg,gif}'],   // Actual patterns to match
-          dest: 'assets/images/'                  // Destination path prefix
+          expand: true, // Enable dynamic expansion
+          cwd: 'assets/images/', // Src matches are relative to this path
+          src: ['*.{png,jpg,gif}'], // Actual patterns to match
+          dest: 'assets/images/' // Destination path prefix
         }]
       }
     },
@@ -126,7 +123,7 @@ module.exports = function(grunt) {
     'copyCSS',
     'jekyll:dev',
     'copy:js',
-    'browser_sync',
+    //'browser_sync',
     'watch',
   ]);
 
