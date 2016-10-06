@@ -1,0 +1,395 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+$text-color:       #504b43;
+$background-color: #ecd5d5;
+$brand-color:      #ef5350;
+$white-alpha:      rgba(255,255,255,.2);
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+svg {
+  width: 100px;
+}
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+	color: $text-color;
+	line-height: 1.6;
+	font-size: 1em;
+	background-color: $background-color;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+  @media all and (min-width: 500px) {
+    font-size: 1.2em;
+  }
+}
+nav {
+	display: flex;
+	align-items: flex-end;
+}
+
+nav > a {
+	padding: 1em;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: .6em;
+  text-align: center;
+	text-decoration: none;
+	border: 2px solid $brand-color;
+	margin-left: -2px;
+  flex: 1 0 auto;
+  &:first-child {
+    margin-left: 0;
+  }
+	&:hover,
+	&:focus,
+	&.active {
+		color: $background-color;
+		background-color: $brand-color;
+	}
+
+}
+.site-header {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  @media all and (min-width: 500px) {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1em 1em 1em 2em;
+  }
+}
+
+.logo {
+  font-size: .8em;
+	svg {
+		position: absolute;
+	  opacity: 0.1;
+	  fill: currentColor;
+	  top: -0.6em;
+	  left: -0.8em;
+		z-index: -1;
+	  width: 200px;
+	}
+}
+
+main {
+  flex: 1 0 auto;
+  padding: 2em;
+  margin: 0 1em 1em;
+	border: 2px solid $brand-color;
+}
+
+h1,
+h2,
+.logo,
+h3 {
+	color: $brand-color;
+	font-weight: bold;
+	clear: both;
+	overflow: hidden;
+}
+
+h1,
+h2,
+.logo {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+h2 {
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 1em;
+	padding-bottom: 1em;
+	border-bottom: 2px solid;
+}
+
+a {
+	color: $brand-color;
+}
+
+article {
+ max-width: 32em;
+	position: relative;
+  margin: 4em auto;
+  @media all and (min-width: 500px) {
+  	margin: 6em auto 8em 1em;
+  }
+  @media all and (min-width: 750px) {
+  	margin: 6em auto 8em 8em;
+  }
+}
+
+time {
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.article-body {
+  p:first-of-type::first-line {
+  	font-weight: bold;
+  	font-variant: smallcaps;
+  	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  p:first-of-type::first-letter {
+  	float: left;
+  	color: $brand-color;
+  	background-color: $white-alpha;
+  	font-size: 2em;
+  	line-height: 1;
+  	padding: .8em;
+  	margin: 0 .28em .25em 0;
+  	width: 100%;
+  	clear: both;
+  	font-weight: bold;
+  	border-bottom: .5em solid;
+
+      @media all and (min-width: 500px) {
+        font-size: 6em;
+        padding: .5em;
+        border-bottom-width: .25em;
+      }
+
+      @media all and (min-width: 750px) {
+        padding: .8em;
+      }
+  }
+
+  h2 {
+
+    @media all and (min-width: 750px) {
+    	transform: translateX(-2em);
+  	  width: calc(100% + 4em);
+    }
+
+  }
+
+  ol,
+  ul {
+  	padding: 0;
+  	list-style-type: none;
+  }
+
+  ul > li {
+  	position: relative;
+  }
+
+  ol {
+  	counter-reset: ol;
+  }
+
+  ol > li {
+  	counter-increment: ol;
+  	position: relative;
+  }
+
+
+
+  ol > li:before,
+  ul > li:before{
+  	color: $brand-color;
+  	font-weight: bold;
+  	position: absolute;
+  	top: 0;
+  	left: -1em;
+  }
+
+  ol > li:before {
+  	content: counter(ol);
+    @media all and (min-width: 500px) {
+      left: -2em;
+    }
+  }
+
+  ul > li:before {
+  	content: "•";
+  }
+
+  code {
+  	background-color: $white-alpha;
+  	font-family: "Monaco", monospace;
+  	font-size: .8em;
+		color: $brand-color;
+  }
+
+  pre code {
+  	background-color: transparent;
+  }
+  pre {
+  	background-color: $white-alpha;
+  	border-radius: .25em;
+  	padding: 2em;
+    overflow-y: auto;
+
+    @media all and (min-width: 750px) {
+    	transform: translateX(-2em);
+      width: calc(100% + 4em);
+    }
+  }
+
+  figure {
+    width: 100%;
+    clear: both;
+    margin: 0;
+    padding: 0;
+  }
+
+  figcaption {
+    font-style: italic;
+    color: lighten($text-color, 15);
+  }
+  blockquote {
+    width: 100%;
+    clear: both;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0.5em 0 0 0;
+    padding: 0 0 .5em;
+    line-height: 1.2;
+  }
+
+}
+
+article {
+
+  footer {
+		padding: 0;
+    font-size: .8em;
+    @media all and (min-width: 500px) {
+      display: flex;
+      border-top: 2px solid $brand-color;
+      > div {
+        flex: 1 0 50%;
+      }
+    }
+  }
+
+}
+
+.footnotes {
+  border-top: 2px solid;
+}
+.footnotes p:first-of-type::first-line {
+  font-weight: inherit;
+  font-variant: inherit;
+}
+.footnotes p:first-of-type::first-letter {
+  float: none;
+  color: inherit;
+  background-color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: inherit;
+  margin: inherit;
+  width: inherit;
+  clear: inherit;
+  font-weight: inherit;
+  border-bottom: inherit;
+}
+
+.posts {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 0 1em;
+	time {
+		background-color: $brand-color;
+		color: $background-color;
+		padding: .5em 1em;
+	}
+	a {
+		padding: 1em;
+		display: block;
+	}
+  > li {
+
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $brand-color;
+    margin: 0 1em 1em 0 ;
+    @media all and (min-width: 750px) {
+      flex: 1 2 33%;
+
+			&:first-child {
+				flex: 2 1 100%;
+				a {
+					font-size: 2em;
+					font-weight: bold;
+					line-height: 1.2;
+				}
+			}
+    }
+  }
+}
+
+footer {
+  padding: 0 1em 1em;
+
+	&:target h2 {
+		background-color: $brand-color;
+		color: $background-color;
+		padding: 0 .5em;
+		transform: translateX(-.5em) rotate(-6deg);
+		transition: background-color .2s ease-in-out, color .2s ease-in-out, transform .2s ease-in-out;
+	}
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid $brand-color;
+  padding-bottom: .5em;
+  nav {
+    flex: 0;
+  }
+  h2 {
+    border: 0 none;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    flex: 0;
+    border: 0 none;
+    color: $text-color;
+    &:hover,
+    &:focus {
+      color: $brand-color;
+      background-color: transparent;
+    }
+  }
+
+  svg {
+    fill: currentColor;
+    width: 3em;
+  }
+}
+
+.small {
+  font-size: .8em;
+}
+
+.day-job {
+	margin-top: 4em;
+	@media all and (min-width: 750px) {
+		margin-left: 10vw;
+	}
+	@media all and (min-width: 1000px) {
+		transform: translateX(12em);
+	}
+}

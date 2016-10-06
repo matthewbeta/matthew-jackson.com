@@ -1,67 +1,46 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{{ page.title }}</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
 
-        {% include typekit.liquid %}
+  <header>
+  	<div class="logo">Matthew Jackson</div>
+  	<nav>
+  		<a href="/">Home</a>
+  		<a href="/notes">Notes</a>
+  		<a href="#contact">Contact</a>
+  	</nav>
+  </header>
 
-        <meta name="description" content="{{ page.snippet }}">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <main>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    {{ content }}
 
-        <style>
-          {% include style.css %}
-          {% if page.css %}
-          {{ page.css }}
-          {% endif %}
-        </style>
-    </head>
-    <body>
-      {% include svg-icons.svg %}
+  </main>
 
-      <div id="wrapMain" class="wrap-main">
+  <footer id="contact">
 
-      <div
+	<h2>Say Hello</h2>
+	<nav class="contact">
+		<a href="">
+			<svg class="icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail" style="max-width: 32px"></use></svg>
+			<svg class="icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter" style="max-width: 32px"></use></svg>
+			<svg class="icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-codepen" style="max-width: 32px"></use></svg>
+			<svg class="icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github" style="max-width: 32px"></use></svg>
+			</a>
 
-        style=""
-        class="header-wrap section section--header">
+	</nav>
+	<div class="small">
 
-        <header id="headerMain" class="header-main section__content" role="banner">
+		<p>Made in Church Village, South Wales on a Macbook Air using Atom. Built with SCSS, on top of Jekyll and hosted on Github. It uses system fonts, and no Javascript. None.</p>
+		<p>© 2016 | All content is licensed under the DBAD License</p>
 
-          <div class="grid">
-
-          {% include brand.liquid %}
-
-          {% include nav.liquid %}
-
-          </div>
-
-        </header>
-
-      </div>
-
-        {{ content }}
-
-      </div>
-      <!-- / WRAP ENDS  -->
-
-      <div class="footer-wrap">
-
-      {% include contact.liquid %}
-
-      {% include footer.liquid %}
-
-    </div>
-
-      <script src="{{ site.url }}/js/min/main.min.js"></script>
-
-      {% include analytics.liquid %}
-
-    </body>
+	</div>
+</footer>
+</body>
 </html>

@@ -1,6 +1,32 @@
-name: Matthew Jackson
-pygments: true
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Matthew Jackson
+email: hello@matthew-jackson.com
+description: > # this means to ignore newlines until "baseurl:"
+  Matthew Jackson is a Front-end Developer and Designer based in Wales, UK
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://matthew-jackson.com" # the base hostname & protocol for your site
+twitter_username: matthewbeta
+github_username:  matthewbeta
+
+# Build settings
+markdown: kramdown
+theme: minima
+highlighter: true
 permalink: /notes/:categories/:title
-pagination: 1
-exclude: ['node_modules' , 'sass', 'Gruntfile.js', '*.ai', '*.icns', 'mjlogo.sketch', 'mdpi', 'logo.sketch', 'package.json', '.gitignore', ]
-markdown: redcarpet
+gems: [jekyll-paginate]
+pagination: 5
+paginate_path: "/notes/page:num"
