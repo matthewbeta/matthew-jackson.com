@@ -1,0 +1,12 @@
+/*
+	# Block site from being framed with X-Frame-Options and CSP
+	Content-Security-Policy: frame-ancestors 'none'
+	X-Frame-Options: DENY
+	# XSS 
+	X-XSS-Protection: 1; mode=block
+	# Prevent browsers from incorrectly detecting non-scripts as scripts
+	X-Content-Type-Options: nosniff
+	# Don't load any resource type not explicitly enabled
+	# Disable plugins like Flash or Silverlight
+	# Load images, scripts, stylesheets and fonts from self
+	Content-Security-Policy: default-src 'none'; object-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'; font-src 'self';
