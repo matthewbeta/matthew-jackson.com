@@ -27,6 +27,7 @@ markdown: kramdown
 theme: minima
 highlighter: true
 permalink: /notes/:categories/:title
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 pagination: 5
 paginate_path: "/notes/page:num"
+include: ["_headers"]
