@@ -1,5 +1,5 @@
 ---
-layout: post__content
+layout: post
 title:  "This is a pathetic piece of shit"
 date:   2013-02-23 00:00:00
 categories: Design

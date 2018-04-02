@@ -1,5 +1,5 @@
 ---
-layout: post__content
+layout: post
 title: Find and Store your IP Address with Node
 categories: development javascript node
 excerpt: A quick post on how to use built in Node JS magic to get your own IP address for use in your grunt and gulpfile

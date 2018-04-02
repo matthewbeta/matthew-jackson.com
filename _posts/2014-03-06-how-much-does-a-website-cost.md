@@ -1,5 +1,5 @@
 ---
-layout: post__content
+layout: post
 title: How much does a website cost?
 categories: 
 excerpt: Where I rambling say it depends. How much have you got?

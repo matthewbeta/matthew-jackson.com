@@ -1,5 +1,5 @@
 ---
-layout: post__content
+layout: post
 title:  "Notes on customer service"
 categories: Process
 excerpt: The following are some rules I've learned during several years of customer service jobs in my previous life as a senior complaint handler for a large financial institution. I have written them down as a note-to-self as I could do with being reminded sometimes. 

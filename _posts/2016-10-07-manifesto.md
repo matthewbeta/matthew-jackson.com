@@ -1,14 +1,16 @@
 ---
-published: false
+layout: post
 ---
+
 # I thought I should have a bullet point manifesto
 
-I've seen a few of these on sites lately so I guess I need one too?
+I have seen a few of these on sites lately so I guess I need one too?
 
-Here goes... 
+Here goes...
 
 ## Matthew's Manifesto
-- Bullet point manifestos are for wankers
+
+* Bullet point manifestos are for wankers
 
 Perfect.
 

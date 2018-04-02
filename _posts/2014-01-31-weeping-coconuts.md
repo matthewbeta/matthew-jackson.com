@@ -1,5 +1,5 @@
 ---
-layout: post__content
+layout: post
 title: "Weeping coconuts"
 categories: art
 excerpt: Culturally sitting in on Facebook with Frida Kahlo's weeping coconuts; or I saw something not evil on Facebook and joined in

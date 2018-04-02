@@ -1,5 +1,5 @@
 ---
-layout: post__content
+layout: post
 title:  "Setting up Grunt from scratch"
 categories: Development
 excerpt: Where I walk through getting set up with Grunt. We're gonna get in the command line in a minute. I promise it isn't gonna get weird.

@@ -1,5 +1,5 @@
 ---
-layout: post__content
+layout: post
 title:  "A tale of two porridges"
 date:   2013-04-03 00:00:00
 categories: UX

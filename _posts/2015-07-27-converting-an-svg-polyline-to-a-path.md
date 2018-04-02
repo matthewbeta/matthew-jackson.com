@@ -1,5 +1,5 @@
 ---
-layout: post__content
+layout: post
 title:  "Converting an SVG Polyline to a Path with this one weird trick"
 categories:
 excerpt: Need to animate an SVG Polyline with CSS? Convert it to a path.

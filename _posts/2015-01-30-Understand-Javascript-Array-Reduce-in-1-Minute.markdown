@@ -1,5 +1,5 @@
 ---
-layout: post__content
+layout: post
 excerpt: This really helped me get array.reduce
 snippet: This really helped me get array.reduce
 title: Linked - Understand Javascript Array Reduce in 1 Minute

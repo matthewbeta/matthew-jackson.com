@@ -1,5 +1,5 @@
 ---
-layout: post__content
+layout: post
 title: Node.js Child Process ENOENT Error on Windows (title for make SEO Good)
 categories: development
 excerpt: I got an ENOENT Error running a child_process on Windows someone on Stack Overflow helped

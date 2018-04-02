@@ -1,5 +1,5 @@
 ---
-layout: post__content
+layout: post
 title:  "Grunt workflow for compiling Sass & Compass and minifying Javascript"
 categories: Development
 excerpt: In this exciting installment, we're gonna plug everything in so you can see how amazers Grunt is, experience its awesome power and bathe in a warm glow of lazy satisfaction.
