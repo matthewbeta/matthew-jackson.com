@@ -1,0 +1,14 @@
+{
+  "name": "Matthew Hyphen Jackson Dot Com",
+  "short_name": "matthewbeta",
+  "lang": "en-GB",
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#5350ef",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "512x512"
+    }
+  ]
+}
