@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}🤷{% endif %} | Matthew Hyphen Jackson Dot Com</title>
+	<meta name="description" content="{% if page.snippet %}{{ page.snippet }}{% else %}I guess I couldn't be bothered to write a description. I suck. I'm sorry{% endif %}">
+	
+	<link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -29,7 +32,7 @@
 </defs></svg>
 
   <header class="site-header">
-  	<div class="logo"><svg class="icon icon-logo" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logo" style="max-width: 32px"></use></svg> Matthew Jackson</div>
+  	<a href="/" class="logo"><svg class="icon icon-logo" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logo" style="max-width: 32px"></use></svg> Matthew Jackson</a>
   	<nav>
   		<a href="/">Home</a>
   		<a href="/notes">Notes</a>
@@ -52,23 +55,27 @@
 
 		<a href="mailto:hello@matthew-jackson.com">
 			<svg class="icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail" style="max-width: 32px"></use></svg>
+			<span class="visuallyhidden">Email me</span>
   </a>
   <a href="https://twitter.com/matthewbeta">
 			<svg class="icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter" style="max-width: 32px"></use></svg>
+			<span class="visuallyhidden">Tweet me</span>
   </a>
   <a href="https://codepen.io/matthewbeta">
 			<svg class="icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-codepen" style="max-width: 32px"></use></svg>
+			<span class="visuallyhidden">Codepen me</span>
   </a>
   <a href="https://github.com/matthewbeta">
 			<svg class="icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github" style="max-width: 32px"></use></svg>
+			<span class="visuallyhidden">Github me</span>
 			</a>
 
 	</nav>
 </div>
 	<div class="small">
 
-		<p>Made in Church Village, South Wales on a Macbook Air using Atom. Built with SCSS, on top of Jekyll and hosted on Github. It uses system fonts, and no Javascript. None.</p>
-		<p>© 2016 | All content is licensed under the DBAD License</p>
+		<p>Made in Church Village, South Wales on a Mac using VS Code. Built with SCSS, on top of Jekyll and hosted on Netlify. It uses system fonts, and no Javascript. None.</p>
+		<p>© {{ 'now' | date: '%Y' }} | All content is licensed under the <a href="https://www.dbad-license.org/">DBAD License</a></p>
 
 	</div>
 </footer>

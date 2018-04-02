@@ -5,9 +5,9 @@
 
 
 $text-color:       #504b43;
-$background-color: #ecd5d5;
-$brand-color:      #ef5350;
-$white-alpha:      rgba(255,255,255,.2);
+$background-color: #f5f5f5;
+$brand-color:      #5350ef;
+$background-alt : #f9f9f9;
 
 *,
 *:before,
@@ -15,10 +15,22 @@ $white-alpha:      rgba(255,255,255,.2);
 	box-sizing: border-box;
 }
 
-svg {
-  width: 100px;
+.visuallyhidden {
+	 position: absolute !important;
+	 height: 1px;
+	 width: 1px;
+	 overflow: hidden;
+	 clip: rect(1px 1px 1px 1px);
 }
 
+svg {
+	width: 100px;
+	display: block;
+}
+
+html {
+	font-size: 100%;
+}
 
 body {
   display: flex;
@@ -29,7 +41,15 @@ body {
 	line-height: 1.6;
 	font-size: 1em;
 	background-color: $background-color;
-	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	font-family: -apple-system,
+	BlinkMacSystemFont,
+	"Segoe UI",
+	Helvetica,
+	Arial,
+	sans-serif,
+	"Apple Color Emoji",
+	"Segoe UI Emoji",
+	"Segoe UI Symbol";
 
   @media all and (min-width: 500px) {
     font-size: 1.2em;
@@ -58,6 +78,7 @@ nav > a {
 	&.active {
 		color: $background-color;
 		background-color: $brand-color;
+		text-decoration: none;
 	}
 
 }
@@ -74,22 +95,30 @@ nav > a {
 }
 
 .logo {
-  font-size: .8em;
+	font-size: .8em;
+	padding-right: 1em;
 	svg {
 		position: absolute;
-	  opacity: 0.1;
-	  fill: currentColor;
-	  top: -0.6em;
-	  left: -0.8em;
+	  opacity: 1;
+	  fill: $background-alt;
+	  top: 0;
+	  left: 0;
 		z-index: -1;
-	  width: 200px;
+		width: 200px;
+		transform: translate(-20%, -20%);
+		@media all and (min-width: 500px) {
+			width: 350px;
+		}
+		@media all and (min-width: 750px) {
+			width: 500px;
+		}
 	}
 }
 
 main {
   flex: 1 0 auto;
   padding: 2em;
-  margin: 0 1em 1em;
+  margin: 0 1em .5em;
 	border: 2px solid $brand-color;
 }
 
@@ -111,7 +140,6 @@ h2,
 }
 
 h2 {
-	font-weight: normal;
 	text-transform: uppercase;
 	font-size: 1em;
 	padding-bottom: 1em;
@@ -120,6 +148,12 @@ h2 {
 
 a {
 	color: $brand-color;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
 }
 
 article {
@@ -140,6 +174,9 @@ time {
   letter-spacing: 3px;
 }
 .article-body {
+	display: flex;
+	flex-direction: column;
+
   p:first-of-type::first-line {
   	font-weight: bold;
   	font-variant: smallcaps;
@@ -149,7 +186,7 @@ time {
   p:first-of-type::first-letter {
   	float: left;
   	color: $brand-color;
-  	background-color: $white-alpha;
+  	background-color: $background-alt;
   	font-size: 2em;
   	line-height: 1;
   	padding: .8em;
@@ -157,12 +194,12 @@ time {
   	width: 100%;
   	clear: both;
   	font-weight: bold;
-  	border-bottom: .5em solid;
+  	border-bottom: .25em solid;
 
       @media all and (min-width: 500px) {
         font-size: 6em;
         padding: .5em;
-        border-bottom-width: .25em;
+        border-bottom-width: .125em;
       }
 
       @media all and (min-width: 750px) {
@@ -221,7 +258,7 @@ time {
   }
 
   code {
-  	background-color: $white-alpha;
+  	background-color: $background-alt;
   	font-family: "Monaco", monospace;
   	font-size: .8em;
 		color: $brand-color;
@@ -231,10 +268,10 @@ time {
   	background-color: transparent;
   }
   pre {
-  	background-color: $white-alpha;
+  	background-color: $background-alt;
   	border-radius: .25em;
-  	padding: 2em;
-    overflow-y: auto;
+		padding: 2em;
+		overflow-y: auto;
 
     @media all and (min-width: 750px) {
     	transform: translateX(-2em);
@@ -269,10 +306,10 @@ article {
 
   footer {
 		padding: 0;
-    font-size: .8em;
+    font-size: 1em;
+		border-top: 2px solid $brand-color;
     @media all and (min-width: 500px) {
       display: flex;
-      border-top: 2px solid $brand-color;
       > div {
         flex: 1 0 50%;
       }
@@ -308,8 +345,9 @@ article {
   flex-wrap: wrap;
   padding: 0 0 0 1em;
 	time {
-		background-color: $brand-color;
-		color: $background-color;
+		// background-color: $brand-color;
+		border-bottom: 2px solid $brand-color;
+		color: $brand-color;
 		padding: .5em 1em;
 	}
 	a {
@@ -338,9 +376,10 @@ article {
 }
 
 footer {
-  padding: 0 1em 1em;
-
+	padding: 0 1em 1em;
+	
 	&:target h2 {
+		font-weight: normal;
 		background-color: $brand-color;
 		color: $background-color;
 		padding: 0 .5em;
@@ -366,10 +405,12 @@ footer {
   a {
     flex: 0;
     border: 0 none;
-    color: $text-color;
+		color: $text-color;
+		
     &:hover,
     &:focus {
-      color: $brand-color;
+			color: $brand-color;
+			outline: 2px solid;
       background-color: transparent;
     }
   }
@@ -381,7 +422,9 @@ footer {
 }
 
 .small {
-  font-size: .8em;
+	@media all and (min-width: 750px) {
+		font-size: .8em;
+	}
 }
 
 .day-job {

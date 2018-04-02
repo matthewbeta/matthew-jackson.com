@@ -1,46 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
+---
+layout: default
+title: page.title
+---
+
+<article>
 
   <header>
-  	<div class="logo">Matthew Jackson</div>
-  	<nav>
-  		<a href="/">Home</a>
-  		<a href="/notes">Notes</a>
-  		<a href="#contact">Contact</a>
-  	</nav>
+
+    <h1 class="heading heading--page">{{ page.title }}</h1>
+    <time class="meta">{{ page.date | date_to_string }}</time>
+
   </header>
 
-  <main>
+  <div class="article-body">
 
     {{ content }}
 
-  </main>
+  </div>
 
-  <footer id="contact">
+  <footer>
 
-	<h2>Say Hello</h2>
-	<nav class="contact">
-		<a href="">
-			<svg class="icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail" style="max-width: 32px"></use></svg>
-			<svg class="icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter" style="max-width: 32px"></use></svg>
-			<svg class="icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-codepen" style="max-width: 32px"></use></svg>
-			<svg class="icon" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github" style="max-width: 32px"></use></svg>
-			</a>
+    <div>
+      <h4 class="heading">Previous post:</h4>
+      {% if page.previous.url %}
+      <a href="{{page.previous.url}}">{{page.previous.title}}</a>
+      {% else %}
+      <p>This is the beginning</p>
+      {% endif %}
+    </div>
 
-	</nav>
-	<div class="small">
+    <div>
+      <h4 class="heading">Next post:</h4>
+      {% if page.next.url %}
+      <a href="{{page.next.url}}">{{page.next.title}}</a>
+      {% else %}
+      <p>Soon&hellip;</p>
+      {% endif %}
+    </div>
 
-		<p>Made in Church Village, South Wales on a Macbook Air using Atom. Built with SCSS, on top of Jekyll and hosted on Github. It uses system fonts, and no Javascript. None.</p>
-		<p>© 2016 | All content is licensed under the DBAD License</p>
+  </footer>
 
-	</div>
-</footer>
-</body>
-</html>
+</article>
