@@ -28,6 +28,12 @@ svg {
 	display: block;
 }
 
+img {
+	display: inline-block;
+	width: 100%;
+	max-width: 100%;
+}
+
 html {
 	font-size: 100%;
 }
@@ -191,7 +197,7 @@ time {
   	line-height: 1;
   	padding: .8em;
   	margin: 0 .28em .25em 0;
-  	width: 100%;
+  	// width: 100%;
   	clear: both;
   	font-weight: bold;
   	border-bottom: .25em solid;
@@ -341,11 +347,14 @@ article {
 
 .posts {
   list-style-type: none;
-  display: flex;
+	display: flex;
+	flex-direction: column;
   flex-wrap: wrap;
-  padding: 0 0 0 1em;
+	padding: 0 0 0 1em;
+	@media all and (min-width: 750px) {
+		flex-direction: row;
+	}
 	time {
-		// background-color: $brand-color;
 		border-bottom: 2px solid $brand-color;
 		color: $brand-color;
 		padding: .5em 1em;
@@ -360,17 +369,18 @@ article {
     flex-direction: column;
     border: 2px solid $brand-color;
     margin: 0 1em 1em 0 ;
+		
+		&:first-child {
+			flex: 2 1 100%;
+			a {
+				font-size: 1.2em;
+				font-weight: bold;
+				line-height: 1.2;
+			}
+		}
     @media all and (min-width: 750px) {
       flex: 1 2 33%;
-
-			&:first-child {
-				flex: 2 1 100%;
-				a {
-					font-size: 2em;
-					font-weight: bold;
-					line-height: 1.2;
-				}
-			}
+			font-size: 2em;
     }
   }
 }
