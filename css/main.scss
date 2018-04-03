@@ -376,11 +376,13 @@ article {
 				font-size: 1.2em;
 				font-weight: bold;
 				line-height: 1.2;
+				@media all and (min-width: 750px) {
+					font-size: 2em;
+				}
 			}
 		}
     @media all and (min-width: 750px) {
       flex: 1 2 33%;
-			font-size: 2em;
     }
   }
 }
