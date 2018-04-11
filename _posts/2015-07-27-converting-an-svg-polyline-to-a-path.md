@@ -5,6 +5,7 @@ categories:
 excerpt: Need to animate an SVG Polyline with CSS? Convert it to a path.
 snippet: Need to animate an SVG Polyline with CSS? Convert it to a path.
 tags: CSS, SVG, Development
+crosspost_to_medium: true
 published: true
 ---
 

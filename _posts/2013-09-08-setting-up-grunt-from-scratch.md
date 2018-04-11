@@ -5,6 +5,7 @@ categories: Development
 excerpt: Where I walk through getting set up with Grunt. We're gonna get in the command line in a minute. I promise it isn't gonna get weird.
 snippet: Grunt from scratch. We're gonna get in the command line in a minute. I promise it isn't gonna get weird.
 tags: front-end, development, design, tools, grunt, node
+crosspost_to_medium: true
 published: true
 ---
 

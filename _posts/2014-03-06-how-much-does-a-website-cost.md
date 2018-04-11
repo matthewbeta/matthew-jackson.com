@@ -5,6 +5,7 @@ categories:
 excerpt: Where I rambling say it depends. How much have you got?
 snippet: How much have you got?
 tags: Design
+crosspost_to_medium: true
 published: true
 css: 
 ---

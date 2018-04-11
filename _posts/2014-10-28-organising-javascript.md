@@ -5,6 +5,7 @@ categories: dev
 excerpt: So you've heard about this Java Script thing (I'm tipping it to be big this year). You've played with it and can write some jQuery soup. But eww. Everything gets messy and difficult and your head hurts  and it makes you want to go kick a tree. I'm starting to wrap my tiny brain around some basic Javascript structuring and here's a brain fart containing some of what I understand
 snippet:  I'm starting to wrap my tiny brain around some basic Javascript structuring and here's a brain fart containing some of what I understand
 tags: javascript, organising, structure architecture
+crosspost_to_medium: true
 published: true
 ---
 

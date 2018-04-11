@@ -4,6 +4,7 @@ title:  "Installing Sass and Compass on Mac or Windows"
 categories: development
 excerpt: If you want to Sass and Compass without a tool like Codekit or Prepros (I did to use Grunt) then you might have to go and install Sass and Compass manually. Don't worry. Its super easy. 
 snippet: Install Sass and Compass manually. Don't worry. Its super easy. 
+crosspost_to_medium: true
 tags: sass compass development
 ---
 

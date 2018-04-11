@@ -5,6 +5,7 @@ categories: development javascript node
 excerpt: A quick post on how to use built in Node JS magic to get your own IP address for use in your grunt and gulpfile
 snippet: how to use built in Node JS magic to get your own IP address for use in your grunt and gulpfile
 tags: javascript node grunt gulp
+crosspost_to_medium: true
 published: true
 ---
 

@@ -1,0 +1,3 @@
+# Crosspost Settings
+jekyll-crosspost_to_medium:
+  enabled: true

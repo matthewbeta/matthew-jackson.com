@@ -5,6 +5,7 @@ date:   2013-02-23 00:00:00
 categories: Design
 excerpt: Nothing like a deadline to focus the mind, eh? I'm not trying to say "I don't want my client work to be perfect. Please take all my clients" but it is certainly easier to be pragmatic about things when you *need* to finish. 
 snippet: Matt realises that perfection is an impossibility and learns to ship the damn thing
+crosspost_to_medium: true
 ---
 
 <p class="lede">Nothing like a deadline to focus the mind, eh? I'm not trying to say "I don't want my client work to be perfect. Please take all my clients" but it is certainly easier to be pragmatic about things when you *need* to finish. </p>

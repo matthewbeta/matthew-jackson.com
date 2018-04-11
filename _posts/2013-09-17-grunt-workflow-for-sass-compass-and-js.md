@@ -5,6 +5,7 @@ categories: Development
 excerpt: In this exciting installment, we're gonna plug everything in so you can see how amazers Grunt is, experience its awesome power and bathe in a warm glow of lazy satisfaction.
 snippet: In this exciting installment, we're gonna plug everything in so you can see how amazers Grunt is
 tags: front-end, development, design, tools, grunt, node
+crosspost_to_medium: true
 published: true
 ---
 

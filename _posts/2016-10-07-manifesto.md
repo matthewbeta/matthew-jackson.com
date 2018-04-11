@@ -1,5 +1,6 @@
 ---
 layout: post
+crosspost_to_medium: true
 ---
 
 # I thought I should have a bullet point manifesto

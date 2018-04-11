@@ -4,6 +4,7 @@ title:  "Notes on customer service"
 categories: Process
 excerpt: The following are some rules I've learned during several years of customer service jobs in my previous life as a senior complaint handler for a large financial institution. I have written them down as a note-to-self as I could do with being reminded sometimes. 
 snippet: Matt takes everything he knows about his previous career in customer service and applies it his current career in customer service.
+crosspost_to_medium: true
 tags: business, ux, clients
 ---
 

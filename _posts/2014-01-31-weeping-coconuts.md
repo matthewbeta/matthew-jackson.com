@@ -5,6 +5,7 @@ categories: art
 excerpt: Culturally sitting in on Facebook with Frida Kahlo's weeping coconuts; or I saw something not evil on Facebook and joined in
 snippet: Culturally sitting on Frida Kahlo's weeping coconuts
 tags: art facebook frida kahlo painting coconuts
+crosspost_to_medium: true
 published: true
 css: |
   .section--header {

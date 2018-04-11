@@ -5,6 +5,7 @@ categories: development
 excerpt: I got an ENOENT Error running a child_process on Windows someone on Stack Overflow helped
 snippet: Fixing an ENOENT Error running child_process on Windows
 tags: node js gulp jekyll
+crosspost_to_medium: true
 published: true
 ---
 
