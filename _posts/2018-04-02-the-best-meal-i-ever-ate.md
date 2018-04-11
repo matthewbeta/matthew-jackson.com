@@ -2,6 +2,7 @@
 layout: post
 title: The best meal I ever ate
 snippet: A cycling adventure in Thailand
+crosspost_to_medium: true
 published: true
 ---
 
