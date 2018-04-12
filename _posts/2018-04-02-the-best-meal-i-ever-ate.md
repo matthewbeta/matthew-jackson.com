@@ -60,7 +60,7 @@ of food. I don't really remember what, but I do
 remember a lot of banana leaf parcels, stuffed with a stodgy
 rice/coconut/banana... thing. Here is what it looked like.
 
-![It looked like this]({{ "/assets/stickyrice.jpg" | absolute_url }})
+![A lump of sticky rice with a piece of banana in it, sitting on a banana leaf]({{ "/assets/stickyrice.jpg" | absolute_url }})
 
 Reader, I could *literally* feel the energy going back into
 my body. The best thing I've ever eaten. It was ugly,
