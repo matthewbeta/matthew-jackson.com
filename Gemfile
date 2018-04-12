@@ -20,6 +20,6 @@ gem "minima"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-paginate"
+  gem "jekyll-paginate-v2"
 	gem "jekyll-crosspost-to-medium"
 end
