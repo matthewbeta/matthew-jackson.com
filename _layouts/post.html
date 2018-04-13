@@ -7,12 +7,17 @@ title: page.title
 
   <header>
 
-    <h1 class="heading heading--page">{{ page.title }}</h1>
+		{% if page.linked %}
+			<h1 class="heading heading--page"><a href="{{ page.linked }}">{{ page.title }}</a></h1>
+		{% else %}
+			<h1 class="heading heading--page">{{ page.title }}</h1>
+		{% endif %}
+
     <time class="meta">{{ page.date | date_to_string }}</time>
 
   </header>
 
-  <div class="article-body">
+<div class="article-body{% unless page.linked %} post{% endunless %}">
 
     {{ content }}
 

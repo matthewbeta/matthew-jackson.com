@@ -7,7 +7,7 @@
 $text-color:       #504b43;
 $background-color: #f5f5f5;
 $brand-color:      #5350ef;
-$background-alt : #f9f9f9;
+$background-alt : #fefefe;
 
 *,
 *:before,
@@ -92,9 +92,9 @@ nav > a {
 .site-header {
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  padding: .5em;
   @media all and (min-width: 500px) {
-    justify-content: space-between;
+		justify-content: space-between;
     align-items: center;
     flex-direction: row;
     padding: 1em 1em 1em 2em;
@@ -124,42 +124,56 @@ nav > a {
 
 main {
   flex: 1 0 auto;
-  padding: 2em;
-  margin: 0 1em .5em;
+  padding: 1em;
+  margin: 0 .5em .5em;
 	border: 2px solid $brand-color;
+
+	@media all and (min-width: 500px) {
+		margin: 0 1em .5em;
+		padding: 2em;
+	}
 }
 
-h1,
-h2,
-.logo,
-h3 {
+.logo {
 	color: $brand-color;
 	font-weight: bold;
 	clear: both;
 	overflow: hidden;
+	letter-spacing: 5px;
+	text-transform: uppercase;
 }
 
-h1,
-h2,
-.logo {
-  letter-spacing: 5px;
-  text-transform: uppercase;
+h1 {
+	font-size: 2em;
+	margin: 0;
 }
 
 h2 {
-	text-transform: uppercase;
 	font-size: 1em;
-	padding-bottom: 1em;
-	border-bottom: 2px solid;
 }
+
+h1, h2, h3 {
+	line-height: 1.2;
+}
+
 
 a {
 	color: $brand-color;
 	text-decoration: none;
-
-	&:hover,
-	&:focus {
+	transition: color .2s ease, background .2s ease;
+	
+	main &,
+	.small & {
 		text-decoration: underline;
+		padding: 4px;
+		margin: -4px;
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			color: $background-alt;
+			background: $brand-color;
+		}
+
 	}
 }
 
@@ -172,7 +186,8 @@ article {
   }
   @media all and (min-width: 750px) {
   	margin: 6em auto 8em 8em;
-  }
+	}
+	
 }
 
 time {
@@ -183,36 +198,44 @@ time {
 .article-body {
 	display: flex;
 	flex-direction: column;
+	margin-top: 2em;
+	> * + * {
+		margin-top: 1.5em;
+	}
 
-  p:first-of-type::first-line {
-  	font-weight: bold;
-  	font-variant: smallcaps;
-  	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  }
+	// This is not a linked post
+	&.post {
+		p:first-of-type::first-line {
+			font-weight: bold;
+			font-variant: smallcaps;
+			font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+		}
+	
+		p:first-of-type::first-letter {
+			float: left;
+			color: $brand-color;
+			background-color: $background-alt;
+			font-size: 2em;
+			line-height: 1;
+			padding: .8em;
+			margin: 0 .28em .25em 0;
+			// width: 100%;
+			clear: both;
+			font-weight: bold;
+			border-bottom: .25em solid;
+	
+				@media all and (min-width: 500px) {
+					font-size: 6em;
+					padding: .5em;
+					border-bottom-width: .125em;
+				}
+	
+				@media all and (min-width: 750px) {
+					padding: .8em;
+				}
+		}
 
-  p:first-of-type::first-letter {
-  	float: left;
-  	color: $brand-color;
-  	background-color: $background-alt;
-  	font-size: 2em;
-  	line-height: 1;
-  	padding: .8em;
-  	margin: 0 .28em .25em 0;
-  	// width: 100%;
-  	clear: both;
-  	font-weight: bold;
-  	border-bottom: .25em solid;
-
-      @media all and (min-width: 500px) {
-        font-size: 6em;
-        padding: .5em;
-        border-bottom-width: .125em;
-      }
-
-      @media all and (min-width: 750px) {
-        padding: .8em;
-      }
-  }
+	}
 
   h2 {
 
@@ -225,8 +248,11 @@ time {
 
   ol,
   ul {
-  	padding: 0;
-  	list-style-type: none;
+  	padding: 0 0 0 1em;
+		list-style-type: none;
+		 @media all and (min-width: 500px) {
+			 padding: 0;
+		 }
   }
 
   ul > li {
@@ -250,7 +276,7 @@ time {
   	font-weight: bold;
   	position: absolute;
   	top: 0;
-  	left: -1em;
+  	left: -1.2em;
   }
 
   ol > li:before {
@@ -269,6 +295,7 @@ time {
   	font-family: "Monaco", monospace;
   	font-size: .8em;
 		color: $brand-color;
+		outline: 4px solid $background-alt;
   }
 
   pre code {
@@ -356,14 +383,24 @@ article {
 	@media all and (min-width: 750px) {
 		flex-direction: row;
 	}
+	div {
+		flex: 1 0 1%;
+		display: flex;
+	}
 	time {
 		border-bottom: 2px solid $brand-color;
 		color: $brand-color;
 		padding: .5em 1em;
 	}
 	a {
+		flex: 1 1 auto;
 		padding: 1em;
+		margin: 0;
 		display: block;
+		text-decoration: none;
+		* {
+			color: inherit;
+		}
 	}
   > li {
 
@@ -377,7 +414,6 @@ article {
 			h2 {
 				font-size: 1.2em;
 				font-weight: bold;
-				line-height: 1.2;
 				@media all and (min-width: 750px) {
 					font-size: 2em;
 				}
