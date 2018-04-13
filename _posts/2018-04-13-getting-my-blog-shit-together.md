@@ -1,6 +1,7 @@
 ---
 title: "Getting my (blog) shit together"
 snippet: "Spring cleaning the old blog and making it as simple as possible to publish"
+crosspost_to_medium: true
 published:  true
 ---
 
