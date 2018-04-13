@@ -2,9 +2,9 @@
 layout: post
 excerpt: This really helped me get array.reduce
 snippet: This really helped me get array.reduce
-title: Linked - Understand Javascript Array Reduce in 1 Minute
+title: 🔗 Understand Javascript Array Reduce in 1 Minute
 date: 2015-01-30 16:41
-url: https://www.airpair.com/javascript/javascript-array-reduce
+linked: https://www.airpair.com/javascript/javascript-array-reduce
 crosspost_to_medium: true
 ---
 
