@@ -3,9 +3,9 @@ layout: default
 title: page.title
 ---
 
-<article>
+<article class="article post">
 
-  <header>
+  <header class="article-header">
 
 		{% if page.linked %}
 			<h1 class="heading heading--page"><a href="{{ page.linked }}">{{ page.title }}</a></h1>
@@ -13,36 +13,40 @@ title: page.title
 			<h1 class="heading heading--page">{{ page.title }}</h1>
 		{% endif %}
 
-    <time class="meta">{{ page.date | date_to_string }}</time>
+<time datetime="{{ page.date | date_to_xmlschema }}" class="meta">{{ page.date | date_to_string }}</time>
 
   </header>
 
-<div class="article-body{% unless page.linked %} post{% endunless %}">
+	<div class="article-body{% unless page.linked %} article-post{% endunless %}">
 
     {{ content }}
 
   </div>
 
-  <footer>
-
-    <div>
-      <h4 class="heading">Previous post:</h4>
-      {% if page.previous.url %}
-      <a href="{{page.previous.url}}">{{page.previous.title}}</a>
-      {% else %}
-      <p>This is the beginning</p>
-      {% endif %}
-    </div>
-
-    <div>
-      <h4 class="heading">Next post:</h4>
-      {% if page.next.url %}
-      <a href="{{page.next.url}}">{{page.next.title}}</a>
-      {% else %}
-      <p>Soon&hellip;</p>
-      {% endif %}
-    </div>
-
-  </footer>
-
+	
+	<footer class="article-footer">
+	
+		<div class="article-prev">
+			<p>
+				Previous post:
+			</p>
+			{% if page.previous.url %}
+			<h3 class="heading"><a href="{{page.previous.url}}">{{page.previous.title}}</a></h3>
+			{% else %}
+			<h3 class="heading"><p>This is the beginning</p></h3>
+			{% endif %}
+		</div>
+	
+		<div class="article-next">
+			<p>
+				Next post:
+			</p>
+			{% if page.next.url %}
+			<h3 class="heading"><a href="{{page.next.url}}">{{page.next.title}}</a></h3>
+			{% else %}
+			<h3 class="heading"><p>Soon&hellip;</p></h3>
+			{% endif %}
+		</div>
+	
+	</footer>
 </article>
