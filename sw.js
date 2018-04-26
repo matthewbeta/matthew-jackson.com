@@ -1,4 +1,4 @@
-const version = "v6::";
+const version = "v7::";
 
 self.addEventListener("install", function(event) {
   console.log("👾 - install event in progress.");
