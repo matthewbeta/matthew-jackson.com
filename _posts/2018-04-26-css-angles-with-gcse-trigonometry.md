@@ -27,19 +27,19 @@ The issue is, if the image proprtions change, the angle is going to change. Basi
 
 ![Photo showing the unknown values and known 8° angle of the triangle slice we need to 'clip' from our image']({{ "/assets/angle-problem.jpg" | absolute_url }})
 
-One thing I can know though, is the aspect ratio of the image. For example the image we've been using is *16:9*. Therefore we could add those measurements in and see if it helps us. As the clip-path will be in percent, we can scale it all up after.
+One thing we can know though, is the aspect ratio of the image. For example the image we've been using is *16:9*. Therefore we could add those measurements in and see if it helps us. As the clip-path will be in percent, we can scale it all up after.
 
 ![Photo showing the 16 x value, 9 y value and known 8° angle of the triangle slice we need to 'clip' from our image']({{ "/assets/angle-closer.jpg" | absolute_url }})
 
-Now I have a triangle where I know 1 side (16 width) and one angle (8°). Digging out my old maths textbooks, I can confirm that I need to use some GCSE trigonometry. To be specific, the phrase [`SOH CAH TOA`](https://www.mathsisfun.com/algebra/sohcahtoa.html).
+Now we have a triangle where we know 1 side (16 width) and one angle (8°). Digging out my old maths textbooks, I can confirm that we need to use some GCSE trigonometry. To be specific, the phrase [`SOH CAH TOA`](https://www.mathsisfun.com/algebra/sohcahtoa.html).
 
-Effectively, this is mneumonic to remember the 3 means of working out the sides of a triangle, based on the information you have. We have the *Opposite* angle (8°) or *O*, the *Adjacent* side (16 wide) or *A*. O and A means we need to use *T* (Tan). Using the formula `Tangent = Opposite / Adjacent` (TOA). Algebra time...
+Effectively, this is mnemonic to remember the 3 ways of working out the sides of a triangle, based on the information you have. We have the *Opposite* angle (8°) or *O*, the *Adjacent* side (16 wide) or *A*. O and A means we need to use *T* (Tan). Using the formula `Tangent = Opposite / Adjacent` (TOA). Algebra time...
 
 ![Photo showing the formula Tangent = Opposite / Adjacent with values applied and then the equasion being simplified to its result revealing the 3rd missing side of the triangle as 2.248653355238256]({{ "/assets/algebra.png" | absolute_url }})
 
-That shows thew other unknown side of our triangle is 2.248653355238256 in length. This doesn't solve our clip-path issue by itself. First we need to get this as a percentage of the whole length of the vertical side (9).
+That shows the other unknown side of our triangle is 2.248653355238256 in length. This doesn't solve our clip-path issue by itself. First we need to get this as a percentage of the whole length of the vertical side (9).
 
-So, to work out the top angle, we need to deivide this by and multiply it by 100%:
+So, to work out the top angle, we need to divide this by 9 and multiply it by 100%:
 
 ````
 tan(8deg) * 16 / 9 * 100%
@@ -50,7 +50,7 @@ For the bottom angle, we need to reverse it by taking it away from 100%:
 100% - (tan(8deg) * 16 / 9 * 100%)
 ````
 
-Unfortunately CSS (or any of it's preprocessors) don't have native trigonometry functions. However, someone already made them! Take a look at the post [Trigonometry in Sass](https://unindented.org/articles/trigonometry-in-sass/). By adding these functions into our code, we can then use the functions in our SCSS. Here's our final clip-path for our 16x9 image:
+Unfortunately CSS (or any of it's preprocessors?) don't have native trigonometry functions. However, someone already made them! Take a look at the post [Trigonometry in Sass](https://unindented.org/articles/trigonometry-in-sass/). By adding these functions into our code, we can then use the functions in our SCSS. Here's our final clip-path for our 16x9 image:
 
 ````SCSS
 clip-path: polygon(0 #{tan(8deg) * 16 / 9 * 100%}, 100% 0, 100% #{100% - (tan(8deg) * 16 / 9 * 100%)}, 0 100%);
