@@ -381,7 +381,7 @@ body {
 	}
 	.post {
 		display: grid;
-		grid-template-columns: minmax(auto, 40em) minmax(300px, 20em);
+		grid-template-columns: 40em minmax(300px, 20em);
 		grid-column-gap: 4em;
 
 	}
