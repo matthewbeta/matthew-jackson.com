@@ -204,6 +204,7 @@ time {
 .article-body {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 4em;
 }
 
 .article-body p:first-child {
