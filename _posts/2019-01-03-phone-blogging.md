@@ -1,8 +1,8 @@
 ---
 title: "Phone Blogging (Phlogging)"
 snippet: "My new patented phone blogging setup"
-crosspost_to_medium:  false
-published:  false
+crosspost_to_medium:  true
+published:  true
 ---
 
 So to help me with one of [my new year changes](https://matthew-jackson.com/notes/twenty-ninteen-ad) (to blog more frequently), I’ve set up my phone so I can blog without needing my laptop. 
