@@ -1,4 +1,9 @@
-# Are you (an) experienced (developer)?
+---
+title: "Are you (an) experienced (developer)?"
+snippet: "What does it mean to be an experienced developer? It definitely doesn’t mean you know how to do everything."
+crosspost_to_medium:  true
+published:  true
+---
 
 What does it mean to be an experienced developer? It definitely doesn’t mean you know how to do everything. 
 
@@ -30,7 +35,7 @@ You also have to try and figure out what ARIA<sup>*</sup>spell you need to summo
 
 This stuff is hard. I find it hard to test, and there isn’t always one correct answer. Experience helps you work out what information to trust. 
 
-\* *ARIA is a standard for helping add accessibility to applications. For example you can show that a button has a popup attached, or that it is expanded etc. It’s bonkers and confusing has weird support among screen readers.*
+\* *ARIA is a standard for helping add accessibility to applications. For example you can show that a button has a popup attached, or that it is expanded etc. It’s bonkers and, confusingly, has weird support among screen readers.*
 
 ## Do I have to build this?
 
