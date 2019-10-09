@@ -14,3 +14,17 @@ if ("serviceWorker" in navigator) {
 } else {
   console.log("🤖 - Service workers are not supported 😭");
 }
+
+(function () {
+var script = document.createElement('script');
+script.src = '/assets/fontfaceobserver.js';
+script.async = true;
+script.onload = function () {
+var franklin = new FontFaceObserver('franklin-gothic-urw', {weight: 400});
+var franklin_bold = new FontFaceObserver('franklin-gothic-urw', {weight: 500});
+Promise.all([franklin.load(), franklin_bold.load()]).then(function () {
+document.documentElement.classList.add('fonts-loaded');
+});
+};
+document.head.appendChild(script);
+}());

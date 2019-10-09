@@ -5,7 +5,7 @@
 	--color-accent: rgb(238, 148, 38);
 	--gradient: linear-gradient(90deg, rgb(223, 11, 106) 0%,rgb(238, 148, 38) 16.66667%,rgb(136, 238, 53) 33.333334%,rgb(75, 240, 221) 50%,rgb(63, 142, 238) 67%, rgb(150, 52, 231) 100%);
 	--smallprint: .85em;
-	--font-sans: 'franklin-gothic-urw', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-sans: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--weight-regular: 400;
 	--weight-bold: 500;
 	--ratio: 1.5;
@@ -24,6 +24,9 @@
   box-sizing: border-box;
 }
 
+.fonts-loaded {
+	--font-sans: 'franklin-gothic-urw', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 ul[class],
 ol[class] {
