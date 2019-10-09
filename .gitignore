@@ -1,8 +1,2 @@
-*.sketch
-*.ai
-.sass-cache/
 node_modules
-assets/images_src/
-_site/
-.DS_Store
-assets/.DS_Store
+_site

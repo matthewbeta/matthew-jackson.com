@@ -1,0 +1,43 @@
+---
+layout: layout.njk
+title: Blog
+snippet: Notes about all sorts
+pagination:
+  data: collections.blog
+  size: 10
+  reverse: true
+  alias: posts
+---
+
+<div class="wrapper">
+
+<div class="stack">
+<header class="page-header border">
+	<h1>Blog</h1>
+</header>
+{% for post in posts %}
+  <article class="snippet border">
+    <h2>
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </h1>
+    <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
+		<p>{{ post.data.snippet }}</p>
+  </article>
+{% endfor %}
+</div>
+
+<nav class="pagination">
+
+{% if pagination.previousPageLink %}
+<a href="{{ pagination.previousPageHref }}">Newer</a>
+{% else %}
+<span aria-hidden="true"></span>
+{% endif %}
+
+{% if pagination.nextPageLink %}
+<a href="{{ pagination.nextPageHref }}">Older</a>
+{% endif %}
+
+</nav>
+
+</div>

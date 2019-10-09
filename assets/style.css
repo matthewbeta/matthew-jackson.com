@@ -1,0 +1,280 @@
+:root {
+	--color-bg: #f9f8f7;
+	--color-fg-light: rgb(128, 121, 123);
+	--color-fg: #292626;
+	--color-accent: rgb(238, 148, 38);
+	--gradient: linear-gradient(90deg, rgb(223, 11, 106) 0%,rgb(238, 148, 38) 16.66667%,rgb(136, 238, 53) 33.333334%,rgb(75, 240, 221) 50%,rgb(63, 142, 238) 67%, rgb(150, 52, 231) 100%);
+	--smallprint: .85em;
+	--font-sans: 'franklin-gothic-urw', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--weight-regular: 400;
+	--weight-bold: 500;
+	--ratio: 1.5;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--color-bg: #292626;
+			--color-fg: #f9f8f7;
+		}
+	}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html, body {
+	background: var(--color-bg);
+	line-height: 1.5;
+}
+html {
+	font-size: 100%;
+}
+@media all and (min-width: 800px) {
+	html {
+		font-size: 120%;
+	}
+}
+@media all and (min-width: 1800px) {
+	html {
+		font-size: 140%;
+	}
+}
+body {
+	background: var(--color-bg);
+	color: var(--color-fg);
+	display: flex;
+	flex-direction: column;
+	font-family: var(--font-sans);
+	height: 100%;
+	min-height: 100vh;
+	padding: 2em 0 2em 2em;
+}
+@media all and (min-width: 800px) {
+	body {
+		padding: 4em 0 4em 4em;
+	}
+}
+main {
+	flex: 1 0 auto;
+	padding-right: 2em;
+}
+a {
+	color: inherit;
+	position: relative;
+	z-index: 1;
+	padding: .25em .5em;
+	margin: -.25em -.5em;
+	border-radius: 3px;
+	transition: all .2s ease-out;
+}
+
+a:hover,
+a:focus {
+	text-decoration-color: underline;
+	background: var(--color-fg);
+	color: var(--color-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: var(--weight-bold);
+}
+h1 {
+	font-size: 2em;
+	line-height: 1.3;
+}
+h2 {
+	font-size: 1.2em;
+}
+time {
+	display: block;
+	padding: 0 0 1em 0;
+	color: var(--color-fg-light);
+	font-size: var(--smallprint);
+}
+nav a {
+	text-decoration: none;
+	margin-left: 1em;
+}
+nav {
+	margin-left: -1.5em;
+}
+ol, ul {
+	list-style-type: none;
+}
+ol {	
+	counter-reset: section;                
+}
+
+ol li::before,
+ul li::before {
+	color: var(--color-accent);
+	margin-right: .5em;
+	margin-left: -1.5em
+}
+
+ol li::before {
+  counter-increment: section;            
+	content: counters(section, ".") " ";   
+}
+
+ul li::before {
+	content: "•"
+}
+
+blockquote {
+	padding: 1em 2em 1em 1em;
+	font-style: italic;
+	color: var(--color-fg-light);
+}
+blockquote + blockquote {
+	padding-top: 0;
+}
+figure > blockquote {
+	padding-top: 0;
+}
+figcaption {
+	font-size: var(--smallprint);
+}
+.page-header {
+	padding-bottom: 2em;
+}
+
+
+.footer {
+	padding: 2em 0 0;
+}
+.footer > p {
+	font-size: var(--smallprint);
+}
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 1em;
+	position: relative;
+	margin-bottom: 3em;
+}
+.logo {
+	font-weight: var(--weight-bold);
+	text-decoration: none;
+	margin-right: 2em;
+	margin-bottom: 1em;
+}
+@media all and (min-width: 600px) {
+	.logo {
+		margin-bottom: 0;
+	}
+}
+.stack > * + * {
+		margin-top: 1em;
+}
+.snippet {
+	position: relative;
+	padding: 1em 0 2em;
+}
+.border {
+	position: relative;
+}
+.border::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: .5px;
+	background: var(--color-fg);
+}
+
+.header.border::before {
+	background: var(--gradient);
+}
+
+.snippet a {
+	text-decoration: none;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 38em;
+}
+
+.pagination {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 2em 0 0;
+}
+
+pre {
+	padding: 2em;
+	background: var(--color-fg);
+	color: var(--color-bg);
+	border-radius: 3px;
+}

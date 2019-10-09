@@ -4,9 +4,9 @@
   "lang": "en-GB",
   "start_url": "/",
   "display": "minimal-ui",
-  "theme_color": "#5350ef",
-  "background_color": "#f5f5f5",
-  "icons": [
+  "theme_color": "#292626",
+	"background_color": "#f9f8f7",
+	"icons": [
     {
       "src": "favicon.png",
       "sizes": "512x512"

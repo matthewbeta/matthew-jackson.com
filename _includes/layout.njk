@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <title>{% if title %}{{ title }} | {% endif %}Matthew Jackson</title> 
+	<link rel="stylesheet" href="https://use.typekit.net/vqk3jnw.css">
+	<link rel="stylesheet" href="/assets/style.css">
+	<link rel="manifest" href="/manifest.json">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#292626">
+	<meta name="msapplication-TileColor" content="#292626">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta name="description" content="{% if snippet %}{{ snippet }}{% else %}Matthew Jackson makes websites{% endif %}">
+	
+</head> 
+<body> 
+  <header class="header border">
+    <a href="/" class="logo">Matthew Jackson</a>
+		<nav class="nav">
+			<a href="/">Home</a>
+			<a href="https://bluegg.co.uk">Work</a>
+			<a href="/blog">Blog</a>
+			<a href="/feed.xml">RSS</a>
+			<a href="/contact">Contact</a>
+		</nav>
+  </header> 
+  <main> 
+    {{ content | safe }}
+  </main> 
+  <footer class="footer"><p>ⓒ 2019</p></footer> 
+	<script src="/assets/script.js" async defer></script>
+</body> 
+</html>

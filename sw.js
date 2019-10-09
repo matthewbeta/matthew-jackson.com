@@ -1,5 +1,5 @@
-const version = "v13::";
-
+const version = "v20191::";
+console.log('👾 - Test')
 self.addEventListener("install", function(event) {
   console.log("👾 - install event in progress.");
   event.waitUntil(
@@ -17,7 +17,7 @@ self.addEventListener("install", function(event) {
            The method below will add all resources we've indicated to the cache,
            after making HTTP requests for each of them.
         */
-        return cache.addAll(["/", "/offline.html", "/css/main.css", "/js/main.js"]);
+        return cache.addAll(["/", "/offline/index.html", "/assets/style.css", "/assets/script.js"]);
       })
       .then(function() {
         console.log("👾 - install completed");
@@ -125,7 +125,7 @@ self.addEventListener("fetch", function(event) {
              - Generate a Response programmaticaly, as shown below, and return that
           */
 
-					return caches.match("/offline.html");
+					return caches.match("/offline/index.html");
 
           console.log(
             "👾 - fetch request failed in both cache and network."
