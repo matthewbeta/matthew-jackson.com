@@ -1,5 +1,4 @@
-const version = "v20194::";
-console.log('👾 - Test')
+const version = "v20195::";
 self.addEventListener("install", function(event) {
   console.log("👾 - install event in progress.");
   event.waitUntil(
