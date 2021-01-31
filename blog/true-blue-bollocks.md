@@ -6,8 +6,6 @@ date: 2021-01-31
 tags: ['blog', 'football', 'Chelsea']
 ---
 
-# True blue bollocks
-
 [Jonathon Wilson in The Guardian](https://www.theguardian.com/football/blog/2021/jan/30/thomas-tuchel-not-true-blue-chelsea-frank-lampard):
 
 > He is one of the world’s brightest coaching prospects, but he is not Lampard. He does not ooze “Chelseaness”. Worse, he arrives as an ascetic vegan intellectual into a world that has had quite enough of experts, as a German when the German authorities have doubted “Britain’s” brave vaccine.
