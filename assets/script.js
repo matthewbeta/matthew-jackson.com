@@ -5,4 +5,4 @@ if ("serviceWorker" in navigator) {
 			console.log("ServiceWorker has been registered!");
 		})
 		.catch(console.error);
-}
+}	
