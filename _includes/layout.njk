@@ -16,6 +16,14 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<meta name="description" content="{% if snippet %}{{ snippet }}{% else %}Matthew Jackson makes websites{% endif %}">
+
+	{% if css %}
+
+	<style>
+			{{ css }}
+	</style>
+
+	{% endif %}
 	
 </head> 
 <body> 

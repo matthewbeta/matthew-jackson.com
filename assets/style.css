@@ -1,9 +1,10 @@
 :root {
-	--color-bg: #f9f8f7;
-	--color-fg-light: rgb(128, 121, 123);
-	--color-fg: #292626;
-	--color-accent: rgb(238, 148, 38);
-	--gradient: linear-gradient(90deg, rgb(223, 11, 106) 0%,rgb(238, 148, 38) 16.66667%,rgb(136, 238, 53) 33.333334%,rgb(75, 240, 221) 50%,rgb(63, 142, 238) 67%, rgb(150, 52, 231) 100%);
+	// BASE
+	--color-light: #f9f8f7
+	--color-dark: #292626
+
+
+	// OTHERS
 	--smallprint: .85em;
 	--font-sans: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-serif: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
@@ -11,12 +12,17 @@
 	--weight-bold: bold;
 	--weight-extra-bold: 900;
 	--ratio: 1.5;
+	--color-bg: var(--color-light);
+	--color-fg: var(--color-dark);
+	--color-fg-light: rgb(128, 121, 123);
+	--color-accent: rgb(238, 148, 38);
+	--gradient: linear-gradient(90deg, rgb(223, 11, 106) 0%,rgb(238, 148, 38) 16.66667%,rgb(136, 238, 53) 33.333334%,rgb(75, 240, 221) 50%,rgb(63, 142, 238) 67%, rgb(150, 52, 231) 100%);
 	}
 
 	@media (prefers-color-scheme: dark) {
 		:root {
-			--color-bg: #292626;
-			--color-fg: #f9f8f7;
+			--color-fg: var(--color-light);
+			--color-bg: var(--color-dark);
 		}
 	}
 
@@ -135,10 +141,16 @@ main {
 	font-family: var(--font-serif);
 	flex: 1 0 auto;
 	margin-right: 2em;
-	padding-bottom: 4em;
-	border-bottom: 1px solid;
+	display: flex;
+	flex-direction: column;
 
 }
+main > .wrapper {
+	flex: 1 0 auto;
+	padding-bottom: 4em;
+	border-bottom: 2px solid;
+}
+
 a {
 	color: inherit;
 	position: relative;
