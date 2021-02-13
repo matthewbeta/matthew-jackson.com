@@ -3,10 +3,10 @@ layout: post.njk
 title: "Using Apple's New York font in CSS"
 snippet: "A slight redesign"
 date: 2021-02-11
-tags: ['web', 'css', 'fonts', 'apple', 'new york', 'system fonts']
+tags: ['blog', 'web', 'css', 'fonts', 'apple', 'new york', 'system fonts']
 css: |
   :root {
-    --color-light: #F4DFDD;
+    --color-light: #EFE7E6;
     --color-dark: #2C2923;
   }
   h1, h2 {

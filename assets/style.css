@@ -1,10 +1,8 @@
 :root {
-	// BASE
-	--color-light: #f9f8f7
-	--color-dark: #292626
-
-
-	// OTHERS
+	/* BASE */
+	--color-light: #f9f8f7;
+	--color-dark: #292626;
+	/* TYPOGRAPHY */
 	--smallprint: .85em;
 	--font-sans: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-serif: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
@@ -12,6 +10,7 @@
 	--weight-bold: bold;
 	--weight-extra-bold: 900;
 	--ratio: 1.5;
+	/* COLOURS */
 	--color-bg: var(--color-light);
 	--color-fg: var(--color-dark);
 	--color-fg-light: rgb(128, 121, 123);
