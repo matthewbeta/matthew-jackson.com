@@ -6,8 +6,8 @@ date: 2021-02-11
 tags: ['blog', 'web', 'css', 'fonts', 'apple', 'new york', 'system fonts']
 css: |
   :root {
-    --color-light: #EFE7E6;
-    --color-dark: #2C2923;
+    --color-light: #F1DEDB;
+    --color-dark: #202020;
   }
   h1, h2 {
     font-family: var(--font-serif);
