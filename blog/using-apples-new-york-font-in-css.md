@@ -9,8 +9,12 @@ css: |
     --color-light: #F1DEDB;
     --color-dark: #202020;
   }
-  h1, h2 {
+  h1 {
     font-family: var(--font-serif);
+  }
+  h2 {
+    font-family: ui-monospace, SFMono-Regular, ui-monospace, Monaco, monospace;
+    font-weight: normal;
   }
 ---
 
@@ -33,3 +37,11 @@ font-family: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
 ```
 
 I've also added a style block in the head, where I can insert custom CSS within the post front-matter. In this one, I've set the headings to also use New York. 🤝
+
+## Update - SF Mono is pretty easy to add too 🤖
+
+Its the same principle. Here's my new code font stack:
+
+```css
+font-family: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+```
