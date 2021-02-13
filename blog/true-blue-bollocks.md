@@ -4,6 +4,12 @@ title: "True Blue Bollocks"
 snippet: "A football post"
 date: 2021-01-31
 tags: ['blog', 'football', 'Chelsea']
+css: |
+  :root {
+    --color-light: #e9fcff;
+    --color-dark: #1e266a;
+    --color-mid: rgb(137, 135, 162);
+  }
 ---
 
 [Jonathon Wilson in The Guardian](https://www.theguardian.com/football/blog/2021/jan/30/thomas-tuchel-not-true-blue-chelsea-frank-lampard):

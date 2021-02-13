@@ -4,6 +4,12 @@ title: "How Monzo Hire Product Designers"
 snippet: "Thoughts on Monzo’s product designer application process"
 date: 2019-01-20
 tags: ['blog']
+css: |
+  :root {
+    --color-light: #f4f4f4;
+    --color-dark: #ff2965;
+    --color-mid: rgb(125, 0, 36);
+  }
 ---
 
 On Friday, someone I follow shared a post about the kind of [application process a Product Designer can expect when applying to Monzo](https://monzo.com/blog/2019/01/17/monzo-product-designer-jobs/?utm_content=buffer0f188&utm_medium=social&utm_source=twitter):

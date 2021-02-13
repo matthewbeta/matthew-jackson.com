@@ -3,7 +3,7 @@ layout: post.njk
 title: "Are you (an) experienced (developer)?"
 date: 2019-01-12
 snippet: "What does it mean to be an experienced developer? It definitely doesn’t mean you know how to do everything."
-tags: ['blog']
+tags: ['blog']}
 ---
 
 What does it mean to be an experienced developer? It definitely doesn’t mean you know how to do everything. 
