@@ -2,6 +2,7 @@
 	/* BASE */
 	--color-light: #f9f8f7;
 	--color-dark: #201C24;
+	--color-mid: rgb(128, 121, 123);
 	/* TYPOGRAPHY */
 	--smallprint: .85em;
 	--font-sans: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -13,7 +14,7 @@
 	/* COLOURS */
 	--color-bg: var(--color-light);
 	--color-fg: var(--color-dark);
-	--color-fg-light: rgb(128, 121, 123);
+	--color-fg-light: var(--color-mid);
 	--color-accent: rgb(238, 148, 38);
 	--gradient: linear-gradient(90deg, rgb(223, 11, 106) 0%,rgb(238, 148, 38) 16.66667%,rgb(136, 238, 53) 33.333334%,rgb(75, 240, 221) 50%,rgb(63, 142, 238) 67%, rgb(150, 52, 231) 100%);
 	}
@@ -197,11 +198,24 @@ nav a {
 	text-decoration: none;
 	margin-left: 1em;
 }
-nav {
+nav, .nav {
 	flex: 1 1 auto;
 	margin-left: -1.5em;
 	padding-right: 1em;
 }
+
+footer .nav {
+	display: flex;
+	justify-content: flex-end;
+	margin-left: -1em;
+	padding-right: 0;
+	align-items: center;
+}
+
+footer .nav a {
+	margin-left: .5em;
+}
+
 ol, ul {
 	list-style-type: none;
 }
@@ -250,6 +264,11 @@ figcaption {
 }
 .footer > p {
 	font-size: var(--smallprint);
+}
+.footer  > .wrapper {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
 }
 .header {
 	display: flex;
@@ -311,6 +330,9 @@ figcaption {
 	flex-wrap: wrap;
 	padding: 2em 0 0;
 }
+
+
+
 
 
 /* PRISM CSS */
