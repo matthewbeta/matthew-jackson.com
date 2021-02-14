@@ -24,7 +24,7 @@ Had a bit of a spring clean on the old web log this week. I wanted to keep thing
 
 I've been using system fonts for a while, as I really like Apple's San-Francisco font and I like the fact thats its nice a quick as no files to download (sorry if your are on Windows). Recently(ish) Apple introduced a serif sister font to San Francisco, New York, which I also like.
 
-Using San Francisco (used to?) require a bit of a hacky method to use it on the web:
+Using San Francisco requires a bit of a hacky method to use it on the web:
 
 ```css
 font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
