@@ -1,7 +1,8 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const moment = require('moment');
-const pluginPWA = require("eleventy-plugin-pwa")
+const pluginPWA = require("eleventy-plugin-pwa");
+const footnotes = require('eleventy-plugin-footnotes');
 
 moment.locale('en');
 
@@ -18,6 +19,7 @@ module.exports = function(eleventyConfig) {
 	});
 	
 	eleventyConfig.addPassthroughCopy("assets");
+	eleventyConfig.addPassthroughCopy("blog");
 	eleventyConfig.addPassthroughCopy("manifest.json");
 	eleventyConfig.addPassthroughCopy({ "_favicons": "/" });
 	eleventyConfig.addPassthroughCopy({ "_netlify": "/" });
@@ -28,7 +30,7 @@ module.exports = function(eleventyConfig) {
     swDest: "./_site/service-worker.js",
     globDirectory: "./_site",
     clientsClaim: true,
-    skipWaiting: false
+    skipWaiting: true
   });
 
   return {
