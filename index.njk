@@ -17,13 +17,15 @@ title: Hello
 
 		{% set posts = collections.blog | reverse %}
 		{% set post = posts[0] %}
-		<article class="snippet">
+		<article class="snippet border">
 			<h3>
 				<a href="{{ post.url | url }}">{{ post.data.title }}</a>
 			</h3>
 			<time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
 			<p>{{ post.data.snippet }}</p>
 		</article>
+
+		<p><a href="/blog">More writing</a></p>
 		
 	</article>
 
