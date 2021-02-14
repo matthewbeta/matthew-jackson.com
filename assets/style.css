@@ -137,6 +137,11 @@ body {
 		padding: 4em 0 4em 8em;
 	}
 }
+
+body > header, body > footer {
+	flex: 0 1 auto;
+}
+
 main {
 	font-family: var(--font-serif);
 	flex: 1 0 auto;
@@ -223,11 +228,22 @@ ol {
 	counter-reset: section;                
 }
 
+ol > li, ul > li {
+	position: relative;
+}
+
+ol > li + li,
+ul > li + li {
+	margin-top: .5em;
+}
+
 ol li::before,
 ul li::before {
+	position: absolute;
+	left: -1.5em;
 	color: var(--color-accent);
-	margin-right: .5em;
-	margin-left: -1.5em
+	/* margin-right: .5em;
+	margin-left: -1.5em */
 }
 
 ol li::before {
@@ -261,6 +277,7 @@ figcaption {
 
 .footer {
 	padding: 2em 0 0;
+	margin-right: 2em;
 }
 .footer > p {
 	font-size: var(--smallprint);
