@@ -18,7 +18,6 @@ module.exports = function(eleventyConfig) {
 	});
 	
 	eleventyConfig.addPassthroughCopy("assets");
-	eleventyConfig.addPassthroughCopy("sw.js");
 	eleventyConfig.addPassthroughCopy("manifest.json");
 	eleventyConfig.addPassthroughCopy({ "_favicons": "/" });
 	eleventyConfig.addPassthroughCopy({ "_netlify": "/" });
@@ -29,7 +28,7 @@ module.exports = function(eleventyConfig) {
     swDest: "./_site/service-worker.js",
     globDirectory: "./_site",
     clientsClaim: true,
-    skipWaiting: true
+    skipWaiting: false
   });
 
   return {
