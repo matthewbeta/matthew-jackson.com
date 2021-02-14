@@ -13,6 +13,18 @@ title: Hello
 
 		<p>I work for the <a href="//bluegg.co.uk">best design agency in Wales</a>.</p>
 
+		<p>Here is some writing:</p>
+
+		{% set posts = collections.blog | reverse %}
+		{% set post = posts[0] %}
+		<article class="snippet">
+			<h3>
+				<a href="{{ post.url | url }}">{{ post.data.title }}</a>
+			</h3>
+			<time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
+			<p>{{ post.data.snippet }}</p>
+		</article>
+		
 	</article>
-	
+
 </div>
