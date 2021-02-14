@@ -2,7 +2,6 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const moment = require('moment');
 const pluginPWA = require("eleventy-plugin-pwa");
-const footnotes = require('eleventy-plugin-footnotes');
 
 moment.locale('en');
 
