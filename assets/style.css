@@ -7,6 +7,7 @@
 	--smallprint: .85em;
 	--font-sans: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-serif: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
+	--font-mono: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	--weight-regular: normal;
 	--weight-bold: bold;
 	--weight-extra-bold: 900;
@@ -350,7 +351,19 @@ figcaption {
 
 
 
+code:not([class]), 
+pre:not([class]) {
+	font-family: var(--font-mono);
+	font-size: .8em;
+	color: #f92aad;
+	background-color: #34294f;
+	position: relative;
+	z-index: 1;
+	padding: .25em .5em;
+	margin: -.25em 0;
+	border-radius: 3px;
 
+}
 
 /* PRISM CSS */
 /*
@@ -359,13 +372,14 @@ figcaption {
  *
  * Ported for PrismJS by Marc Backes [@themarcba]
  */
+ 
 
  code[class*="language-"],
  pre[class*="language-"] {
 	 color: #f92aad;
 	 /* text-shadow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3; */
 	 background: none;
-	 font-family: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	 font-family: var(--font-mono);
 	 font-size: 1em;
 	 text-align: left;
 	 white-space: pre;
