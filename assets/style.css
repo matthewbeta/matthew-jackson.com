@@ -349,6 +349,12 @@ figcaption {
 	padding: 2em 0 0;
 }
 
+.flex {
+	display: flex;
+}
+.align-center {
+	align-items: center;
+}
 
 
 code:not([class]), 
