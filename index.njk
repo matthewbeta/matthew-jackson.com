@@ -15,8 +15,10 @@ title: Hello
 
 		<p>Here is some writing:</p>
 
-		{% set posts = collections.blog | reverse %}
-		{% set post = posts[0] %}
+		{% set posts = collections.blog | reverse  %}
+
+		{% for post in posts %}
+		{% if loop.index0 < 5 %}
 		<article class="snippet border">
 			<h3>
 				<a href="{{ post.url | url }}">{{ post.data.title }}</a>
@@ -24,6 +26,8 @@ title: Hello
 			<time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
 			<p>{{ post.data.snippet }}</p>
 		</article>
+		{% endif %}
+		{% endfor %}
 
 		<p><a href="/blog">More writing</a></p>
 		
