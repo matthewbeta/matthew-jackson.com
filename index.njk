@@ -20,9 +20,9 @@ title: Hello
 		{% for post in posts %}
 		{% if loop.index0 < 5 %}
 		<article class="snippet border">
-			<h3>
+			<h2>
 				<a href="{{ post.url | url }}">{{ post.data.title }}</a>
-			</h3>
+			</h2>
 			<time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
 			<p>{{ post.data.snippet }}</p>
 		</article>
