@@ -1,0 +1,54 @@
+---
+layout: layout.njk
+title: Book shelf
+---
+<div class="wrapper wrapper--full">
+<article class="stack">
+	<header class="page-header">
+		<h1>Bookshelf</h1>
+	</header>
+
+	{% set reading = literaldotclub.reading | reverse %}
+	{% set read = literaldotclub.read | reverse %}
+	
+	<div class="bookshelf">
+	<ol>
+	{% for book in reading %}
+		<li>
+			<a href="//literal.club/matthewbeta/book/{{ book.slug  }}">
+				<img src="{{ book.cover }}" alt="{{ book.title }} by {% for author in book.authors %}{{ author.name }}{% if loop.last == false %}, {% endif %}{% endfor %}">
+			</a>
+
+			<div class="book-info">
+				<h2>{{ book.title }} 👀</h2>
+				<p><em>{{ book.subtitle }}</em></p>
+				<p>– {% for author in book.authors %}{{ author.name }}{% if loop.last == false %}, & {% endif %}{% endfor %}</p>
+			</div>
+
+		</li>
+	{% endfor %}
+
+
+	{% for book in read %}
+		{% if loop.index0 < 19 %}
+			<li>
+				<a href="//literal.club/matthewbeta/book/{{ book.slug  }}">
+					<img src="{{ book.cover }}" alt="{{ book.title }} by {% for author in book.authors %}{{ author.name }}{% if loop.last == false %}, {% endif %}{% endfor %}">
+				</a>
+
+			<div class="book-info">
+				<h2>{{ book.title }}</h2>
+				<p><em>{{ book.subtitle }}</em></p>
+				<p>– {% for author in book.authors %}{{ author.name }}{% if loop.last == false %}, & {% endif %}{% endfor %}</p>
+			</div>
+
+			</li>
+		{% endif %}
+	{% endfor %}
+	</ol>
+	</div>
+
+	<a href="https://literal.club/matthewbeta">See all my reading</a>
+
+</article>
+</div>

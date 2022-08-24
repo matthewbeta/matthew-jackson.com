@@ -2,6 +2,8 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const moment = require('moment');
 const pluginPWA = require("eleventy-plugin-pwa");
+// required packages
+const fetch = require("node-fetch");
 
 moment.locale('en');
 
@@ -16,6 +18,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('dateReadable', date => {
     return moment(date).format('dddd, D MMM YYYY'); 
 	});
+
+	eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
 	
 	eleventyConfig.addPassthroughCopy("assets");
 	eleventyConfig.addPassthroughCopy("blog");
