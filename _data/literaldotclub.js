@@ -106,7 +106,7 @@ const getRead = async function() {
 	.then(res => res.json()) // node-fetch option to transform to json
 	.then(json => {
 		// prune the data to return only what we want
-		console.log(json.data.booksByReadingStateAndProfile);
+		// console.log(json.data.booksByReadingStateAndProfile);
 		return json.data.booksByReadingStateAndProfile
 	});
 
