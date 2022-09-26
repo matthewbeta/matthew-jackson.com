@@ -33,7 +33,13 @@ module.exports = function(eleventyConfig) {
     swDest: "./_site/service-worker.js",
     globDirectory: "./_site",
     clientsClaim: true,
-    skipWaiting: true
+    skipWaiting: true,
+		runtimeCaching: [
+			{
+				urlPattern: /^.*\.(html|jpg|png|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json)$/,
+				handler: 'NetworkFirst'
+			}
+		]
   });
 
   return {
