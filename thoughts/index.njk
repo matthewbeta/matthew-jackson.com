@@ -1,0 +1,43 @@
+---
+layout: layout.njk
+title: Thoughts
+snippet: Like a tweet but mine
+pagination:
+  data: collections.thought
+  size: 40
+  reverse: true
+  alias: posts
+---
+
+<div class="wrapper">
+
+<div class="stack">
+<header class="page-header border">
+	<h1>Thoughts</h1>
+</header>
+{% for post in posts %}
+  <article class="thought border">
+    <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
+		<p>{{ post.data.thought }}</p>
+		{% if post.data.link %}
+		<p><a href="{{ post.data.link }}">{{ post.data.link}}</a></p>
+		{% endif %}
+  </article>
+{% endfor %}
+</div>
+
+<nav class="pagination">
+
+{% if pagination.previousPageLink %}
+<a href="{{ pagination.previousPageHref }}">Newer</a>
+{% else %}
+<span aria-hidden="true"></span>
+{% endif %}
+
+{% if pagination.nextPageLink %}
+<a href="{{ pagination.nextPageHref }}">Older</a>
+{% endif %}
+
+</nav>
+
+</div>

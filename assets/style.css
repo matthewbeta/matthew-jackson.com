@@ -313,6 +313,14 @@ figcaption {
 	position: relative;
 	padding: 1em 0 2em;
 }
+.thought {
+	position: relative;
+	padding: 1em 0 2em;
+}
+.thought p + p {
+	padding-top: .5em;
+}
+
 .border {
 	position: relative;
 }
