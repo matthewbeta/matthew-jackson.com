@@ -29,18 +29,18 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addPlugin(pluginRss);
 
-	eleventyConfig.addPlugin(pluginPWA, {
-    swDest: "./_site/service-worker.js",
-    globDirectory: "./_site",
-    clientsClaim: true,
-    skipWaiting: true,
-		runtimeCaching: [
-			{
-				urlPattern: /^.*\.(html|jpg|png|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json)$/,
-				handler: 'NetworkFirst'
-			}
-		]
-  });
+	// eleventyConfig.addPlugin(pluginPWA, {
+  //   swDest: "./_site/service-worker.js",
+  //   globDirectory: "./_site",
+  //   clientsClaim: true,
+  //   skipWaiting: true,
+	// 	runtimeCaching: [
+	// 		{
+	// 			urlPattern: /^.*\.(html|jpg|png|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json)$/,
+	// 			handler: 'NetworkFirst'
+	// 		}
+	// 	]
+  // });
 
   return {
     passthroughFileCopy: true
