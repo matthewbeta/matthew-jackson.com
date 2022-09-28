@@ -203,11 +203,14 @@ time {
 nav a {
 	text-decoration: none;
 	margin-left: 1em;
+	margin-top: .5em;
 }
 nav, .nav {
 	display: flex;
+	flex-wrap: wrap;
 	flex: 1 1 auto;
 	margin-left: -1.5em;
+	margin-top: -.5em;
 	padding-right: 1em;
 }
 
@@ -215,12 +218,6 @@ nav [aria-current="page"] {
 	order: -1;
 	font-weight: bold;	
 }
-
-nav [aria-current="page"]:after {
-	content: "|";
-	display: inline-flex;
-	margin-left: 1.5em;
-	}
 
 footer .nav {
 	display: flex;
@@ -310,8 +307,7 @@ figcaption {
 .logo {
 	font-weight: var(--weight-bold);
 	text-decoration: none;
-	margin-right: .5em;
-	margin-bottom: 1em;
+	order: -1;
 }
 @media all and (min-width: 600px) {
 	.logo {
