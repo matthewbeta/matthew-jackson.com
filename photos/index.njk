@@ -1,0 +1,45 @@
+---
+layout: layout.njk
+title: Photos
+snippet: Like an instagram but mine
+pagination:
+  data: collections.photo
+  size: 10
+  reverse: true
+  alias: posts
+---
+
+<div class="wrapper">
+
+<div class="stack">
+	<header class="page-header border">
+		<h1>Photos</h1>
+	</header>
+	<div class="photo-grid">
+	{% for post in posts %}
+		<figure class="thought border">
+			<img src="{{ post.data.src }}" alt="{{ post.data.alt }}">
+			<figcaption>
+			{% if post.data.caption %}<p>{{ post.data.caption }}</p>{% endif %}
+			<time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
+			</figcaption>
+		</figure>
+	{% endfor %}
+	</div>
+</div>
+
+<nav class="pagination">
+
+{% if pagination.previousPageLink %}
+<a href="{{ pagination.previousPageHref }}">Newer</a>
+{% else %}
+<span aria-hidden="true"></span>
+{% endif %}
+
+{% if pagination.nextPageLink %}
+<a href="{{ pagination.nextPageHref }}">Older</a>
+{% endif %}
+
+</nav>
+
+</div>
