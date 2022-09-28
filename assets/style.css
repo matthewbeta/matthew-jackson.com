@@ -452,6 +452,13 @@ pre:not([class]) {
 	padding: .5em 0;
 }
 
+.photo-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 20em);
+	gap: 1em;
+	list-style-type: none;
+}
+
 /* PRISM CSS */
 /*
  * Synthwave '84 Theme originally by Robb Owen [@Robb0wen] for Visual Studio Code
