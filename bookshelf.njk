@@ -12,9 +12,8 @@ title: Book shelf
 	{% set read = literaldotclub.read | reverse %}
 	
 	<div class="bookshelf">
-	<ol>
 	{% for book in reading %}
-		<li>
+		<article class="border">
 			<a href="//literal.club/matthewbeta/book/{{ book.slug  }}">
 				<img src="{{ book.cover }}" alt="{{ book.title }} by {% for author in book.authors %}{{ author.name }}{% if loop.last == false %}, {% endif %}{% endfor %}">
 			</a>
@@ -25,13 +24,13 @@ title: Book shelf
 				<p>– {% for author in book.authors %}{{ author.name }}{% if loop.last == false %}, & {% endif %}{% endfor %}</p>
 			</div>
 
-		</li>
+		</article>
 	{% endfor %}
 
 
 	{% for book in read %}
-		{% if loop.index0 < 19 %}
-			<li>
+		{% if loop.index0 < 99 %}
+			<article class="border">
 				<a href="//literal.club/matthewbeta/book/{{ book.slug  }}">
 					<img src="{{ book.cover }}" alt="{{ book.title }} by {% for author in book.authors %}{{ author.name }}{% if loop.last == false %}, {% endif %}{% endfor %}">
 				</a>
@@ -39,16 +38,16 @@ title: Book shelf
 			<div class="book-info">
 				<h2>{{ book.title }}</h2>
 				<p><em>{{ book.subtitle }}</em></p>
-				<p>– {% for author in book.authors %}{{ author.name }}{% if loop.last == false %}, & {% endif %}{% endfor %}</p>
+				<p>{% for author in book.authors %}{{ author.name }}{% if loop.last == false %}, & {% endif %}{% endfor %}</p>
 			</div>
 
-			</li>
+			</article>
 		{% endif %}
 	{% endfor %}
-	</ol>
 	</div>
 
 	<a href="https://literal.club/matthewbeta">See all my reading</a>
 
 </article>
 </div>
+<div class="wrapper"></div>

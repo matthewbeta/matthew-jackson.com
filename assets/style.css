@@ -205,10 +205,22 @@ nav a {
 	margin-left: 1em;
 }
 nav, .nav {
+	display: flex;
 	flex: 1 1 auto;
 	margin-left: -1.5em;
 	padding-right: 1em;
 }
+
+nav [aria-current="page"] {
+	order: -1;
+	font-weight: bold;	
+}
+
+nav [aria-current="page"]:after {
+	content: "|";
+	display: inline-flex;
+	margin-left: 1.5em;
+	}
 
 footer .nav {
 	display: flex;
@@ -298,7 +310,7 @@ figcaption {
 .logo {
 	font-weight: var(--weight-bold);
 	text-decoration: none;
-	margin-right: 2em;
+	margin-right: .5em;
 	margin-bottom: 1em;
 }
 @media all and (min-width: 600px) {
@@ -352,6 +364,7 @@ figcaption {
 
 .wrapper--full {
 	max-width: 100%;
+	border: 0 none !important;
 }
 
 .pagination {
@@ -393,16 +406,11 @@ pre:not([class]) {
 }
 
 .bookshelf {
-	padding: 2em 0;
-}
-
-.bookshelf ol {
-	padding: 0;
-	margin: 0;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 10em);
 	gap: 1em;
 	list-style-type: none;
+	margin-bottom: 1em;
 }
 
 .bookshelf a {
@@ -410,18 +418,8 @@ pre:not([class]) {
 	padding: .5em;
 }
 
-.bookshelf li::before {
-	display: none;
-}
 
-.bookshelf li {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	 
-}
-
-.bookshelf li.reading::before {
+.bookshelf .reading::before {
 	display: flex;
 	content: "Reading...";
 	position: absolute;
@@ -454,9 +452,21 @@ pre:not([class]) {
 
 .photo-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, 20em);
+	grid-template-columns: repeat(auto-fill, 18em);
 	gap: 1em;
 	list-style-type: none;
+}
+
+.photo-grid  img {
+	aspect-ratio: 1/1;
+	width: 100%;
+	object-fit: cover;
+}
+
+.photo-grid a {
+	display: inline-flex;
+	padding: .5em;
+	margin-bottom: 1em;
 }
 
 /* PRISM CSS */

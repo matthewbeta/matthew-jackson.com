@@ -9,4 +9,4 @@
 	# Don't load any resource type not explicitly enabled
 	# Disable plugins like Flash or Silverlight
 	# Load images, scripts, stylesheets and fonts from self
-	Content-Security-Policy: default-src 'none'; object-src 'none'; img-src 'self' https://assets-ol.literal.club https://assets.literal.club; script-src 'self'; style-src 'self' https://use.typekit.net https://p.typekit.net 'unsafe-inline'; font-src 'self' https://use.typekit.net; manifest-src 'self'; connect-src 'self' https://use.typekit.net; worker-src 'self';
+	Content-Security-Policy: default-src 'none'; object-src 'none'; img-src 'self' https://assets-ol.literal.club https://assets.literal.club https://i.imgur.com https://cvws.icloud-content.com; script-src 'self'; style-src 'self' https://use.typekit.net https://p.typekit.net 'unsafe-inline'; font-src 'self' https://use.typekit.net; manifest-src 'self'; connect-src 'self' https://use.typekit.net; worker-src 'self';

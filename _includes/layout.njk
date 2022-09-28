@@ -28,14 +28,16 @@
 </head> 
 <body> 
   <header class="header border">
-    <a href="/" class="logo">Matthew Jackson</a>
+    <a href="/" class="logo">Matthew Jackson <span aria-hidden="true">    /</span></a>
 		<nav class="nav">
 			<a href="/">Home</a>
-			<a href="https://bluegg.co.uk" target="_blank" rel="noopener noreferrer">Work</a>
-			<a href="/blog">Blog</a>
-			<a href="/thoughts">Thoughts</a>
-			<a href="/bookshelf">Bookshelf</a>
-			<a href="/contact">Contact</a>
+			<a href="/blog"{% if '/blog' in page.url %}aria-current="page"{% endif %}>Blog</a>
+			<a href="/thoughts"{% if '/thoughts' in page.url %}aria-current="page"{% endif %}>Thoughts</a>
+			
+			<a href="/photos"{% if '/photos' in page.url %}aria-current="page"{% endif %}>Photos</a>
+
+			<a href="/bookshelf"{% if '/bookshelf' in page.url %}aria-current="page"{% endif %}>Bookshelf</a>
+			<a href="/contact"{% if '/contact' in page.url %}aria-current="page"{% endif %}>Contact</a>
 		</nav>
   </header> 
   <main> 

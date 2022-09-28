@@ -18,7 +18,7 @@ pagination:
 	<div class="photo-grid">
 	{% for post in posts %}
 		<figure class="thought border">
-			<img src="{{ post.data.src }}" alt="{{ post.data.alt }}">
+			<a href="{{ post.data.src }}""><img src="{{ post.data.src }}" alt="{{ post.data.alt }}"></a>
 			<figcaption>
 			{% if post.data.caption %}<p>{{ post.data.caption }}</p>{% endif %}
 			<time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
