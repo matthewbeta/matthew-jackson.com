@@ -2,7 +2,7 @@
 Layout: post.njk
 title: "the beauty of standing still"
 snippet: "Thinking about how the front end got complicated"
-date: 2022-01-01
+date: 2022-09-29
 link: ""
 tags: [blog]
 — 
