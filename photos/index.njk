@@ -9,7 +9,7 @@ pagination:
   alias: posts
 ---
 
-<div class="wrapper">
+<div class="wrapper wrapper--full">
 
 <div class="stack">
 	<header class="page-header border">
@@ -17,12 +17,13 @@ pagination:
 	</header>
 	<div class="photo-grid">
 	{% for post in posts %}
-		<figure class="thought border">
-			<a href="{{ post.data.src }}""><img src="{{ post.data.src }}" alt="{{ post.data.alt }}"></a>
-			<figcaption>
-			{% if post.data.caption %}<p>{{ post.data.caption }}</p>{% endif %}
+		<figure class="photo ">
+			{# <div class="photo-header"><img class="avatar" src="/assets/profile-pic-{{ [1,2,3,4,5,6,7,8,9] | random }}.jpeg" alt="Random Photo of Matt"> matthewbeta</div> #}
+			<a href="{{ post.url | url }}"><img src="{{ post.data.src }}" alt="{{ post.data.alt }}"></a>
+			{# <figcaption>
+			{% if post.data.caption %}<p><strong>matthewbeta</strong> {{ post.data.caption }}</p>{% endif %}
 			<time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
-			</figcaption>
+			</figcaption> #}
 		</figure>
 	{% endfor %}
 	</div>
@@ -43,3 +44,5 @@ pagination:
 </nav>
 
 </div>
+
+<div class="wrapper"></div>
