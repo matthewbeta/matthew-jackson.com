@@ -11,7 +11,7 @@
 	--weight-regular: normal;
 	--weight-bold: bold;
 	--weight-extra-bold: 900;
-	--ratio: 1.5;
+	--ratio: 1.7;
 	/* COLOURS */
 	--color-bg: var(--color-light);
 	--color-fg: var(--color-dark);
@@ -149,7 +149,7 @@ main {
 	margin-right: 2em;
 	display: flex;
 	flex-direction: column;
-
+	font-size: 1.25em;
 }
 main > .wrapper {
 	flex: 1 0 auto;
@@ -195,7 +195,7 @@ h2 {
 	font-size: 1.2em;
 }
 time {
-	display: block;
+	display: inline-flex;
 	padding: 0 0 1em 0;
 	color: var(--color-fg-light);
 	font-size: var(--smallprint);
@@ -322,11 +322,23 @@ figcaption {
 	padding: 1em 0 2em;
 }
 .thought {
+	display: grid;
+	grid-template-columns: 5em 1fr;
+	grid-gap: 2em;
 	position: relative;
 	padding: 1em 0 2em;
 }
 .thought p + p {
 	padding-top: .5em;
+}
+
+.thought.border:before {
+	width: 100%;
+	background-color: var(--color-fg-light);
+}
+
+.thought-body {
+	overflow: hidden;
 }
 
 .border {
@@ -355,7 +367,7 @@ figcaption {
 
 .wrapper {
 	width: 100%;
-	max-width: 56em;
+	max-width: 48rem;
 }
 
 .wrapper--full {
@@ -460,9 +472,32 @@ pre:not([class]) {
 }
 
 .photo-grid a {
-	display: inline-flex;
+	display: block;
 	padding: .5em;
-	margin-bottom: 1em;
+}
+
+.photo-header {
+	display: grid;
+	grid-template-columns: 2em 1fr;
+	padding-bottom: 1em;
+	grid-gap: 1em;
+	align-items: center;
+	font-weight: bold;
+}
+
+.photo figcaption {
+	padding: 1em 0;
+}
+
+.avatar {
+	width: 100%;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.photo, .thought {
+	font-family: var(--font-sans);
 }
 
 /* PRISM CSS */

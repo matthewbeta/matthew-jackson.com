@@ -1,0 +1,18 @@
+---
+layout: layout.njk
+---
+
+<div class="wrapper">
+	<article class="photo">
+		<div class="photo-header"><img class="avatar" src="/assets/profile-pic-{{ [1,2,3,4,5,6,7,8,9] | random }}.jpeg" alt="Random Photo of Matt"> matthewbeta</div>
+		{{ content | safe }}
+
+		<img src="{{ src }}" alt="{{ alt }}">
+			<figcaption>
+			{% if caption %}<p><strong>matthewbeta</strong> {{ caption }}</p>{% endif %}
+			<time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time> 
+			</figcaption>
+		</figure>
+
+	</article>
+</div>
