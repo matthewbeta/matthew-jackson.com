@@ -8,7 +8,7 @@ title: Book shelf
 		<h1>Bookshelf</h1>
 	</header>
 
-	{% set reading = literaldotclub.reading | reverse %}
+	{# {% set reading = literaldotclub.reading | reverse %}
 	{% set read = literaldotclub.read | reverse %}
 	
 	<div class="bookshelf">
@@ -46,7 +46,41 @@ title: Book shelf
 	{% endfor %}
 	</div>
 
-	<a href="https://literal.club/matthewbeta">See all my reading</a>
+	<a href="https://literal.club/matthewbeta">See all my reading</a> #}
+
+	      <style type="text/css" media="screen">
+        .gr_grid_container {
+          /* customize grid container div here. eg: width: 500px; */
+					display: grid;
+					grid-template-columns: repeat(auto-fill, 6em);
+					gap: 1em;
+					list-style-type: none;
+					margin-bottom: 1em;
+        }
+
+        .gr_grid_book_container a {
+          /* customize book cover container div here */
+          	display: inline-flex;
+						padding: .5em;
+						width: 100%;
+        }
+
+				.gr_grid_book_container img {
+          /* customize book cover container div here */
+          	width: 100%;
+        }
+      </style>
+
+			<h2>Reading</h2>
+      <div id="gr_grid_widget_1720614578"></div>
+
+			<h2>Read</h2>
+			<div id="gr_grid_widget_1720613676"></div>
+
+			
+      <script src="https://www.goodreads.com/review/grid_widget/93093847.Matthew's%20currently-reading%20book%20montage?cover_size=medium&hide_link=true&hide_title=true&num_books=20&order=d&shelf=currently-reading&sort=date_read&widget_id=1720614578" type="text/javascript" charset="utf-8"></script>
+      
+      <script src="https://www.goodreads.com/review/grid_widget/93093847.Matthew's%20read%20book%20montage?cover_size=medium&hide_link=true&hide_title=true&num_books=50&order=d&shelf=read&sort=date_read&widget_id=1720613676" type="text/javascript" charset="utf-8"></script>
 
 </article>
 </div>

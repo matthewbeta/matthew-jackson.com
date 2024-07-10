@@ -1,7 +1,7 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const moment = require('moment');
-const pluginPWA = require("eleventy-plugin-pwa");
+// const pluginPWA = require("eleventy-plugin-pwa");
 // required packages
 const fetch = require("node-fetch");
 
